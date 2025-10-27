@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Newsletter Subscribers Model - za evidentiranje korisnika koji su zatražili brošuru
+model NewsletterSubscriber {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  name         String?
+  phone        String?
+  
+  // Status tracking
+  status       String    @default("active")
+  
+  // Brošura tracking
+  brochureSent Boolean   @default(false)
+  sentAt       DateTime?
+  
+  // GDPR & Marketing
+  gdprConsent  Boolean   @default(false)
+  
+  // Metadata
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  
+  // IP i User Agent (opciono, za fraud prevention)
+  ipAddress    String?
+  userAgent    String?
+  
+  // Notes - za internal tracking (npr. "Poslao ponovo na zahtev")
+  notes        String?
+  
+  @@index([email])
+  @@index([createdAt])
+  @@map("newsletter_subscribers")
+}
