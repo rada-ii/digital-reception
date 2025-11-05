@@ -9,7 +9,15 @@ export default function ScrollToTop() {
   const [currentSection, setCurrentSection] = useState<string | null>(null);
   const [clickCount, setClickCount] = useState(0);
 
-  const sections = ["hero", "valueprops", "howitworks", "comparison", "packages", "faq", "cta"];
+  const sections = [
+    "hero",
+    "valueprops",
+    "howitworks",
+    "comparison",
+    "packages",
+    "faq",
+    "cta",
+  ];
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -23,12 +31,15 @@ export default function ScrollToTop() {
 
     const findCurrentSection = () => {
       const scrollPosition = window.pageYOffset + 100;
-      
+
       for (const sectionId of sections) {
         const element = document.getElementById(sectionId);
         if (element) {
           const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setCurrentSection(sectionId);
             return;
           }
@@ -54,7 +65,7 @@ export default function ScrollToTop() {
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
           setClickCount(1);
-          
+
           // Reset click count nakon 3 sekunde
           setTimeout(() => {
             setClickCount(0);
@@ -76,16 +87,22 @@ export default function ScrollToTop() {
       {isVisible && (
         <motion.button
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
+          animate={{ opacity: 0.5, scale: 1 }}
           exit={{ opacity: 0, scale: 0.5 }}
           onClick={scrollToTop}
           className="fixed bottom-6 right-6 z-50 bg-orange-500 hover:bg-orange-600 text-white p-3 sm:p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 group"
-          aria-label={clickCount === 0 ? "Scroll to section top" : "Scroll to page top"}
+          aria-label={
+            clickCount === 0 ? "Scroll to section top" : "Scroll to page top"
+          }
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <ArrowUp className={`w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 ${clickCount === 1 ? "animate-bounce" : ""}`} />
-          
+          <ArrowUp
+            className={`w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 ${
+              clickCount === 1 ? "animate-bounce" : ""
+            }`}
+          />
+
           {/* Tooltip */}
           <div className="absolute bottom-full right-0 mb-2 px-3 py-1.5 bg-slate-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
             {clickCount === 0 ? "Na vrh sekcije" : "Na vrh stranice"}

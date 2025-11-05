@@ -26,10 +26,10 @@ export default function SectionNavigation() {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
-      // Prikaži buttone nakon 100px scrolla
-      setIsVisible(scrollY > 100);
+      // Prikaži buttone nakon 100px scrolla ALI sakrij ih kada smo blizu dna (200px odFootera)
+      const isNearBottom = scrollY > documentHeight - windowHeight - 200;
+      setIsVisible(scrollY > 100 && !isNearBottom);
 
-      // Proveri da li možemo ići gore/dole
       setCanScrollUp(scrollY > 100);
       setCanScrollDown(scrollY < documentHeight - windowHeight - 50);
     };
@@ -74,7 +74,7 @@ export default function SectionNavigation() {
               p-3 md:p-4 rounded-full shadow-lg transition-all duration-300
               ${
                 canScrollUp
-                  ? "bg-orange-500 hover:bg-orange-600 text-white cursor-pointer hover:shadow-2xl"
+                  ? "bg-orange-500 hover:bg-orange-600 text-white cursor-pointer hover:shadow-2xl opacity-50 hover:opacity-70"
                   : "bg-gray-300 text-gray-500 cursor-not-allowed opacity-40"
               }
             `}
@@ -94,7 +94,7 @@ export default function SectionNavigation() {
               p-3 md:p-4 rounded-full shadow-lg transition-all duration-300
               ${
                 canScrollDown
-                  ? "bg-orange-500 hover:bg-orange-600 text-white cursor-pointer hover:shadow-2xl"
+                  ? "bg-orange-500 hover:bg-orange-600 text-white cursor-pointer hover:shadow-2xl opacity-50 hover:opacity-70"
                   : "bg-gray-300 text-gray-500 cursor-not-allowed opacity-40"
               }
             `}

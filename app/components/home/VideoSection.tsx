@@ -22,9 +22,9 @@ export default function VideoSection() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   // NAPOMENA: Zameni sa pravim video linkom!
-  const videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ"; // Primer
-  const thumbnailUrl =
-    "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1200&h=675&fit=crop";
+  const videoUrl =
+    "https://www.youtube.com/embed/YP10mh0BNZM?si=ES-3ZP8jvrnlH9sZ";
+  const thumbnailUrl = "/images/masina-video.jpg";
 
   return (
     <section

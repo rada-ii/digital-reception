@@ -163,7 +163,7 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Bottom Stats */}
+        {/* Bottom Stats
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -186,7 +186,7 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

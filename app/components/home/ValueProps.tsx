@@ -101,7 +101,7 @@ export default function ValueProps() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto"
           >
-            Četiri ključne prednosti koje revolucionišu hotelsku industriju
+            4 ključne prednosti koje donose revoluciju u hotelsku industriju
           </motion.p>
         </div>
 
