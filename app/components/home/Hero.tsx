@@ -144,7 +144,8 @@ export default function Hero() {
               className="max-w-5xl mx-auto mb-5 sm:mb-6"
             >
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-700 leading-relaxed px-2 sm:px-4">
-                Digitalna recepcija za sve hotele koji razmišljaju da{" "}
+                Digitalna recepcija za sve hotele i apartmane koji razmišljaju
+                da{" "}
                 <span className="font-bold text-slate-900 bg-orange-100 px-1.5 py-0.5 rounded">
                   potpuno automatizuju
                 </span>{" "}

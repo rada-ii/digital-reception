@@ -8,7 +8,7 @@ export default function PackagesTeaser() {
   const packages = [
     {
       name: "OSNOVNI",
-      price: "Od 999€",
+      // price: "Od 999€",
       features: [
         "Plaćanje karticama",
         "Email obaveštenja",
@@ -18,7 +18,7 @@ export default function PackagesTeaser() {
     },
     {
       name: "STANDARD",
-      price: "Od 1,499€",
+      // price: "Od 1,499€",
       popular: true,
       features: [
         "Sve iz Osnovnog",
@@ -29,7 +29,7 @@ export default function PackagesTeaser() {
     },
     {
       name: "PRO",
-      price: "Od 1,999€",
+      // price: "Od 1,999€",
       features: [
         "Sve iz Standard",
         "Online APP",
