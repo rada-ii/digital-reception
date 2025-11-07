@@ -33,27 +33,27 @@ export default function Hero() {
 
   const carouselImages = [
     {
-      image: "/images/masina14.jpg",
+      image: "/images/masina10.jpg",
       title: "Digitalna Recepcija",
       subtitle: "Za Moderne Hotele",
     },
     {
-      image: "/images/masina19.jpg",
+      image: "/images/masina13.jpg",
       title: "Automatski Check-in",
       subtitle: "Bez Čekanja",
     },
     {
-      image: "/images/masina10.png",
+      image: "/images/masina12.jpg",
       title: "24/7 Dostupnost",
       subtitle: "Uvek Dostupno",
     },
     {
-      image: "/images/masina13.png",
+      image: "/images/masina9.jpg",
       title: "24/7 Dostupnost",
       subtitle: "Uvek Dostupno",
     },
     {
-      image: "/images/masina11.png",
+      image: "/images/masinacentar.jpg",
       title: "24/7 Dostupnost",
       subtitle: "Uvek Dostupno",
     },

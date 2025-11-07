@@ -36,7 +36,7 @@ export default function CalendlyEmbed() {
 
   const calendlyUrl =
     process.env.NEXT_PUBLIC_CALENDLY_URL ||
-    "https://calendly.com/your-username/demo"; // Zameni sa pravim!
+    "https://calendly.com/boris-inovatechit/self_check_in_meeting";
 
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden">

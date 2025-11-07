@@ -23,9 +23,9 @@ export default function ProductHero({ onOpenBrochure }: ProductHeroProps) {
   const [selectedImage, setSelectedImage] = useState(0);
 
   const images = [
-    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1200&h=800&fit=crop",
+    "/images/masina1.jpg",
+    "/images/masina7.jpg",
+    "/images/masina8.jpg",
   ];
 
   const keyFeatures = [
