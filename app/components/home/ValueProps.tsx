@@ -26,21 +26,21 @@ export default function ValueProps() {
       title: "ŠTEDNJA",
       description: "Smanjite troškove do 60%",
       details: "Uštedite hiljade sati i novca",
-      color: "green",
+      color: "black",
     },
     {
       icon: <Clock className="w-8 h-8" />,
       title: "24/7",
       description: "Gosti dolaze kad žele",
       details: "Uvek dostupno bez dodatnog osoblja",
-      color: "blue",
+      color: "orangeLight",
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "SIGURNOST",
       description: "Potpuno sigurne transakcije",
-      details: "Šifrovane plaćanja i podaci",
-      color: "purple",
+      details: "Šifrovana plaćanja i podaci",
+      color: "blackLight",
     },
   ];
 
@@ -50,27 +50,27 @@ export default function ValueProps() {
       text: "text-orange-500",
       hover: "hover:bg-orange-500",
     },
-    green: {
-      bg: "bg-green-100",
-      text: "text-green-500",
-      hover: "hover:bg-green-500",
+    black: {
+      bg: "bg-slate-900",
+      text: "text-white",
+      hover: "hover:bg-slate-900",
     },
-    blue: {
-      bg: "bg-blue-100",
-      text: "text-blue-500",
-      hover: "hover:bg-blue-500",
+    orangeLight: {
+      bg: "bg-orange-500",
+      text: "text-white",
+      hover: "hover:bg-orange-500",
     },
-    purple: {
-      bg: "bg-purple-100",
-      text: "text-purple-500",
-      hover: "hover:bg-purple-500",
+    blackLight: {
+      bg: "bg-slate-700",
+      text: "text-white",
+      hover: "hover:bg-slate-700",
     },
   };
 
   return (
     <section
       id="value-props"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 via-white to-slate-50 scroll-mt-16 overflow-hidden"
+      className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-orange-50 via-white to-slate-50 scroll-mt-16 overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -83,8 +83,8 @@ export default function ValueProps() {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 sm:py-20">
-        <div className="text-center mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-8 sm:py-10">
+        <div className="text-center mb-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

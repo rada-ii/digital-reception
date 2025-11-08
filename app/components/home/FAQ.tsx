@@ -9,44 +9,44 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "Koliko traje instalacija digitalne recepcije?",
+      question: "Zašto je self check-in kiosk bolji od mobilne aplikacije?",
       answer:
-        "Instalacija digitalne recepcije traje između 2-4 sata, u zavisnosti od kompleksnosti integracije sa postojećim sistemima. Naš tim će se pobrinuti da sve bude podešeno, testirano i obučiće vaše osoblje za korišćenje. U cenu je uključena kompletna instalacija, podešavanje i trening.",
+        "Kiosk eliminiše sve prepreke za gosta - nema instalacije app-a, registracije ili komplikacija sa roamingom. Strani gosti često nemaju lokalni broj niti naviku da instaliraju aplikacije. Kiosk je uvek spreman, intuitivan i radi na svim jezicima bez obzira na tip telefona ili digitalnu pismenost gosta. Dodatno, kiosk direktno komunicira sa PMS-om, fiskalnim printerom i encoderom za sobne kartice, što mobilne aplikacije ne mogu. Fizička prisutnost elegantnog kioska u lobby-ju stvara utisak modernog hotela i odmah signalizira efikasnost.",
     },
     {
-      question: "Koliko košta digitalna recepcija?",
+      question: "Koliko košta i koliko brzo se isplati investicija?",
       answer:
-        "Cena digitalne recepcije počinje od 999€ za osnovni paket (Standard). Imamo tri paketa: Standard (999€), Professional (1.499€) i Enterprise (1.999€). Svaki paket uključuje hardware, software, instalaciju i 12 meseci podrške. Za detaljan cenovnik kontaktirajte nas za personalizovanu ponudu.",
-    },
-    {
-      question: "Da li se integriše sa PMS sistemom?",
-      answer:
-        "Da! Digitalna recepcija se integriše sa većinom popularnih PMS sistema kao što su Opera, Cloudbeds, Mews, Protel, Fidelio, HotelTime i mnogim drugim. Ako vaš PMS ima API, možemo ga integrisati. Naš tim će vam pomoći u procesu integracije.",
-    },
-    {
-      question: "Šta je uključeno u cenu?",
-      answer:
-        "U cenu je uključeno: touchscreen kiosk sa postoljem, kompletna instalacija i podešavanje, integracija sa PMS sistemom, eTurista automatska prijava, 12 meseci tehničke podrške, besplatni software update-i, obuka osoblja, i garancija na hardware. Nema skrivenih troškova!",
-    },
-    {
-      question: "Da li je potrebna internet konekcija?",
-      answer:
-        "Da, internet konekcija je neophodna za funkcionisanje digitalne recepcije. Preporučujemo stabilnu konekciju brzine minimum 10 Mbps. Sistem ima backup režim koji omogućava offline rad u slučaju problema sa internetom, a podaci se sinhronizuju kada se konekcija vrati.",
-    },
-    {
-      question: "Kakva je tehnička podrška?",
-      answer:
-        "Nudimo 24/7 tehničku podršku putem telefona, emaila i remote desktop-a. U okviru paketa dobijate 12 meseci besplatne podrške. Prosečno vreme odgovora je ispod 30 minuta. Za hitne probleme garantujemo odgovor u roku od 15 minuta. Nakon isteka prvog perioda, podrška se može produžiti po preferencijalnim cenama.",
-    },
-    {
-      question: "Da li mogu testirati pre kupovine?",
-      answer:
-        "Apsolutno! Nudimo besplatnu demo prezentaciju gde možete videti sistem uživo. Takođe možete zatražiti trial period od 14 dana gde možete testirati kiosk u vašem hotelu bez obaveze kupovine. Za trial period je potreban refundable depozit. Zakažite demo klikom na dugme gore!",
+        "Pozovite nas ili zakazite demo sastanak za tacne cene koje se formiraju prem vasim potreba i paketima usluga. U cenu je uključeno: touchscreen kiosk, instalacija, PMS integracija, eTurista automatska prijava, 12 meseci podrške, besplatni update-i i obuka osoblja. Investicija se vraća za 6-12 meseci kroz smanjenje troškova osoblja (do 60%), eliminaciju grešaka pri check-in-u, povećanje zadovoljstva gostiju i mogućnost rada 24/7 bez dodatnih troškova. Hotel sa 50+ soba uštedi minimum 2.000€ mesečno.",
     },
     {
       question: "Kako izgleda proces check-in-a za gosta?",
       answer:
-        "Proces je jednostavan: 1) Gost skenira QR kod ili unosi broj rezervacije, 2) Sistem automatski učitava podatke iz PMS-a, 3) Gost verifikuje podatke i potpisuje, 4) Plaćanje karticom (opciono), 5) Automatski check-in u eTurista sistem, 6) Izdavanje ključa kartice. Sve traje maksimum 30 sekundi!",
+        "Proces je jednostavan i traje 30-60 sekundi: 1) Gost skenira QR kod ili unosi broj rezervacije, 2) Sistem automatski učitava podatke iz PMS-a, 3) Gost verifikuje podatke i potpisuje na ekranu, 4) Plaćanje karticom (opciono), 5) Automatski check-in u eTurista sistem, 6) Izdavanje ključa kartice. Sve je intuitivno sa jasnim instrukcijama na ekranu. Više kioska znači paralelno prijavljivanje više gostiju - nema gužve ni čekanja na recepciji.",
+    },
+    {
+      question: "Da li se integriše sa PMS sistemom?",
+      answer:
+        "Da! Digitalna recepcija se integriše sa većinom popularnih PMS sistema kao što su Opera, Cloudbeds, Mews, Protel, Fidelio, HotelTime i mnogim drugim. Ako vaš PMS ima API, možemo ga integrisati. Kiosk direktno komunicira sa vašim sistemom - automatski preuzima rezervacije, ažurira status sobe (npr. 'checked-in') i sinhronizuje sve podatke bez potrebe za ručnim unosom. Naš tim će vam pomoći u celom procesu integracije i testiranja.",
+    },
+    {
+      question: "Koliko traje instalacija digitalne recepcije?",
+      answer:
+        "Instalacija traje između 2-4 sata, zavisno od kompleksnosti integracije sa postojećim sistemima. Naš tim će se pobrinuti da sve bude podešeno, testirano i obučiće vaše osoblje za korišćenje. U cenu je uključena kompletna instalacija, podešavanje, integracija sa PMS-om i detaljan trening za vaš tim. Kiosk će biti spreman za rad istog dana, a mi ostajemo dostupni za bilo kakva pitanja.",
+    },
+    {
+      question: "Da li mogu testirati pre kupovine?",
+      answer:
+        "Apsolutno! Nudimo besplatnu demo prezentaciju gde možete videti sistem uživo i isprobati sve funkcije. Takođe možete zatražiti trial period od 14 dana gde možete testirati kiosk u vašem hotelu bez obaveze kupovine. Za trial period je potreban refundable depozit. Mnogi naši klijenti su doneli odluku tek nakon što su videli reakciju svojih gostiju - koji su oduševljeni brzinom i jednostavnošću. Zakažite demo klikom na dugme gore!",
+    },
+    {
+      question: "Kakva je tehnička podrška?",
+      answer:
+        "Nudimo 24/7 tehničku podršku putem telefona, emaila i remote desktop-a. U okviru paketa dobijate 12 meseci besplatne podrške. Prosečno vreme odgovora je ispod 30 minuta. Za hitne probleme garantujemo odgovor u roku od 15 minuta. Nakon isteka prvog perioda, podrška se može produžiti po preferencijalnim cenama. Većina problema se rešava daljinski, a za fizičke intervencije imamo servisne tehničare širom regiona.",
+    },
+    {
+      question: "Šta ako gost ne želi da koristi kiosk?",
+      answer:
+        "Kiosk ne zamenjuje recepciju - već je dopunjava! Gosti koji preferiraju ljudski kontakt i dalje mogu da se prijave na recepciji klasičnim putem. U praksi, 85-90% gostiju prihvata kiosk nakon prvog korišćenja jer je brži i jednostavniji. Stariji gosti i oni koji nisu tehnički vični mogu dobiti asistenciju od recepcije. Kiosk je tu da eliminiše gužve tokom peak sati i omogući vašem osoblju da se fokusira na kompleksnije zadatke i personalizovanu uslugu.",
     },
   ];
 
@@ -57,7 +57,7 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 scroll-mt-16"
+      className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 scroll-mt-16 min-h-[70svh]"
     >
       <div className="max-w-4xl mx-auto">
         {/* Header */}
@@ -134,9 +134,9 @@ export default function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-8 sm:mt-10 md:mt-12"
+          className="mt-8 sm:mt-10 md:mt-12"
         >
-          <div className="inline-flex flex-col sm:flex-row items-center gap-3 bg-orange-50 px-6 py-4 rounded-xl border border-orange-200">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 bg-orange-50 px-6 py-4 rounded-xl border border-orange-200">
             <p className="text-slate-700 font-medium text-sm sm:text-base">
               Nemate odgovor na vaše pitanje?
             </p>

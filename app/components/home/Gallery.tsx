@@ -124,7 +124,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6scroll-mt-16"
+      className="py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 scroll-mt-16 min-h-[80svh]"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -137,8 +137,9 @@ export default function Gallery() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Galerija Proizvoda
           </h2>
-          <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-            Pogledajte našu digitalnu recepciju u različitim hotel okruženjima
+          <p className="text-lg sm:text-xl text-orange-500 max-w-3xl mx-auto">
+            Pogledajte našu digitalnu recepciju u različitim hotelskim
+            okruženjima
           </p>
         </motion.div>
 

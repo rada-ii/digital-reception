@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -22,20 +23,38 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
       className="bg-slate-900/95 backdrop-blur-md text-white sticky top-0 z-50 shadow-lg border-b border-slate-800"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-10">
         <div className="flex justify-between items-center h-14 sm:h-16">
           <Link href="/" className="group flex-shrink-0">
             <motion.div
-              className="text-base sm:text-lg md:text-lg lg:text-xl font-bold"
+              className="relative"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
-              {/* 🎨 NARANDŽAST LOGO - Zadatak #7 */}
-              <span className="hidden sm:inline">
-                <span className="text-orange-500">Digitalna</span>
-                <span className="text-orange-500">Recepcija</span>
-              </span>
-              <span className="sm:hidden text-orange-500">DR</span>
+              {/* Desktop Logo - Full logo with text */}
+              <div className="hidden sm:block">
+                <Image
+                  src="/2.png"
+                  alt="Digitalna Recepcija"
+                  width={400}
+                  height={200}
+                  priority
+                  className="h-78 md:h-76 lg:h-100 xl:h-100 w-100% relative right-35
+                  "
+                />
+              </div>
+
+              {/* Mobile Logo - Icon only (orange circle) */}
+              <div className="sm:hidden ">
+                <Image
+                  src="/1.png"
+                  alt="DR"
+                  width={60}
+                  height={60}
+                  priority
+                  className="h-50 w-50 pt-4 relative right-14"
+                />
+              </div>
             </motion.div>
           </Link>
 
@@ -51,7 +70,7 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* Telefon Button - Best Practice ✅ */}
+            {/* Telefon Button */}
             <motion.a
               href="tel:+381641238587"
               whileHover={{ scale: 1.05 }}
@@ -64,7 +83,7 @@ export default function Navbar() {
             </motion.a>
           </div>
 
-          <div className="lg:hidden flex items-center gap-2">
+          <div className="lg:hidden flex items-center gap-2 pr-4">
             <motion.a
               href="tel:+381641238587"
               whileHover={{ scale: 1.05 }}

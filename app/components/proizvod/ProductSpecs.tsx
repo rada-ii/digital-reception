@@ -118,9 +118,9 @@ export default function ProductSpecs() {
   return (
     <section
       id="specs"
-      className="py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 bg-white scroll-mt-16"
+      className="py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6 bg-white scroll-mt-16"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto min-h-[70vh]">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -203,7 +203,7 @@ export default function ProductSpecs() {
                     transition={{ delay: index * 0.05 }}
                     className="flex items-center gap-2 text-slate-700"
                   >
-                    <span className="text-green-500 font-bold">{feature}</span>
+                    <span className="text-orange-500 font-bold">{feature}</span>
                   </motion.div>
                 ))}
               </div>

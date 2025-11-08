@@ -1,12 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
   preload: true,
-  variable: "--font-inter",
+  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 // VIEWPORT CONFIGURATION
@@ -20,7 +21,7 @@ export const viewport: Viewport = {
 
 // SEO SUPER OPTIMIZACIJA - Meta tags
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vasadomena.com"), // ⚠️ Zameni sa pravim domenom!
+  metadataBase: new URL("https://hotelsync.org"),
 
   // BASIC META
   title: {
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "🏨 Najmodernija digitalna recepcija za potpuno automatizovan hotel check-in za samo 30 sekundi. ✅ 24/7 dostupnost ✅ eTurista integracija ✅ Smanjenje troškova do 60%. Preko 50+ hotela koristi naš sistem. Zatražite besplatnu demo prezentaciju!",
+    "Najmodernija digitalna recepcija za potpuno automatizovan hotel check-in za samo 30 sekundi. 24/7 dostupnost, eTurista integracija, smanjenje troškova do 60%. Preko 20+ hotela koristi naš sistem. Zatražite besplatnu demo prezentaciju!",
 
   keywords: [
     // Primary keywords
@@ -71,15 +72,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "sr_RS",
-    alternateLocale: ["en_US", "de_DE"],
-    url: "https://vasadomena.com",
+    alternateLocale: ["en_US", "hr_HR"],
+    url: "https://hotelsync.org",
     siteName: "Digitalna Recepcija",
     title: "Digitalna Recepcija | Automatski Hotel Check-in za 30 Sekundi",
     description:
-      "Revolucionišite vaš hotel sa najmodernijom digitalnom recepcijom. Check-in za 30 sekundi, 24/7 dostupnost, eTurista integracija. Preko 50+ hotela već koristi naš sistem!",
+      "Automatizujte vaš hotel sa najmodernijom digitalnom recepcijom. Check-in za 30 sekundi, 24/7 dostupnost, eTurista integracija. Preko 20+ hotela već koristi naš sistem!",
     images: [
       {
-        url: "https://vasadomena.com/og-image.jpg",
+        url: "https://hotelsync.org/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Digitalna Recepcija - Automatski Hotel Check-in Kiosk",
@@ -94,8 +95,8 @@ export const metadata: Metadata = {
     creator: "@yourtwitterhandle",
     title: "Digitalna Recepcija | Hotel Check-in Automation",
     description:
-      "Automatski check-in kiosk za hotele. ✅ 30 sekundi ✅ 24/7 ✅ eTurista integracija. Zatražite demo!",
-    images: ["https://vasadomena.com/twitter-image.jpg"],
+      "Automatski check-in kiosk za hotele. 30 sekundi, 24/7 dostupnost, eTurista integracija. Zatražite demo!",
+    images: ["https://hotelsync.org/twitter-image.jpg"],
   },
 
   // ROBOTS & INDEXING
@@ -114,9 +115,8 @@ export const metadata: Metadata = {
 
   // VERIFICATION
   verification: {
-    google: "your-google-verification-code", // ⚠️ Dodaj Google Search Console kod
+    google: "your-google-verification-code",
     yandex: "your-yandex-verification-code",
-    // bing: "your-bing-verification-code",
   },
 
   // CATEGORY
@@ -124,10 +124,10 @@ export const metadata: Metadata = {
 
   // ALTERNATE LANGUAGES
   alternates: {
-    canonical: "https://vasadomena.com",
+    canonical: "https://hotelsync.org",
     languages: {
-      "sr-RS": "https://vasadomena.com",
-      "en-US": "https://vasadomena.com/en",
+      "sr-RS": "https://hotelsync.org",
+      "en-US": "https://hotelsync.org/en",
     },
   },
 
@@ -141,23 +141,15 @@ export const metadata: Metadata = {
   // ICONS & MANIFEST
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/1.png", sizes: "32x32", type: "image/png" },
+      { url: "/1.png", sizes: "16x16", type: "image/png" },
+      { url: "/1.png" },
     ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
+    apple: [{ url: "/1.png", sizes: "180x180", type: "image/png" }],
+    shortcut: [{ url: "/1.png" }],
   },
 
   manifest: "/site.webmanifest",
-
-  // APP LINKS (za mobilne aplikacije)
-  // appLinks: {
-  //   web: {
-  //     url: "https://vasadomena.com",
-  //     should_fallback: true,
-  //   },
-  // },
 };
 
 export default function RootLayout({
@@ -187,11 +179,11 @@ export default function RootLayout({
               name: "Digitalna Recepcija",
               description:
                 "Automatski check-in kiosk za hotele sa touchscreen-om, integrisanim plaćanjem i eTurista prijavom",
-              image: "https://vasadomena.com/product-image.jpg",
+              image: "https://hotelsync.org/product-image.jpg",
               brand: {
                 "@type": "Brand",
                 name: "Inova Tech IT",
-                logo: "https://vasadomena.com/logo.png",
+                logo: "https://hotelsync.org/logo.png",
               },
               offers: {
                 "@type": "AggregateOffer",
@@ -244,9 +236,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Digitalna Recepcija - Inova Tech IT",
-              image: "https://vasadomena.com/office-image.jpg",
-              "@id": "https://vasadomena.com",
-              url: "https://vasadomena.com",
+              image: "https://hotelsync.org/office-image.jpg",
+              "@id": "https://hotelsync.org",
+              url: "https://hotelsync.org",
               telephone: "+381641238587",
               email: "info@inovatechit.com",
               priceRange: "€€",
@@ -278,7 +270,7 @@ export default function RootLayout({
               ],
               sameAs: [
                 "https://www.facebook.com/yourpage",
-                "https://www.linkedin.com/company/yourpage",
+                "https://www.linkedin.com/company/inovatechit/",
                 "https://www.instagram.com/yourpage",
               ],
             }),
@@ -329,36 +321,9 @@ export default function RootLayout({
         <meta name="revisit-after" content="7 days" />
         <meta name="distribution" content="global" />
         <meta name="rating" content="general" />
-
-        {/* Preload Font */}
-        <link
-          rel="preload"
-          href="/fonts/inter-var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
       </head>
 
-      <body className={`${inter.className} antialiased`}>
-        {children}
-
-        {/* Google Analytics (Optional) */}
-        {/* <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
-            `,
-          }}
-        /> */}
-      </body>
+      <body className={`${montserrat.className} antialiased`}>{children}</body>
     </html>
   );
 }

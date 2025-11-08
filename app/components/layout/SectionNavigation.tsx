@@ -62,7 +62,7 @@ export default function SectionNavigation() {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 50 }}
           transition={{ duration: 0.3 }}
-          className="fixed right-4 md:right-6 bottom-20 md:bottom-24 z-40 flex flex-col gap-3"
+          className="fixed right-3 md:right-4 bottom-20 md:bottom-24 z-40 flex flex-col gap-1.5"
         >
           {/* UP Button */}
           <motion.button
@@ -71,7 +71,7 @@ export default function SectionNavigation() {
             whileHover={{ scale: canScrollUp ? 1.1 : 1 }}
             whileTap={{ scale: canScrollUp ? 0.9 : 1 }}
             className={`
-              p-3 md:p-4 rounded-full shadow-lg transition-all duration-300
+              p-1.5 md:p-2 rounded-full shadow-lg transition-all duration-300
               ${
                 canScrollUp
                   ? "bg-orange-500 hover:bg-orange-600 text-white cursor-pointer hover:shadow-2xl opacity-50 hover:opacity-70"
@@ -81,7 +81,7 @@ export default function SectionNavigation() {
             aria-label="Scroll up"
             title="Scroll gore"
           >
-            <ChevronUp className="w-5 h-5 md:w-6 md:h-6" strokeWidth={2.5} />
+            <ChevronUp className="w-3.5 h-3.5 md:w-4 md:h-4" strokeWidth={2.5} />
           </motion.button>
 
           {/* DOWN Button */}
@@ -91,7 +91,7 @@ export default function SectionNavigation() {
             whileHover={{ scale: canScrollDown ? 1.1 : 1 }}
             whileTap={{ scale: canScrollDown ? 0.9 : 1 }}
             className={`
-              p-3 md:p-4 rounded-full shadow-lg transition-all duration-300
+              p-1.5 md:p-2 rounded-full shadow-lg transition-all duration-300
               ${
                 canScrollDown
                   ? "bg-orange-500 hover:bg-orange-600 text-white cursor-pointer hover:shadow-2xl opacity-50 hover:opacity-70"
@@ -101,7 +101,7 @@ export default function SectionNavigation() {
             aria-label="Scroll down"
             title="Scroll dole"
           >
-            <ChevronDown className="w-5 h-5 md:w-6 md:h-6" strokeWidth={2.5} />
+            <ChevronDown className="w-3.5 h-3.5 md:w-4 md:h-4" strokeWidth={2.5} />
           </motion.button>
         </motion.div>
       )}

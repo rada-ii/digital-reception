@@ -33,7 +33,7 @@ export default function HowItWorks() {
   return (
     <section
       id="howitworks"
-      className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 scroll-mt-16"
+      className="py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 scroll-mt-16 min-h-[70vh]"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div

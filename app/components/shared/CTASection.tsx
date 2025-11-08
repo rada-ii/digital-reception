@@ -16,7 +16,7 @@ export default function CTASection() {
   const handleDemoClick = () => {
     // Otvori Calendly u novom tabu
     window.open(
-      "https://calendly.com/aitechwebdev/demo-prezentacija",
+      "https://calendly.com/boris-inovatechit/digital-reception-intro",
       "_blank"
     );
   };
@@ -24,7 +24,7 @@ export default function CTASection() {
   return (
     <section
       id="cta"
-      className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 overflow-hidden scroll-mt-16"
+      className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[75vh] flex items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 bg-gradient-to-br from-orange-700 via-orange-600 to-orange-500 overflow-hidden scroll-mt-16"
     >
       <div className="absolute inset-0 opacity-10">
         <div

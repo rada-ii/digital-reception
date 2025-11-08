@@ -23,8 +23,8 @@ export default function ProductHero({ onOpenBrochure }: ProductHeroProps) {
   const [selectedImage, setSelectedImage] = useState(0);
 
   const images = [
+    "/images/masina9.jpg",
     "/images/masina1.jpg",
-    "/images/masina7.jpg",
     "/images/masina8.jpg",
   ];
 
@@ -48,7 +48,7 @@ export default function ProductHero({ onOpenBrochure }: ProductHeroProps) {
 
   const handleDemoClick = () => {
     window.open(
-      "https://calendly.com/aitechwebdev/demo-prezentacija",
+      "https://calendly.com/boris-inovatechit/digital-reception-intro",
       "_blank"
     );
   };
@@ -56,7 +56,7 @@ export default function ProductHero({ onOpenBrochure }: ProductHeroProps) {
   return (
     <section
       id="product-hero"
-      className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-to-br from-orange-50 via-white to-slate-50 scroll-mt-16 overflow-hidden"
+      className="relative min-h-[80vh] sm:min-h-[85vh] md:min-h-[90vh] flex items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 bg-gradient-to-br from-orange-50 via-white to-slate-50 scroll-mt-16 overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -94,7 +94,7 @@ export default function ProductHero({ onOpenBrochure }: ProductHeroProps) {
               transition={{ delay: 0.3 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight"
             >
-              Digitalna Recepcija{" "}
+              Digitalna Recepcija <br />
               <span className="text-orange-500">Nova Generacije</span>
             </motion.h1>
 
@@ -105,8 +105,8 @@ export default function ProductHero({ onOpenBrochure }: ProductHeroProps) {
               className="text-lg sm:text-xl text-slate-600 mb-8 leading-relaxed"
             >
               Potpuno automatizovan check-in i check-out sistem sa integrisanim
-              plaćanjem, eTurista prijavom i PMS povezivanjem. Revolucionišite
-              način na koji primajete goste.
+              plaćanjem, eTurista prijavom i PMS povezivanjem. Promenite način
+              na koji primate goste.
             </motion.p>
 
             {/* Key Features */}
@@ -158,8 +158,8 @@ export default function ProductHero({ onOpenBrochure }: ProductHeroProps) {
               transition={{ delay: 0.7 }}
               className="mt-8 flex items-center gap-3 text-sm text-slate-600"
             >
-              <Check className="w-5 h-5 text-green-500" />
-              <span>Više od 50+ hotela koristi našu digitalnu recepciju</span>
+              {/* <Check className="w-5 h-5 text-green-500" />
+              <span>Više od 20+ hotela koristi našu digitalnu recepciju</span> */}
             </motion.div>
           </motion.div>
 

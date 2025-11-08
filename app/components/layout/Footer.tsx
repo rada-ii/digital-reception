@@ -103,11 +103,11 @@ export default function Footer() {
                 <span className="break-all">+381 64 1238587</span>
               </a>
               <a
-                href="mailto:info@inovatechit.com"
+                href="mailto:office@inovatechit.com"
                 className="flex items-center gap-2 hover:text-orange-500 transition"
               >
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="break-all">info@inovatechit.com</span>
+                <span className="break-all">office@inovatechit.com</span>
               </a>
               <a
                 href="https://inovatechit.com"

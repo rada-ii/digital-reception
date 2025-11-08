@@ -133,7 +133,7 @@ export default function ContactForm() {
               <p className="text-sm text-orange-100 font-medium mb-1">
                 Pošaljite email
               </p>
-              <p className="font-bold text-sm">info@inovatechit.com</p>
+              <p className="font-bold text-sm">office@inovatechit.com</p>
             </div>
           </a>
 

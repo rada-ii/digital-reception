@@ -34,9 +34,9 @@ export default function HomePage() {
       {/* HOW IT WORKS - Bela pozadina */}
       <section
         id="kako-funkcionise"
-        className="min-h-screen flex items-center justify-centerscroll-mt-16"
+        className="min-h-[70svh] flex items-center justify-centerscroll-mt-8"
       >
-        <div className="max-w-7xl mx-auto w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto w-full py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6">
           <HowItWorks />
         </div>
       </section>
@@ -44,9 +44,9 @@ export default function HomePage() {
       {/* VIDEO - Siva pozadina (slate-50) */}
       <section
         id="video"
-        className="min-h-screen flex items-center justify-center bg-slate-50 scroll-mt-16"
+        className="min-h-[70vh] flex items-center justify-center bg-slate-50 scroll-mt-8"
       >
-        <div className="max-w-7xl mx-auto w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto w-full py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6">
           <VideoSection />
         </div>
       </section>
@@ -54,18 +54,18 @@ export default function HomePage() {
       {/* TESTIMONIALS - Svetla pozadina (white to orange-50) */}
       <section
         id="testimonials"
-        className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-orange-50 to-white scroll-mt-16"
+        className="min-h-[70vsh] flex items-center justify-center bg-gradient-to-br from-white via-orange-50 to-white scroll-mt-8"
       >
-        <div className="max-w-7xl mx-auto w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto w-full py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6">
           <Testimonials />
         </div>
       </section>
 
       <section
         id="faq"
-        className="min-h-screen flex items-center justify-center scroll-mt-16"
+        className="min-h-[80svh] flex items-center justify-center scroll-mt-8"
       >
-        <div className="max-w-5xl mx-auto w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto w-full py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6">
           <PackagesTeaser />
         </div>
       </section>
@@ -73,9 +73,9 @@ export default function HomePage() {
       {/* FAQ - Bela pozadina */}
       <section
         id="faq"
-        className="min-h-screen flex items-center justify-center bg-slate-50 scroll-mt-16"
+        className="min-h-[80svh] flex items-center justify-center bg-slate-50 scroll-mt-8"
       >
-        <div className="max-w-5xl mx-auto w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto w-full py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6">
           <FAQ />
         </div>
       </section>

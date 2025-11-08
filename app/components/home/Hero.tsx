@@ -33,7 +33,7 @@ export default function Hero() {
 
   const carouselImages = [
     {
-      image: "/images/masina10.jpg",
+      image: "/images/masina12.jpg",
       title: "Digitalna Recepcija",
       subtitle: "Za Moderne Hotele",
     },
@@ -98,7 +98,7 @@ export default function Hero() {
       className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-slate-50 scroll-mt-16"
     >
       {animatedDots}
-      <div className="relative min-h-[100svh] flex flex-col justify-center py-8 sm:py-10 md:py-12 px-4 sm:px-6">
+      <div className="relative min-h-[70svh] flex flex-col justify-around py-8 sm:py-10 md:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto w-full">
           <motion.div
             className="text-center mb-6 sm:mb-8"
@@ -123,7 +123,7 @@ export default function Hero() {
               <span className="text-orange-500 inline-block relative">
                 30s
                 {/* Decorative underline */}
-                <svg
+                {/* <svg
                   className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-2 sm:h-3 text-orange-500/30"
                   viewBox="0 0 200 12"
                   preserveAspectRatio="none"
@@ -134,7 +134,7 @@ export default function Hero() {
                     strokeWidth="4"
                     fill="none"
                   />
-                </svg>
+                </svg> */}
               </span>
             </motion.h1>
 
@@ -155,7 +155,7 @@ export default function Hero() {
                 i van sezone ili u trećoj smeni{" "}
                 <span className="text-slate-600">
                   (a Vi zaslužujete{" "}
-                  <span className="font-bold text-orange-600 underline decoration-orange-300 decoration-2">
+                  <span className="font-bold text-orange-600 ">
                     još bolju ocenu na Booking-u
                   </span>
                   )
@@ -190,7 +190,7 @@ export default function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative w-full h-[220px] xs:h-[260px] sm:h-[300px] md:h-[350px] lg:h-[400px] mb-6 sm:mb-8 md:mb-10"
+            className="relative w-full h-[170px] xs:h-[260px] sm:h-[200px] md:h-[250px] lg:h-[300px] mb-6 sm:mb-8 md:mb-10"
           >
             <div className="relative h-full rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-xl">
               {carouselImages.map((slide, index) => (
@@ -268,7 +268,7 @@ export default function Hero() {
                 {[
                   {
                     icon: <Users className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
-                    number: "50+",
+                    number: "20+",
                     label: "Hotela",
                   },
                   {

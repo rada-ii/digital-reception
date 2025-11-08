@@ -27,7 +27,7 @@ export default function Testimonials() {
       image:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
       rating: 5,
-      text: "Digitalna recepcija je revolucionisala naš posao. Gosti su oduševljeni brzinom check-ina, a mi smo smanjili troškove osoblja za 40%. Investicija se isplatila za 6 meseci!",
+      text: "Digitalna recepcija je izmenila u potpunosti naš način poslovanja. Gosti su oduševljeni brzinom check-ina, a mi smo smanjili troškove osoblja za 40%. Investicija se isplatila za 6 meseci!",
       stats: {
         metric: "40%",
         label: "Ušteda troškova",
@@ -80,7 +80,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6  scroll-mt-16"
+      className="py-8 sm:py-10 md:py-12 px-4 sm:px-6  scroll-mt-16 min-h-[80svh]"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -94,7 +94,7 @@ export default function Testimonials() {
             Šta Kažu Naši Klijenti
           </h2>
           <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-            Više od 50+ hotela i apartmana koristi našu digitalnu recepciju
+            Više od 20+ hotela i apartmana koristi našu digitalnu recepciju
           </p>
         </motion.div>
 
@@ -127,7 +127,7 @@ export default function Testimonials() {
 
               {/* Text */}
               <p className="text-slate-700 mb-6 text-base sm:text-lg leading-relaxed">
-                "{testimonial.text}"
+                &ldquo;{testimonial.text}&rdquo;
               </p>
 
               {/* Stats Badge */}
@@ -163,8 +163,8 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Bottom Stats
-        <motion.div
+        {/* Bottom Stats */}
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

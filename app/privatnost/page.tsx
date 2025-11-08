@@ -7,20 +7,20 @@ import { Shield, Mail, Phone, ArrowLeft } from "lucide-react";
  *
  * PUTANJA: /politika-privatnosti
  *
- * GDPR Kompatibilna politika privatnosti
+ * GDPR Kompatibilna politika privatnosti - Inova Tech d.o.o.
  */
 
 export const metadata: Metadata = {
-  title: "Politika Privatnosti",
+  title: "Politika Privatnosti | Inova Tech d.o.o.",
   description:
-    "Politika privatnosti za Digitalnu Recepciju - kako čuvamo vaše podatke",
+    "Politika privatnosti za Inova Tech d.o.o. - kako čuvamo vaše lične, poslovne i finansijske podatke u skladu sa zakonima Republike Srbije",
 };
 
 export default function PolitikaPrivatnosti() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white py-16 px-4">
+      <div className="bg-orange-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link
             href="/"
@@ -37,7 +37,8 @@ export default function PolitikaPrivatnosti() {
             </h1>
           </div>
           <p className="text-lg text-white/90">
-            Poslednje ažurirano: {new Date().toLocaleDateString("sr-RS")}
+            Inova Tech d.o.o. | Poslednje ažurirano:{" "}
+            {new Date().toLocaleDateString("sr-RS")}
           </p>
         </div>
       </div>
@@ -45,370 +46,330 @@ export default function PolitikaPrivatnosti() {
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Uvod */}
-        <section className="mb-12 p-6 bg-orange-50 rounded-xl border-l-4 border-orange-500">
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">📋 Uvod</h2>
-          <p className="text-slate-700 leading-relaxed">
-            Dobrodošli na sajt Digitalne Recepcije. Ova politika privatnosti
-            objašnjava kako
-            <strong> Inova Tech IT</strong> prikuplja, koristi i štiti vaše
-            lične podatke kada koristite naš sajt i usluge. Posvećeni smo
-            zaštiti vaše privatnosti i u skladu smo sa GDPR i važećim zakonima o
-            zaštiti podataka u Republici Srbiji.
+        <section className="mb-12 p-6 bg-white rounded-xl border-l-4 border-orange-500 shadow-sm">
+          <h2 className="text-2xl font-bold text-black mb-4">Uvod</h2>
+          <p className="text-black leading-relaxed mb-4">
+            Firmi Inova Tech d.o.o. je posvećena zaštiti vaše privatnosti i
+            zaštiti vaših ličnih, poslovnih i finansijskih podataka.
+          </p>
+          <p className="text-black leading-relaxed mb-4">
+            Svrha ove Izjave o privatnosti je da vas informiše o vrstama ličnih
+            podataka, kako su definisane u nastavku, koje Inova Tech d.o.o.
+            prikuplja, koristi i otkriva. Objašnjava kako te informacije
+            koristimo i otkrivamo, izbore koje imate u vezi sa takvom upotrebom
+            i otkrivanjem i kako te informacije možete kontrolisati.
+          </p>
+          <p className="text-black leading-relaxed">
+            Ova Izjava o privatnosti dizajnirana je da zadovolji standarde
+            propisane teritorijalnim zakonodavstvom i najboljom praksom. Pored
+            svih zakona specifičnih za teritoriju, i dalje se podvrgavamo
+            pravilima poverljivosti profesionalnih tela na teritoriji.
           </p>
         </section>
 
         {/* Glavni sadržaj */}
-        <div className="prose prose-slate max-w-none">
-          {/* 1. Prikupljanje podataka */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span className="text-orange-500">1.</span>
-              Koje podatke prikupljamo?
+        <div className="space-y-10">
+          {/* 1. Saglasnost */}
+          <section>
+            <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
+              1. Saglasnost
             </h2>
+            <div className="bg-white p-6 rounded-lg border border-black/10">
+              <p className="text-black leading-relaxed mb-4">
+                Korišćenjem sajta kompanije Inova Tech d.o.o. uključujući i sve
+                druge domena i poddomena kojima pristupate putem internet adrese{" "}
+                <strong className="text-orange-600">www.inovatechit.com</strong>{" "}
+                dajete saglasnost na uslove ove Politike privatnosti.
+              </p>
+              <p className="text-black leading-relaxed">
+                Inova Tech d.o.o. zadržava pravo da povremeno izmeni uslove iz
+                ove Politike privatnosti. S tim u vezi ćete biti blagovremeno
+                obavešteni.
+              </p>
+            </div>
+          </section>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200 mb-4">
-              <h3 className="text-lg font-semibold text-slate-900 mb-3">
-                Lični podaci koje dobrovoljno delite:
-              </h3>
-              <ul className="space-y-2 text-slate-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
+          {/* 2. Prikupljanje i korišćenje informacija */}
+          <section>
+            <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
+              2. Prikupljanje i korišćenje informacija
+            </h2>
+            <div className="bg-white p-6 rounded-lg border border-black/10">
+              <p className="text-black leading-relaxed mb-4">
+                Prikupljene informacije se koriste u sledećim slučajevima:
+              </p>
+              <ul className="space-y-3 text-black">
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Popunjavanje formi u zahtevima za informacijama</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Ponuda novih proizvoda</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
                   <span>
-                    <strong>Ime i prezime</strong> - za identifikaciju prilikom
-                    komunikacije
+                    Poboljšanje efektivnosti naših veb stranica, servisa i
+                    proizvoda
                   </span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
-                  <span>
-                    <strong>Email adresa</strong> - za slanje informacija i
-                    odgovora na upite
-                  </span>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Sprovođenje istraživanja i analiza</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
-                  <span>
-                    <strong>Broj telefona</strong> - za direktnu komunikaciju
-                    (opciono)
-                  </span>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Obezbeđivanje i pružanje korisničkih servisa</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
-                  <span>
-                    <strong>Naziv firme/hotela</strong> - za personalizaciju
-                    ponude
-                  </span>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Slanje informacija u marketinške svrhe</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
-                  <span>
-                    <strong>Sadržaj poruka</strong> - pitanja i zahtevi koje nam
-                    šaljete
-                  </span>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Analiza podataka putem analitike</span>
                 </li>
               </ul>
             </div>
+          </section>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-              <h3 className="text-lg font-semibold text-slate-900 mb-3">
-                Automatski prikupljeni podaci:
-              </h3>
-              <ul className="space-y-2 text-slate-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
+          {/* 3. Koji lični podaci se prikupljaju */}
+          <section>
+            <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
+              3. Koji lični podaci se prikupljaju
+            </h2>
+            <div className="bg-white p-6 rounded-lg border border-black/10">
+              <ul className="space-y-3 text-black">
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
                   <span>
-                    <strong>IP adresa</strong> - za sigurnost i analitiku
+                    <strong>Vaše kontakt informacije:</strong> ime, prezime,
+                    poštanska i e-mail adresa, broj telefona
                   </span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
                   <span>
-                    <strong>Tip browsera i uređaja</strong> - za optimizaciju
-                    korisničkog iskustva
+                    <strong>Informacije za isporuku:</strong> adresa za isporuku
                   </span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
                   <span>
-                    <strong>Podaci o poseti</strong> - stranice koje posećujete,
-                    vreme provedeno na sajtu
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
-                  <span>
-                    <strong>Kolačići (cookies)</strong> - za funkcionisanje
-                    sajta i analitiku
+                    <strong>Podaci prikupljeni putem Google Analytics:</strong>{" "}
+                    podaci koje prikuplja treća strana putem servisa Google
+                    Analytics
                   </span>
                 </li>
               </ul>
             </div>
           </section>
 
-          {/* 2. Kako koristimo podatke */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span className="text-orange-500">2.</span>
-              Kako koristimo vaše podatke?
+          {/* 4. Upotreba sakupljenih informacija */}
+          <section>
+            <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
+              4. Deljenje podataka sa trećim licima
             </h2>
-
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100/50 p-6 rounded-lg mb-4">
-              <p className="text-slate-700 leading-relaxed mb-4">
-                Vaše podatke koristimo isključivo za sledeće svrhe:
+            <div className="bg-white p-6 rounded-lg border border-black/10">
+              <p className="text-black leading-relaxed mb-4">
+                Možemo da otkrijemo Vaše podatke o ličnosti sledećim
+                korisnicima:
               </p>
-              <ul className="space-y-3 text-slate-700">
+              <ul className="space-y-3 text-black">
                 <li className="flex items-start gap-3">
-                  <span className="text-orange-600 font-bold text-xl">✓</span>
+                  <span className="text-orange-500 font-bold mt-1">•</span>
                   <span>
-                    <strong>Odgovaranje na upite</strong> - kontaktiramo vas u
-                    vezi sa vašim pitanjima
+                    <strong>Našim povezanim kompanijama</strong>
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-orange-600 font-bold text-xl">✓</span>
+                  <span className="text-orange-500 font-bold mt-1">•</span>
                   <span>
-                    <strong>Slanje brošura i materijala</strong> - šaljemo
-                    tražene informacije
+                    <strong>Obrađivačima podataka</strong> koji će podatke o
+                    ličnosti da obrađuju u naše ime u skladu sa Zakonom o
+                    zaštiti podataka o ličnosti Republike Srbije, na način na
+                    koji se obezbeđuje zaštita prava lica na koje se podaci
+                    odnose
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-orange-600 font-bold text-xl">✓</span>
+                  <span className="text-orange-500 font-bold mt-1">•</span>
                   <span>
-                    <strong>Newsletter</strong> - šaljemo korisne informacije
-                    (samo uz vašu saglasnost)
+                    <strong>Drugim korisnicima</strong> ukoliko su obavezni da
+                    tako postupe po nalogu suda ili nalogu koji je izdao drugi
+                    organ vlasti ili ih zakon na to obavezuje
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-orange-600 font-bold text-xl">✓</span>
+                  <span className="text-orange-500 font-bold mt-1">•</span>
                   <span>
-                    <strong>Zakazivanje demo prezentacija</strong> -
-                    koordinacija sastanaka
+                    Vaše podatke možemo preneti i{" "}
+                    <strong>van teritorije Srbije</strong> našim povezanim
+                    pravnim licima u cilju poboljšanja naših usluga, proizvoda i
+                    servisa
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-orange-600 font-bold text-xl">✓</span>
-                  <span>
-                    <strong>Poboljšanje usluga</strong> - analiza kako
-                    poboljšati naš sajt i ponudu
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-orange-600 font-bold text-xl">✓</span>
-                  <span>
-                    <strong>Sigurnost</strong> - zaštita od zloupotrebe i
-                    prevare
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-              <p className="text-red-900 font-semibold mb-2">
-                ❌ ŠTA NE RADIMO:
-              </p>
-              <ul className="space-y-1 text-red-800 text-sm">
-                <li>• Nikada ne prodajemo vaše podatke trećim stranama</li>
-                <li>• Ne delimo vaše podatke bez vaše saglasnosti</li>
-                <li>• Ne šaljemo neželjenu poštu (spam)</li>
               </ul>
             </div>
           </section>
 
-          {/* 3. Čuvanje podataka */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span className="text-orange-500">3.</span>
-              Kako čuvamo vaše podatke?
+          {/* 5. Kolačići (Cookies) */}
+          <section>
+            <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
+              5. Korišćenje Internet kolačića (Cookies)
             </h2>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-              <p className="text-slate-700 leading-relaxed mb-4">
-                Primenjujemo sledeće mere sigurnosti:
+            <div className="bg-white p-6 rounded-lg border border-black/10">
+              <p className="text-black leading-relaxed mb-4">
+                Internet kolačić je mala datoteka koja se putem Veb stranica
+                generiše i čuva na Vašem računaru. Oni omogućavaju čuvanje
+                informacija o Vašim podešavanjima i sesijama i dozvoljava
+                pristup Veb stranicama bez ponovne personalizacije.
               </p>
-              <ul className="space-y-3 text-slate-700">
+              <p className="text-black leading-relaxed mb-4">
+                Ta vrsta prikupljenih podataka može da uključuje:
+              </p>
+              <ul className="space-y-3 text-black mb-6">
                 <li className="flex items-start gap-3">
-                  <span className="text-green-600 font-bold text-xl">🔒</span>
-                  <span>
-                    <strong>SSL enkripcija</strong> - svi podaci se prenose
-                    enkriptovano
-                  </span>
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Vaše prethodno odredište</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-600 font-bold text-xl">🔒</span>
-                  <span>
-                    <strong>Sigurni serveri</strong> - podaci se čuvaju na
-                    zaštićenim serverima
-                  </span>
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Korišćeni pregledač</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-600 font-bold text-xl">🔒</span>
-                  <span>
-                    <strong>Ograničen pristup</strong> - samo ovlašćeno osoblje
-                    ima pristup
-                  </span>
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Operativni sistem</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-600 font-bold text-xl">🔒</span>
-                  <span>
-                    <strong>Redovne rezervne kopije</strong> - zaštita od
-                    gubitka podataka
-                  </span>
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Pretraživač</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Trajanje Vaše posete vebsajtu</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>IP adresu</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-orange-500 font-bold mt-1">•</span>
+                  <span>Google Analytics servise</span>
                 </li>
               </ul>
-
-              <div className="mt-6 p-4 bg-slate-50 rounded-lg">
-                <p className="text-sm text-slate-600">
-                  <strong>Rok čuvanja:</strong> Vaše podatke čuvamo dokle god je
-                  potrebno za navedene svrhe ili dok ne zatražite brisanje.
-                  Najduže čuvamo podatke
-                  <strong> 3 godine</strong> nakon poslednje interakcije.
+              <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
+                <p className="text-black text-sm leading-relaxed">
+                  <strong>Upravljanje kolačićima:</strong> Možete da onemogućite
+                  skladištenje kolačića u određenim podešavanjima Vašeg internet
+                  pretraživača. Takođe možete onemogućiti Google-u da snima
+                  podatke koji se odnose na Vašu upotrebu vebsajta, koje je
+                  kolačić generisao (što uključuje i IP adresu).
                 </p>
               </div>
             </div>
           </section>
 
-          {/* 4. Vaša prava */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span className="text-orange-500">4.</span>
-              Vaša prava (GDPR)
+          {/* 6. Prava korisnika */}
+          <section>
+            <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
+              6. Vaša prava u vezi sa ličnim podacima
             </h2>
-
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-white p-5 rounded-lg shadow-sm border border-slate-200">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  📄 Pravo na pristup
+              <div className="bg-white p-5 rounded-lg border border-black/10 hover:border-orange-500 transition">
+                <h3 className="font-bold text-black mb-2">
+                  Pravo na prigovor i pritužbu
                 </h3>
-                <p className="text-sm text-slate-600">
-                  Možete zatražiti kopiju svih podataka koje imamo o vama
+                <p className="text-sm text-black">
+                  Korisnik ima pravo da prigovori na način obrade njegovih
+                  ličnih podataka koji može podneti direktno Inova Tech d.o.o.
+                  ili da podnese pritužbu Povereniku za informacije od javnog
+                  značaja i zaštitu podataka o ličnosti.
                 </p>
               </div>
 
-              <div className="bg-white p-5 rounded-lg shadow-sm border border-slate-200">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  ✏️ Pravo na ispravku
+              <div className="bg-white p-5 rounded-lg border border-black/10 hover:border-orange-500 transition">
+                <h3 className="font-bold text-black mb-2">
+                  Pravo na ograničenje obrade
                 </h3>
-                <p className="text-sm text-slate-600">
-                  Možete tražiti ispravku netačnih ili nepotpunih podataka
+                <p className="text-sm text-black">
+                  U svakom trenutku korisnik ima pravo da traži ograničenje
+                  obrade njegovih ličnih podataka.
                 </p>
               </div>
 
-              <div className="bg-white p-5 rounded-lg shadow-sm border border-slate-200">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  🗑️ Pravo na brisanje
-                </h3>
-                <p className="text-sm text-slate-600">
-                  Možete zatražiti trajno brisanje vaših podataka
+              <div className="bg-white p-5 rounded-lg border border-black/10 hover:border-orange-500 transition">
+                <h3 className="font-bold text-black mb-2">Pravo na pristup</h3>
+                <p className="text-sm text-black">
+                  Možete zatražiti kopiju svih podataka koje imamo o vama.
                 </p>
               </div>
 
-              <div className="bg-white p-5 rounded-lg shadow-sm border border-slate-200">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  🚫 Pravo na prigovor
-                </h3>
-                <p className="text-sm text-slate-600">
-                  Možete prigovoriti načinu obrade vaših podataka
+              <div className="bg-white p-5 rounded-lg border border-black/10 hover:border-orange-500 transition">
+                <h3 className="font-bold text-black mb-2">Pravo na ispravku</h3>
+                <p className="text-sm text-black">
+                  Možete tražiti ispravku netačnih ili nepotpunih podataka.
                 </p>
               </div>
 
-              <div className="bg-white p-5 rounded-lg shadow-sm border border-slate-200">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  📦 Pravo na prenosivost
-                </h3>
-                <p className="text-sm text-slate-600">
-                  Možete dobiti podatke u strukturisanom formatu
+              <div className="bg-white p-5 rounded-lg border border-black/10 hover:border-orange-500 transition">
+                <h3 className="font-bold text-black mb-2">Pravo na brisanje</h3>
+                <p className="text-sm text-black">
+                  Možete zatražiti trajno brisanje vaših podataka.
                 </p>
               </div>
 
-              <div className="bg-white p-5 rounded-lg shadow-sm border border-slate-200">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  ⏸️ Pravo na ograničenje
+              <div className="bg-white p-5 rounded-lg border border-black/10 hover:border-orange-500 transition">
+                <h3 className="font-bold text-black mb-2">
+                  Pravo na prenosivost
                 </h3>
-                <p className="text-sm text-slate-600">
-                  Možete ograničiti obradu vaših podataka
+                <p className="text-sm text-black">
+                  Možete dobiti podatke u strukturisanom formatu.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* 5. Kolačići */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span className="text-orange-500">5.</span>
-              Kolačići (Cookies)
+          {/* 7. Promene politike */}
+          <section>
+            <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
+              7. Promene ove Izjave o privatnosti
             </h2>
-
-            <p className="text-slate-700 leading-relaxed mb-4">
-              Naš sajt koristi kolačiće za poboljšanje korisničkog iskustva.
-              Kolačići su male tekstualne datoteke koje se čuvaju na vašem
-              uređaju.
-            </p>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-              <h3 className="font-semibold text-slate-900 mb-3">
-                Vrste kolačića koje koristimo:
-              </h3>
-              <ul className="space-y-2 text-slate-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
-                  <span>
-                    <strong>Neophodni kolačići</strong> - potrebni za
-                    funkcionisanje sajta
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
-                  <span>
-                    <strong>Analitički kolačići</strong> - pomažu nam da
-                    razumemo kako koristite sajt
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-orange-500 font-bold">•</span>
-                  <span>
-                    <strong>Funkcionalni kolačići</strong> - pamte vaše
-                    preferencije
-                  </span>
-                </li>
-              </ul>
-
-              <p className="text-sm text-slate-600 mt-4">
-                Možete upravljati kolačićima u podešavanjima vašeg browsera.
+            <div className="bg-white p-6 rounded-lg border border-black/10">
+              <p className="text-black leading-relaxed mb-4">
+                Povremeno možemo izvršiti promene u ovoj Izjavi o privatnosti.
+                Izjava o privatnosti je aktuelna od datuma "poslednjeg
+                revidiranog" koji se pojavljuje na vrhu ove stranice.
+              </p>
+              <p className="text-black leading-relaxed">
+                Mi ćemo se prema Ličnim podacima odnositi na način koji je u
+                skladu sa Izjavom o privatnosti prema kojoj su prikupljeni i
+                našom Politikom privatnosti, osim ako nemamo vašu saglasnost da
+                ih tretiramo drugačije. Ova Izjava o privatnosti odnosi se na
+                sve informacije koje sakupljamo ili primamo o vama iz bilo kog
+                izvora.
               </p>
             </div>
-          </section>
-
-          {/* 6. Promene politike */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <span className="text-orange-500">6.</span>
-              Promene politike
-            </h2>
-
-            <p className="text-slate-700 leading-relaxed">
-              Zadržavamo pravo da ažuriramo ovu politiku privatnosti. O svim
-              bitnim promenama ćemo vas obavestiti putem emaila ili obaveštenja
-              na sajtu. Preporučujemo da povremeno proveravate ovu stranicu.
-            </p>
           </section>
         </div>
 
         {/* Kontakt za pitanja */}
-        <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white p-8 rounded-2xl mt-12">
+        <div className="bg-orange-500 text-white p-8 rounded-2xl mt-12">
           <h2 className="text-2xl font-bold mb-4">
-            📞 Imate pitanja o privatnosti?
+            Imate pitanja o privatnosti?
           </h2>
           <p className="mb-6">
             Za sva pitanja u vezi sa zaštitom podataka, kontaktirajte nas:
           </p>
 
-          <div className="space-y-3">
+          <div className="space-y-3 mb-6">
             <a
-              href="mailto:privacy@inovatechit.com"
+              href="mailto:office@inovatechit.com"
               className="flex items-center gap-3 text-white/90 hover:text-white transition"
             >
               <Mail className="w-5 h-5" />
-              <span>privacy@inovatechit.com</span>
+              <span>office@inovatechit.com</span>
             </a>
 
             <a
@@ -420,15 +381,13 @@ export default function PolitikaPrivatnosti() {
             </a>
           </div>
 
-          <div className="mt-6 pt-6 border-t border-white/20">
-            <p className="text-sm text-white/80">
-              <strong>Inova Tech IT</strong>
+          <div className="pt-6 border-t border-white/20">
+            <p className="text-sm text-white/90 leading-relaxed">
+              <strong className="text-white">Inova Tech d.o.o.</strong>
               <br />
-              Beograd, Srbija
+              Beograd, Republika Srbija
               <br />
-              PIB: 123456789
-              <br />
-              Matični broj: 987654321
+              www.inovatechit.com
             </p>
           </div>
         </div>

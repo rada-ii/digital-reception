@@ -67,7 +67,7 @@ export default function ProductFAQ() {
   return (
     <section
       id="product-faq"
-      className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6scroll-mt-16"
+      className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6scroll-mt-16 min-h-[70svh]"
     >
       <div className="max-w-4xl mx-auto">
         {/* Header */}
@@ -145,9 +145,9 @@ export default function ProductFAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-8 sm:mt-10 md:mt-12"
+          className="mt-8 sm:mt-10 md:mt-12"
         >
-          <div className="inline-flex flex-col sm:flex-row items-center gap-3 bg-gradient-to-r from-orange-50 to-orange-100 px-8 py-5 rounded-xl border border-orange-200 shadow-sm">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 bg-gradient-to-r from-orange-50 to-orange-100 px-8 py-5 rounded-xl border border-orange-200 shadow-sm">
             <div className="text-center sm:text-left">
               <p className="text-slate-900 font-bold text-base sm:text-lg mb-1">
                 Trebate dodatne tehničke detalje?

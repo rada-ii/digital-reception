@@ -21,7 +21,6 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function VideoSection() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
-  // NAPOMENA: Zameni sa pravim video linkom!
   const videoUrl =
     "https://www.youtube.com/embed/YP10mh0BNZM?si=ES-3ZP8jvrnlH9sZ";
   const thumbnailUrl = "/images/masina-video.jpg";
@@ -29,7 +28,7 @@ export default function VideoSection() {
   return (
     <section
       id="video"
-      className="py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 scroll-mt-16"
+      className="py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6 scroll-mt-16 min-h-[70svh]"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -75,14 +74,14 @@ export default function VideoSection() {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
-              <div className="w-20 h-20 sm:w-24 sm:h-24 bg-orange-500 rounded-full flex items-center justify-center shadow-xl group-hover:bg-orange-600 transition-colors">
-                <Play className="w-10 h-10 sm:w-12 sm:h-12 text-white ml-1" />
+              <div className="w-15 h-15 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center shadow-xl group-hover:bg-orange-600 transition-colors">
+                <Play className="w-8 h-8 sm:w-10 sm:h-10 text-white ml-1" />
               </div>
             </motion.div>
 
             {/* Text Overlay */}
-            <div className="absolute bottom-8 left-8 right-8 text-white z-10">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-2">
+            <div className="absolute bottom-2 left-14 right-8 text-white z-10">
+              <h3 className="text-xl sm:text-2xl font-bold ">
                 Check-in za 30 sekundi
               </h3>
               <p className="text-sm sm:text-base text-white/90">
@@ -96,7 +95,7 @@ export default function VideoSection() {
             {[
               { number: "30s", label: "Brzi Check-in" },
               { number: "24/7", label: "Dostupnost" },
-              { number: "100%", label: "Automatizovan" },
+              { number: "100%", label: "Sigurnost" },
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -106,7 +105,7 @@ export default function VideoSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center p-4 bg-white rounded-xl shadow-md"
               >
-                <div className="text-3xl sm:text-4xl font-bold text-orange-500 mb-2">
+                <div className="text-xl sm:text-24xl font-bold text-orange-500 mb-2">
                   {stat.number}
                 </div>
                 <div className="text-sm sm:text-base text-slate-600">

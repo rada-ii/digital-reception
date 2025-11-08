@@ -36,9 +36,9 @@ export default function ProizvodPage() {
       {/* SPECS - Bela pozadina */}
       <section
         id="specs"
-        className="min-h-screen flex items-center justify-center bg-white scroll-mt-16"
+        className="min-h-[70svh] flex items-center justify-center bg-white scroll-mt-5"
       >
-        <div className="max-w-7xl mx-auto w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto w-full py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6">
           <ProductSpecs />
         </div>
       </section>
@@ -46,9 +46,9 @@ export default function ProizvodPage() {
       {/* GALLERY - Siva pozadina */}
       <section
         id="gallery"
-        className="min-h-screen flex items-center justify-center bg-slate-50 scroll-mt-16"
+        className="min-h-[80svh] flex items-center justify-center bg-slate-50 scroll-mt-16"
       >
-        <div className="max-w-7xl mx-auto w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto w-full py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6">
           <Gallery />
         </div>
       </section>
@@ -56,9 +56,9 @@ export default function ProizvodPage() {
       {/* COMPARISON - Svetla pozadina */}
       <section
         id="comparison"
-        className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-orange-50 to-white scroll-mt-16"
+        className="min-h-[80svh] flex items-center justify-center bg-gradient-to-br from-white via-orange-50 to-white scroll-mt-16"
       >
-        <div className="max-w-7xl mx-auto w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto w-full y-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6">
           <ComparisonTable />
         </div>
       </section>
@@ -66,9 +66,9 @@ export default function ProizvodPage() {
       {/* FAQ - Bela pozadina */}
       <section
         id="product-faq"
-        className="min-h-screen flex items-center justify-center bg-white scroll-mt-16"
+        className="min-h-[70svh] flex items-center justify-center bg-white scroll-mt-16"
       >
-        <div className="max-w-5xl mx-auto w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto w-full y-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6">
           <ProductFAQ />
         </div>
       </section>

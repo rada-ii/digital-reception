@@ -73,13 +73,13 @@ export default function AboutPage() {
 
   const timeline = [
     {
-      year: "2022",
+      year: "2017",
       title: "Osnivanje",
       description:
         "Inova Tech IT pokreće projekat digitalne recepcije nakon istraživanja potreba hotelijerske industrije.",
     },
     {
-      year: "2023",
+      year: "2019",
       title: "Prvi Klijent",
       description:
         "Uspešna instalacija prvog sistema i pozitivne recenzije od hotela u Beogradu.",
@@ -88,7 +88,7 @@ export default function AboutPage() {
       year: "2024",
       title: "Ekspanzija",
       description:
-        "Proširenje na 50+ hotela širom Srbije i region. Lansiranje Pro paketa sa naprednim funkcijama.",
+        "Proširenje na 20+ hotela širom Srbije i region. Lansiranje Pro paketa sa naprednim funkcijama.",
     },
     {
       year: "2025",
@@ -119,7 +119,7 @@ export default function AboutPage() {
                 Lideri u hotelskoj automatizaciji
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-500 mb-6">
                 O Nama
               </h1>
 
@@ -137,7 +137,7 @@ export default function AboutPage() {
               className="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-2xl"
             >
               <Image
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=600&fit=crop"
+                src="https://images.unsplash.com/photo-1758520145178-29eafeda9908?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
                 alt="Inova Tech IT Team"
                 fill
                 className="object-cover"
@@ -160,12 +160,17 @@ export default function AboutPage() {
                   Naša Priča
                 </h2>
 
-                <div className="space-y-4 text-slate-600 leading-relaxed">
+                <div className="space-y-4 text-orange-500 leading-relaxed">
                   <p>
                     Inova Tech IT je kompanija specijalizovana za razvoj
                     inovativnih IT rešenja u oblasti hotelijerstva. Osnovana
-                    2022. godine, naša misija je bila jasna - transformisati
+                    2017. godine, naša misija je bila jasna - transformisati
                     tradicionalnu recepciju u moderan, automatizovan sistem.
+                  </p>
+
+                  <p>
+                    Inova Tech IT je kompanija koja ima predstavnistva u Pragu i
+                    Beogradu.
                   </p>
 
                   <p>
@@ -246,7 +251,7 @@ export default function AboutPage() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-br from-orange-500 to-orange-600 text-white">
+        {/* <section className="py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-br from-orange-500 to-orange-600 text-white">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
               {stats.map((stat, index) => (
@@ -267,7 +272,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Timeline Section */}
         <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-white">

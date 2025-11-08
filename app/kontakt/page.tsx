@@ -37,8 +37,8 @@ export default function ContactPage() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      content: "info@inovatechit.com",
-      link: "mailto:info@inovatechit.com",
+      content: "office@inovatechit.com",
+      link: "mailto:office@inovatechit.com",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -140,29 +140,27 @@ export default function ContactPage() {
 
         {/* Main Content - Form & Calendly */}
         <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-slate-50">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-              {/* Contact Form */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <ContactForm />
-              </motion.div>
+          <div className="max-w-3xl mx-auto">
+            {/* Contact Form */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <ContactForm />
+            </motion.div>
 
-              {/* Calendly Embed */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                id="booking"
-              >
-                <CalendlyEmbed />
-              </motion.div>
-            </div>
+            {/* Calendly Embed */}
+            {/* <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              id="booking"
+            >
+              <CalendlyEmbed />
+            </motion.div> */}
           </div>
         </section>
 
@@ -175,7 +173,7 @@ export default function ContactPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-orange-500 mb-6">
                 Brzi Odgovori
               </h2>
 
@@ -205,8 +203,8 @@ export default function ContactPage() {
                     Koja je cena?
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Paketi počinju od 999€. Kontaktirajte nas za tačan cenovnik
-                    prilagođen vašim potrebama.
+                    Kontaktirajte nas za tačan cenovnik prilagođen vašim
+                    potrebama.
                   </p>
                 </div>
 
