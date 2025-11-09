@@ -1,19 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("navbar");
 
   const navLinks = [
-    { href: "/", label: "Početna" },
-    { href: "/proizvod", label: "Proizvod" },
-    { href: "/kontakt", label: "Kontakt" },
-    { href: "/o-nama", label: "O Nama" },
+    { href: "/", label: t("links.home") },
+    { href: "/proizvod", label: t("links.product") },
+    { href: "/kontakt", label: t("links.contact") },
+    { href: "/o-nama", label: t("links.about") },
   ];
 
   return (
@@ -35,7 +38,7 @@ export default function Navbar() {
               <div className="hidden sm:block">
                 <Image
                   src="/2.png"
-                  alt="Digitalna Recepcija"
+                  alt={t("logoAlt")}
                   width={400}
                   height={200}
                   priority
@@ -48,7 +51,7 @@ export default function Navbar() {
               <div className="sm:hidden ">
                 <Image
                   src="/1.png"
-                  alt="DR"
+                  alt={t("logoAltMobile")}
                   width={60}
                   height={60}
                   priority
@@ -70,34 +73,39 @@ export default function Navbar() {
               </Link>
             ))}
 
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+
             {/* Telefon Button */}
             <motion.a
-              href="tel:+381641238587"
+              href={`tel:${t("phone")}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="ml-2 xl:ml-4 flex items-center gap-2 px-4 xl:px-5 py-2 bg-orange-500 rounded-full hover:bg-orange-600 transition font-semibold text-xs xl:text-sm whitespace-nowrap"
             >
               <Phone className="w-3.5 h-3.5 xl:w-4 xl:h-4" />
-              <span className="hidden xl:inline">+381 64 1238587</span>
-              <span className="xl:hidden">Pozovi</span>
+              <span className="hidden xl:inline">{t("phone")}</span>
+              <span className="xl:hidden">{t("call")}</span>
             </motion.a>
           </div>
 
           <div className="lg:hidden flex items-center gap-2 pr-4">
+            <LanguageSwitcher />
+
             <motion.a
-              href="tel:+381641238587"
+              href={`tel:${t("phone")}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 bg-orange-500 rounded-full hover:bg-orange-600 transition font-semibold text-xs sm:text-sm"
             >
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              <span className="hidden xs:inline">Pozovi</span>
+              <span className="hidden xs:inline">{t("call")}</span>
             </motion.a>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 hover:bg-slate-800 rounded-lg transition touch-manipulation"
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-label={isMenuOpen ? t("menuClose") : t("menuOpen")}
             >
               {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -125,11 +133,11 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <a
-                  href="tel:+381641238587"
+                  href={`tel:${t("phone")}`}
                   className="flex items-center justify-center gap-2 px-5 py-3 bg-orange-500 rounded-full hover:bg-orange-600 transition font-semibold mx-4 mt-3 text-sm sm:text-base"
                 >
                   <Phone className="w-4 h-4" />
-                  +381 64 1238587
+                  {t("phone")}
                 </a>
               </div>
             </motion.div>

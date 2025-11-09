@@ -1,0 +1,540 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Početna",
+      "product": "Proizvod",
+      "contact": "Kontakt",
+      "about": "O Nama"
+    },
+    "call": "Pozovi",
+    "phone": "+381 64 1238587",
+    "logoAlt": "Digitalna Recepcija",
+    "logoAltMobile": "DR",
+    "menuClose": "Close menu",
+    "menuOpen": "Open menu"
+  },
+  "hero": {
+    "question": "Šta ako je moguće ...",
+    "mainTitle": "CHECK-IN ZA 30s",
+    "description": "Digitalna recepcija za sve hotele i apartmane koji razmišljaju da {highlight1} check-in i check-out, ali imaju neke nedoumice. Zato što vaši gosti zaslužuju {highlight2} čak i van sezone ili u trećoj smeni (a Vi zaslužujete {highlight3})",
+    "highlight1": "potpuno automatizuju",
+    "highlight2": "brz odziv",
+    "highlight3": "još bolju ocenu na Booking-u",
+    "ctaDownload": "Preuzmite Brošuru",
+    "ctaDemo": "Zakažite Demo",
+    "carousel": {
+      "slide1": {
+        "title": "Digitalna Recepcija",
+        "subtitle": "Za Moderne Hotele"
+      },
+      "slide2": {
+        "title": "Automatski Check-in",
+        "subtitle": "Bez Čekanja"
+      },
+      "slide3": {
+        "title": "24/7 Dostupnost",
+        "subtitle": "Uvek Dostupno"
+      }
+    },
+    "stats": {
+      "hotels": "Hotela",
+      "checkins": "Check-inova",
+      "uptime": "Uptime",
+      "rating": "Ocena"
+    },
+    "navigation": {
+      "prev": "Previous slide",
+      "next": "Next slide",
+      "goToSlide": "Go to slide {number}"
+    }
+  },
+  "valueProps": {
+    "badge": "Zašto Digitalna Recepcija?",
+    "title": "Zašto Digitalna Recepcija?",
+    "subtitle": "4 ključne prednosti koje donose revoluciju u hotelsku industriju",
+    "speed": {
+      "title": "BRZINA",
+      "feature": "Check-in za 30 sekundi",
+      "description": "Smanjite troškove do 60%"
+    },
+    "savings": {
+      "title": "ŠTEDNJA",
+      "feature": "Smanjite troškove do 60%",
+      "description": "Uštedite hiljade sati i novca"
+    },
+    "availability": {
+      "title": "24/7",
+      "feature": "Gosti dolaze kad žele",
+      "description": "Uvek dostupno bez dodatnog osoblja"
+    },
+    "security": {
+      "title": "SIGURNOST",
+      "feature": "Potpuno sigurne transakcije",
+      "description": "Šifrovana plaćanja i podaci"
+    }
+  },
+  "howItWorks": {
+    "title": "Kako Funkcioniše?",
+    "subtitle": "4 jednostavna koraka",
+    "steps": {
+      "scan": {
+        "title": "SKENIRAJ",
+        "description": "QR kod ili broj"
+      },
+      "pay": {
+        "title": "PLATI",
+        "description": "Karticom ili gotovinom"
+      },
+      "receive": {
+        "title": "PREUZMI",
+        "description": "Automatski keycard"
+      },
+      "enter": {
+        "title": "UĐI",
+        "description": "Uživaj!"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Šta Kažu Naši Klijenti",
+    "subtitle": "Više od 20+ hotela i apartmana koristi našu digitalnu recepciju",
+    "reviews": {
+      "marko": {
+        "name": "Marko Petrović",
+        "role": "Vlasnik Hotela",
+        "company": "Hotel Beograd",
+        "text": "Digitalna recepcija je izmenila u potpunosti naš način poslovanja. Gosti su oduševljeni brzinom check-ina, a mi smo smanjili troškove osoblja za 40%. Investicija se isplatila za 6 meseci!",
+        "stat": "40% Ušteda troškova"
+      },
+      "ana": {
+        "name": "Ana Jovanović",
+        "role": "Menadžer Recepcije",
+        "company": "Apartmani Novi Sad",
+        "text": "Neverovatno kako tehnologija može da olakša posao. Sada možemo da primamo goste 24/7 bez dodatnog osoblja. Sistem je intuitivan i naši stariji gosti nemaju problem sa njim.",
+        "stat": "24/7 Dostupnost"
+      },
+      "djordje": {
+        "name": "Đorđe Nikolić",
+        "role": "Direktor",
+        "company": "Resort Zlatibor",
+        "text": "Integracija sa našim PMS sistemom prošla je besprekorno. Podaci se automatski sinhronizuju, a eTurista prijava nam je olakšala život. Preporučujem svima!",
+        "stat": "5 min Instalacija"
+      },
+      "jelena": {
+        "name": "Jelena Stojanović",
+        "role": "Vlasnica",
+        "company": "Boutique Hotel Skadarlija",
+        "text": "Gosti često komentarišu kako im se sviđa moderan pristup. Mladi gosti to očekuju, a stariji brzo nauče. Povećali smo prosečnu ocenu na Booking.com za 0.5 poena!",
+        "stat": "+0.5 Rating boost"
+      }
+    }
+  },
+  "video": {
+    "title": "Pogledajte Kako Funkcioniše",
+    "subtitle": "2-minutni video koji pokazuje kompletnu funkcionalnost digitalne recepcije",
+    "overlay": "Check-in za 30 sekundi - Kompletna demonstracija sistema",
+    "stats": {
+      "speed": "Brzi Check-in",
+      "availability": "Dostupnost",
+      "security": "Sigurnost"
+    }
+  },
+  "faq": {
+    "badge": "Često Postavljana Pitanja",
+    "title": "Imate Pitanja? Odgovorili Smo!",
+    "subtitle": "Odgovori na najčešće postavljana pitanja o Digitalnoj Recepciji",
+    "ctaQuestion": "Nemate odgovor na vaše pitanje?",
+    "ctaButton": "Kontaktirajte Nas",
+    "questions": {
+      "q1": {
+        "question": "Zašto je self check-in kiosk bolji od mobilne aplikacije?",
+        "answer": "Kiosk eliminiše sve prepreke za gosta - nema instalacije app-a, registracije ili komplikacija sa roamingom. Strani gosti često nemaju lokalni broj niti naviku da instaliraju aplikacije. Sa kioskom, sve što treba je da gost dođe do recepcije i za 30 sekundi dobije ključ. Jednostavno, brzo, bez potrebe za bilo kakvom prethodnom pripremom od strane gosta."
+      },
+      "q2": {
+        "question": "Koliko košta i koliko brzo se isplati investicija?",
+        "answer": "Pozovite nas ili zakazite demo sastanak za tacne cene koje se formiraju prem vasim potreba i paketima usluga. U cenu je uključeno: touchscreen kiosk, instalacija, PMS integracija, obuka osoblja, prva godina održavanja. Većina hotela vrati investiciju za 8-12 meseci kroz smanjenje troškova osoblja, povećanje efikasnosti i veće zadovoljstvo gostiju (bolje ocene = više rezervacija)."
+      },
+      "q3": {
+        "question": "Kako izgleda proces check-in-a za gosta?",
+        "answer": "Proces je jednostavan i traje 30-60 sekundi:\n1) Gost skenira QR kod ili unosi broj rezervacije\n2) Sistem automatski učitava podatke iz PMS-a\n3) Gost potvrđuje podatke ili ih ažurira\n4) Sistem automatski prijavljuje gosta u eTurista\n5) Plaćanje karticom (ako je potrebno)\n6) Štampanje računa i izdavanje keycarda\n7) Sistem šalje email sa svim detaljima boravka\n\nSve se dešava na jednom ekranu, intuitivno i brzo!"
+      },
+      "q4": {
+        "question": "Da li se integriše sa PMS sistemom?",
+        "answer": "Da! Digitalna recepcija se integriše sa većinom popularnih PMS sistema kao što su Opera, Cloudbeds, Mews, Protel, Fidelio, HotelTime i drugi. Integracija omogućava real-time sinhronizaciju rezervacija, dostupnosti soba, cena i check-in statusa. Ukoliko koristite manje poznat PMS, kontaktirajte nas - verovatno ga već podržavamo ili možemo dodati podršku."
+      },
+      "q5": {
+        "question": "Koliko traje instalacija digitalne recepcije?",
+        "answer": "Instalacija traje između 2-4 sata, zavisno od kompleksnosti integracije sa postojećim sistemima. Proces uključuje: fizičku instalaciju kioska, povezivanje sa PMS-om, konfiguraciju plaćanja, testiranje, obuku osoblja. Nakon instalacije, naš tim ostaje dostupan za podršku 24/7. Sistem je spreman za rad odmah nakon instalacije!"
+      },
+      "q6": {
+        "question": "Da li mogu testirati pre kupovine?",
+        "answer": "Apsolutno! Nudimo besplatnu demo prezentaciju gde možete videti sistem uživo i isprobati sve funkcije. Demo traje 30 minuta i može biti online (Google Meet/Zoom) ili uživo u vašem hotelu. Takođe možemo organizovati posetu hotelu koji već koristi naš sistem kako biste videli u praksi. Bez obaveze - cilj nam je da budete 100% sigurni u odluku pre kupovine."
+      },
+      "q7": {
+        "question": "Kakva je tehnička podrška?",
+        "answer": "Nudimo 24/7 tehničku podršku putem telefona, emaila i remote desktop-a. Većina problema se rešava u roku od 15 minuta putem remote pristupa. Sistem automatski šalje notifikacije o potencijalnim problemima (npr. printer nema papir), tako da ih možemo rešiti pre nego što gost oseti problem. Redovni software update-ovi se instaliraju automatski noću kada nema gostiju."
+      },
+      "q8": {
+        "question": "Šta ako gost ne želi da koristi kiosk?",
+        "answer": "Kiosk ne zamenjuje recepciju - već je dopunjava! Gosti koji preferiraju ljudski kontakt i dalje mogu da se prijave na recepciji. Ali statistika pokazuje da 85% gostiju, nakon što jednom vide koliko je brz check-in na kiosku, sledeći put koriste kiosk dobrovoljno. Mlađe generacije (Gen Z, Millennials) očekuju self-service opcije, dok starije generacije brzo nauče kada vide da je jednostavno."
+      }
+    }
+  },
+  "packages": {
+    "title": "Izaberite Pravi Paket",
+    "subtitle": "Prilagođeno vašim potrebama",
+    "priceNote": "*Kontaktirajte za cenu",
+    "ctaButton": "Vidi Detalje",
+    "popularBadge": "Najpopularniji",
+    "basic": {
+      "name": "OSNOVNI",
+      "features": {
+        "payment": "Plaćanje karticama",
+        "email": "Email obaveštenja",
+        "locks": "Integracija brava",
+        "qr": "QR kod račun"
+      }
+    },
+    "standard": {
+      "name": "STANDARD",
+      "features": {
+        "all": "Sve iz Osnovnog",
+        "eturista": "eTurista prijava",
+        "cash": "Gotovina",
+        "pms": "PMS integracija"
+      }
+    },
+    "pro": {
+      "name": "PRO",
+      "features": {
+        "all": "Sve iz Standard",
+        "app": "Online APP",
+        "sms": "SMS notifikacije",
+        "custom": "Custom funkcije"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Galerija Proizvoda",
+    "subtitle": "Pogledajte našu digitalnu recepciju u različitim hotelskim okruženjima",
+    "images": {
+      "img1": "Digitalna Recepcija - Front View - Moderan touchscreen interfejs za automatski check-in",
+      "img2": "Check-in Proces - Intuitivan i brz proces prijave gostiju",
+      "img3": "Plaćanje Karticom - Bezbedno i jednostavno kartično plaćanje",
+      "img4": "Hotel Lobby Integracija - Savršeno se uklapa u prostor hotela",
+      "img5": "Noćni Rad 24/7 - Automatska recepcija dostupna non-stop",
+      "img6": "Moderna Recepcija - Dizajn koji impresionira goste"
+    },
+    "lightbox": {
+      "imageOf": "Slika {current} od {total}",
+      "controls": "Tasteri: ← → | + − | 0 | ESC"
+    }
+  },
+  "contact": {
+    "title": "Kontaktirajte Nas",
+    "subtitle": "Imate pitanja? Slobodno nas kontaktirajte i odgovorićemo u najkraćem roku.",
+    "cards": {
+      "phone": {
+        "title": "Pozovite nas",
+        "value": "+381 64 123 8587"
+      },
+      "email": {
+        "title": "Pošaljite email",
+        "value": "office@inovatechit.com"
+      },
+      "address": {
+        "title": "Naša adresa",
+        "value": "Beograd, Srbija"
+      }
+    },
+    "hours": {
+      "title": "Radno vreme",
+      "weekdays": "Ponedeljak - Petak: 09:00 - 17:00",
+      "weekend": "Subota - Nedelja: Zatvoreno"
+    },
+    "form": {
+      "title": "Pošaljite Poruku",
+      "name": "Ime i Prezime",
+      "namePlaceholder": "Petar Petrović",
+      "email": "Email Adresa",
+      "emailPlaceholder": "petar@firma.rs",
+      "phone": "Telefon",
+      "phonePlaceholder": "+381 64 123 4567",
+      "subject": "Predmet",
+      "subjectPlaceholder": "Izaberite predmet",
+      "subjectOptions": {
+        "demo": "Demo Prezentacija",
+        "pricing": "Cenovnik",
+        "support": "Tehnička Podrška",
+        "other": "Ostalo"
+      },
+      "message": "Vaša Poruka",
+      "messagePlaceholder": "Unesite vašu poruku...",
+      "submit": "Pošalji Poruku",
+      "sending": "Šaljem...",
+      "success": "Poruka uspešno poslata! Kontaktiraćemo vas u najkraćem roku.",
+      "error": "Greška! {message}"
+    }
+  },
+  "calendly": {
+    "title": "Zakažite Demo Prezentaciju",
+    "subtitle": "Odaberite termin koji vam odgovara - trajanje 30 minuta",
+    "features": {
+      "videoCall": "Video Call - Google Meet ili Zoom",
+      "duration": "30 minuta - Potpuna demonstracija",
+      "free": "Besplatno - Bez obaveze"
+    }
+  },
+  "footer": {
+    "description": "Najmodernija mašina za potpuno automatizovan check-in i check-out.",
+    "pages": "Stranice",
+    "company": "Kompanija",
+    "companyName": "Inova Tech IT",
+    "privacy": "Politika Privatnosti",
+    "contact": "Kontakt",
+    "copyright": "© 2025 Digitalna Recepcija by Inova Tech IT. Sva prava zadržana.",
+    "website": "inovatechit.com"
+  },
+  "product": {
+    "hero": {
+      "badge": "Najmodernije rešenje na tržištu",
+      "title": "Digitalna Recepcija Nova Generacije",
+      "description": "Potpuno automatizovan check-in i check-out sistem sa integrisanim plaćanjem, eTurista prijavom i PMS povezivanjem. Promenite način na koji primate goste.",
+      "features": {
+        "speed": "Check-in za 30 sekundi",
+        "security": "Potpuno sigurne transakcije",
+        "availability": "24/7 dostupnost bez osoblja"
+      },
+      "ctaDownload": "Preuzmite Brošuru",
+      "ctaDemo": "Zakažite Demo",
+      "stats": {
+        "availability": "Dostupnost",
+        "checkin": "Prosečan check-in"
+      }
+    },
+    "specs": {
+      "title": "Tehničke Specifikacije",
+      "subtitle": "Premium komponente za maksimalnu pouzdanost i performanse",
+      "touchscreen": {
+        "title": "Touchscreen Displej",
+        "spec1": "21.5\" Full HD (1920x1080)",
+        "spec2": "Kapacitivni multi-touch",
+        "spec3": "Gorilla Glass zaštita",
+        "spec4": "Anti-glare premaz"
+      },
+      "payment": {
+        "title": "Sistem Plaćanja",
+        "spec1": "EMV Chip & PIN",
+        "spec2": "Contactless (NFC)",
+        "spec3": "Apple Pay / Google Pay",
+        "spec4": "PCI DSS compliant"
+      },
+      "printer": {
+        "title": "Štampač",
+        "spec1": "Termalni štampač",
+        "spec2": "Auto-cut funkcija",
+        "spec3": "Računi i keycards",
+        "spec4": "QR kod podrška"
+      },
+      "keycard": {
+        "title": "Keycard Sistem",
+        "spec1": "RFID tehnologija",
+        "spec2": "Magnetske kartice",
+        "spec3": "Auto-encoding",
+        "spec4": "Dispenser za 100 kartica"
+      },
+      "camera": {
+        "title": "Kamera & Scanner",
+        "spec1": "5MP kamera za dokumente",
+        "spec2": "QR/Barcode scanner",
+        "spec3": "OCR tehnologija",
+        "spec4": "Auto-focus"
+      },
+      "hardware": {
+        "title": "Hardware",
+        "spec1": "Intel i5 procesor",
+        "spec2": "8GB RAM",
+        "spec3": "256GB SSD",
+        "spec4": "Fanless dizajn"
+      },
+      "connectivity": {
+        "title": "Povezivanje",
+        "spec1": "WiFi 6 (802.11ax)",
+        "spec2": "Gigabit Ethernet",
+        "spec3": "4G/LTE backup (opciono)",
+        "spec4": "Bluetooth 5.0"
+      },
+      "power": {
+        "title": "Napajanje & Sigurnost",
+        "spec1": "24/7 rad",
+        "spec2": "UPS backup (opciono)",
+        "spec3": "Metal kućište",
+        "spec4": "Anti-vandal dizajn"
+      },
+      "software": {
+        "title": "Softverske Mogućnosti",
+        "description": "Napredni softver dizajniran za maksimalnu fleksibilnost i jednostavnost korišćenja.",
+        "features": {
+          "f1": "PMS Integracija (Opera, Cloudbeds, Mews)",
+          "f2": "eTurista automatska prijava",
+          "f3": "Multi-language podrška (10+ jezika)",
+          "f4": "Real-time reporting dashboard",
+          "f5": "Email & SMS notifikacije",
+          "f6": "Cloud backup & sync",
+          "f7": "Remote management",
+          "f8": "Automatic updates"
+        }
+      },
+      "dimensions": {
+        "height": "Visina: 150 cm",
+        "width": "Širina: 60 cm",
+        "depth": "Dubina: 40 cm",
+        "weight": "Težina: 45 kg",
+        "power": "Napajanje: 220V AC",
+        "warranty": "Garancija: 2 godine punog servisa"
+      }
+    },
+    "comparison": {
+      "title": "Tradicionalna vs. Digitalna Recepcija",
+      "subtitle": "Vidite razliku",
+      "traditional": "Tradicionalna",
+      "digital": "Digitalna",
+      "features": {
+        "time": "Vreme check-in-a",
+        "availability": "Dostupnost",
+        "costs": "Troškovi osoblja",
+        "errors": "Greške u podacima",
+        "languages": "Višejezična podrška",
+        "pms": "Integracija sa PMS",
+        "covid": "COVID bezbednost"
+      },
+      "values": {
+        "time": {
+          "traditional": "5-15 minuta",
+          "digital": "30 sekundi"
+        },
+        "availability": {
+          "traditional": "Radno vreme",
+          "digital": "24/7"
+        },
+        "costs": {
+          "traditional": "Visoki",
+          "digital": "Minimalni"
+        },
+        "errors": {
+          "traditional": "Česte",
+          "digital": "Retke"
+        },
+        "languages": {
+          "traditional": "Ograničena",
+          "digital": "Neograničena"
+        }
+      }
+    },
+    "faq": {
+      "badge": "Tehnička Pitanja",
+      "title": "Detaljne Tehničke Informacije",
+      "subtitle": "Odgovori na tehnička pitanja o specifikacijama, integracijama i funkcionalnostima",
+      "ctaTitle": "Trebate dodatne tehničke detalje?",
+      "ctaSubtitle": "Zakažite sastanak sa našim tehničkim timom",
+      "ctaButton": "Zakažite Demo"
+    }
+  },
+  "about": {
+    "badge": "Lideri u hotelskoj automatizaciji",
+    "title": "O Nama",
+    "subtitle": "Transformišemo način na koji hoteli primaju svoje goste kroz inovativnu tehnologiju i vrhunsku podršku.",
+    "story": {
+      "p1": "Inova Tech IT je kompanija specijalizovana za razvoj inovativnih IT rešenja u oblasti hotelijerstva. Osnovana 2017. godine, naša misija je bila jasna - transformisati tradicionalnu recepciju u moderan, automatizovan sistem.",
+      "p2": "Inova Tech IT je kompanija koja ima predstavnistva u Pragu i Beogradu.",
+      "p3": "Prepoznali smo da hoteli gube dragoceno vreme na manuelne check-in procese, što dovodi do dugih redova, frustriranih gostiju i povećanih operativnih troškova.",
+      "p4": "Danas, sa više od 50 uspešnih instalacija, nastavljamo da inoviramo i poboljšavamo naš sistem."
+    },
+    "values": {
+      "title": "Naše Vrednosti",
+      "innovation": {
+        "title": "Inovacija",
+        "description": "Konstantno istraživanje i razvoj novih tehnologija za hotelijerstvo."
+      },
+      "quality": {
+        "title": "Kvalitet",
+        "description": "Premium komponente i pažljivo testiran softver za maksimalnu pouzdanost."
+      },
+      "support": {
+        "title": "Podrška",
+        "description": "24/7 tehnička podrška i kontinuirano partnerstvo sa klijentima."
+      },
+      "results": {
+        "title": "Rezultati",
+        "description": "Fokus na merljive rezultate - smanjenje troškova i povećanje efikasnosti."
+      }
+    },
+    "timeline": {
+      "title": "Naša Evolucija",
+      "year2017": {
+        "title": "Osnivanje",
+        "description": "Inova Tech IT pokreće projekat digitalne recepcije nakon istraživanja potreba hotelijerske industrije."
+      },
+      "year2019": {
+        "title": "Prvi Klijent",
+        "description": "Uspešna instalacija prvog sistema i pozitivne recenzije od hotela u Beogradu."
+      },
+      "year2024": {
+        "title": "Ekspanzija",
+        "description": "Proširenje na 20+ hotela širom Srbije i region. Lansiranje Pro paketa sa naprednim funkcijama."
+      },
+      "year2025": {
+        "title": "Budućnost",
+        "description": "Planirana ekspanzija na EU tržište i razvoj mobilne aplikacije za goste."
+      }
+    }
+  },
+  "cta": {
+    "title": "Spremni da Automatizujete Svoju Recepciju?",
+    "description": "Pridružite se hotelima koji su već uštedeli hiljade sati i povećali zadovoljstvo gostiju.",
+    "ctaDemo": "Zakažite Demo",
+    "ctaCall": "Pozovite Nas"
+  },
+  "newsletter": {
+    "title": "Preuzmite Brošuru",
+    "subtitle": "Unesite vaše podatke i dobićete kompletnu brošuru na email",
+    "email": "Email Adresa",
+    "emailPlaceholder": "vas@email.com",
+    "name": "Ime i Prezime",
+    "namePlaceholder": "Petar Petrović",
+    "phone": "Telefon (opciono)",
+    "phonePlaceholder": "+381 64 123 4567",
+    "consent": "Slažem se sa uslovima korišćenja i politikom privatnosti. Prihvatam da primam marketinške email poruke.",
+    "submit": "Preuzmite Brošuru",
+    "success": "Uspešno poslato! 🎉 Brošura je poslata na vašu email adresu. Proverite inbox!",
+    "duplicate": "Već ste primili brošuru. Ukoliko niste primili email, proverite spam folder ili nas kontaktirajte.",
+    "error": "Greška: {message}",
+    "info": "Vaši podaci su zaštićeni i neće biti deljeni sa trećim licima. Možete se odjaviti u bilo kom trenutku."
+  },
+  "privacy": {
+    "title": "Politika Privatnosti",
+    "subtitle": "Inova Tech d.o.o. | Poslednje ažurirano: {date}",
+    "backLink": "Nazad na početnu",
+    "sections": {
+      "intro": "Uvod",
+      "consent": "Saglasnost",
+      "collection": "Prikupljanje i korišćenje informacija",
+      "personalData": "Koji lični podaci se prikupljaju",
+      "sharing": "Deljenje podataka sa trećim licima",
+      "cookies": "Korišćenje Internet kolačića (Cookies)",
+      "rights": "Vaša prava u vezi sa ličnim podacima",
+      "changes": "Promene ove Izjave o privatnosti"
+    },
+    "ctaBox": {
+      "title": "Imate pitanja o privatnosti?",
+      "subtitle": "Za sva pitanja u vezi sa zaštitom podataka, kontaktirajte nas:",
+      "company": "Inova Tech d.o.o. - Beograd, Republika Srbija - www.inovatechit.com"
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Digitalna Recepcija | Automatski Check-in Kiosk za Hotele - 30 Sekundi",
+      "description": "Najmodernija digitalna recepcija za potpuno automatizovan hotel check-in za samo 30 sekundi. 24/7 dostupnost, eTurista integracija, smanjenje troškova do 60%. Preko 20+ hotela koristi naš sistem. Zatražite besplatnu demo prezentaciju!"
+    }
+  }
+}

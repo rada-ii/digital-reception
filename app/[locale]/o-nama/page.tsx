@@ -10,9 +10,9 @@ import {
   TrendingUp,
 } from "lucide-react";
 import Image from "next/image";
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
-import CTASection from "../components/shared/CTASection";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import CTASection from "@/components/shared/CTASection";
 import SectionNavigation from "@/components/layout/SectionNavigation";
 
 /**

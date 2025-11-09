@@ -8,7 +8,7 @@ import VideoSection from "@/components/home/VideoSection";
 import FAQ from "@/components/home/FAQ";
 import CTASection from "@/components/shared/CTASection";
 import SectionNavigation from "@/components/layout/SectionNavigation";
-import PackagesTeaser from "./components/home/PackagesTeaser";
+import PackagesTeaser from "@/components/home/PackagesTeaser";
 
 /**
  * 🎯 HOME PAGE - SA FULLSCREEN SEKCIJAMA

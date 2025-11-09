@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
-import ContactForm from "../components/contact/ContactForm";
-import CalendlyEmbed from "../components/contact/CalendlyEmbed";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import ContactForm from "@/components/contact/ContactForm";
+import CalendlyEmbed from "@/components/contact/CalendlyEmbed";
 import SectionNavigation from "@/components/layout/SectionNavigation";
 
 /**

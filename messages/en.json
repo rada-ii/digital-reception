@@ -1,0 +1,540 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Home",
+      "product": "Product",
+      "contact": "Contact",
+      "about": "About Us"
+    },
+    "call": "Call",
+    "phone": "+381 64 1238587",
+    "logoAlt": "Digital Reception",
+    "logoAltMobile": "DR",
+    "menuClose": "Close menu",
+    "menuOpen": "Open menu"
+  },
+  "hero": {
+    "question": "What if it were possible ...",
+    "mainTitle": "CHECK-IN IN 30s",
+    "description": "Digital reception for all hotels and apartments considering {highlight1} check-in and check-out, but have some doubts. Because your guests deserve {highlight2} even in the off-season or during the night shift (and you deserve {highlight3})",
+    "highlight1": "complete automation of",
+    "highlight2": "quick response",
+    "highlight3": "an even better rating on Booking",
+    "ctaDownload": "Download Brochure",
+    "ctaDemo": "Schedule Demo",
+    "carousel": {
+      "slide1": {
+        "title": "Digital Reception",
+        "subtitle": "For Modern Hotels"
+      },
+      "slide2": {
+        "title": "Automatic Check-in",
+        "subtitle": "No Waiting"
+      },
+      "slide3": {
+        "title": "24/7 Availability",
+        "subtitle": "Always Available"
+      }
+    },
+    "stats": {
+      "hotels": "Hotels",
+      "checkins": "Check-ins",
+      "uptime": "Uptime",
+      "rating": "Rating"
+    },
+    "navigation": {
+      "prev": "Previous slide",
+      "next": "Next slide",
+      "goToSlide": "Go to slide {number}"
+    }
+  },
+  "valueProps": {
+    "badge": "Why Digital Reception?",
+    "title": "Why Digital Reception?",
+    "subtitle": "4 key advantages bringing revolution to the hotel industry",
+    "speed": {
+      "title": "SPEED",
+      "feature": "Check-in in 30 seconds",
+      "description": "Reduce costs by up to 60%"
+    },
+    "savings": {
+      "title": "SAVINGS",
+      "feature": "Reduce costs by up to 60%",
+      "description": "Save thousands of hours and money"
+    },
+    "availability": {
+      "title": "24/7",
+      "feature": "Guests arrive when they want",
+      "description": "Always available without additional staff"
+    },
+    "security": {
+      "title": "SECURITY",
+      "feature": "Completely secure transactions",
+      "description": "Encrypted payments and data"
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works?",
+    "subtitle": "4 simple steps",
+    "steps": {
+      "scan": {
+        "title": "SCAN",
+        "description": "QR code or number"
+      },
+      "pay": {
+        "title": "PAY",
+        "description": "Card or cash"
+      },
+      "receive": {
+        "title": "RECEIVE",
+        "description": "Automatic keycard"
+      },
+      "enter": {
+        "title": "ENTER",
+        "description": "Enjoy!"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "More than 20+ hotels and apartments use our digital reception",
+    "reviews": {
+      "marko": {
+        "name": "Marko Petrović",
+        "role": "Hotel Owner",
+        "company": "Hotel Belgrade",
+        "text": "Digital reception has completely changed our way of doing business. Guests are delighted with the check-in speed, and we've reduced staff costs by 40%. The investment paid off in 6 months!",
+        "stat": "40% Cost savings"
+      },
+      "ana": {
+        "name": "Ana Jovanović",
+        "role": "Reception Manager",
+        "company": "Novi Sad Apartments",
+        "text": "It's amazing how technology can make work easier. Now we can receive guests 24/7 without additional staff. The system is intuitive and our older guests have no problem with it.",
+        "stat": "24/7 Availability"
+      },
+      "djordje": {
+        "name": "Đorđe Nikolić",
+        "role": "Director",
+        "company": "Zlatibor Resort",
+        "text": "Integration with our PMS system went flawlessly. Data syncs automatically, and eTourist registration made our lives easier. I recommend it to everyone!",
+        "stat": "5 min Installation"
+      },
+      "jelena": {
+        "name": "Jelena Stojanović",
+        "role": "Owner",
+        "company": "Boutique Hotel Skadarlija",
+        "text": "Guests often comment on how much they like the modern approach. Young guests expect it, and older ones learn quickly. We've increased our average Booking.com rating by 0.5 points!",
+        "stat": "+0.5 Rating boost"
+      }
+    }
+  },
+  "video": {
+    "title": "See How It Works",
+    "subtitle": "2-minute video showing the complete functionality of the digital reception",
+    "overlay": "Check-in in 30 seconds - Complete system demonstration",
+    "stats": {
+      "speed": "Fast Check-in",
+      "availability": "Availability",
+      "security": "Security"
+    }
+  },
+  "faq": {
+    "badge": "Frequently Asked Questions",
+    "title": "Have Questions? We've Answered Them!",
+    "subtitle": "Answers to the most frequently asked questions about Digital Reception",
+    "ctaQuestion": "Don't have an answer to your question?",
+    "ctaButton": "Contact Us",
+    "questions": {
+      "q1": {
+        "question": "Why is a self check-in kiosk better than a mobile app?",
+        "answer": "The kiosk eliminates all barriers for guests - no app installation, registration, or roaming complications. Foreign guests often don't have a local number or the habit of installing apps. With a kiosk, all the guest needs to do is come to reception and get their key in 30 seconds. Simple, fast, without any prior preparation needed from the guest."
+      },
+      "q2": {
+        "question": "How much does it cost and how quickly does the investment pay off?",
+        "answer": "Call us or schedule a demo meeting for exact prices that are formed according to your needs and service packages. The price includes: touchscreen kiosk, installation, PMS integration, staff training, first year of maintenance. Most hotels recover their investment in 8-12 months through reduced staff costs, increased efficiency, and higher guest satisfaction (better ratings = more bookings)."
+      },
+      "q3": {
+        "question": "What does the check-in process look like for guests?",
+        "answer": "The process is simple and takes 30-60 seconds:\n1) Guest scans QR code or enters reservation number\n2) System automatically loads data from PMS\n3) Guest confirms or updates data\n4) System automatically registers guest in eTourist\n5) Card payment (if needed)\n6) Printing receipt and issuing keycard\n7) System sends email with all stay details\n\nEverything happens on one screen, intuitively and quickly!"
+      },
+      "q4": {
+        "question": "Does it integrate with PMS systems?",
+        "answer": "Yes! Digital reception integrates with most popular PMS systems such as Opera, Cloudbeds, Mews, Protel, Fidelio, HotelTime, and others. Integration enables real-time synchronization of reservations, room availability, prices, and check-in status. If you use a less known PMS, contact us - we probably already support it or can add support."
+      },
+      "q5": {
+        "question": "How long does digital reception installation take?",
+        "answer": "Installation takes between 2-4 hours, depending on the complexity of integration with existing systems. The process includes: physical kiosk installation, PMS connection, payment configuration, testing, staff training. After installation, our team remains available for 24/7 support. The system is ready to use immediately after installation!"
+      },
+      "q6": {
+        "question": "Can I test before purchasing?",
+        "answer": "Absolutely! We offer a free demo presentation where you can see the system live and try all functions. The demo lasts 30 minutes and can be online (Google Meet/Zoom) or live at your hotel. We can also arrange a visit to a hotel already using our system so you can see it in practice. No obligation - our goal is for you to be 100% confident in your decision before purchasing."
+      },
+      "q7": {
+        "question": "What kind of technical support is provided?",
+        "answer": "We offer 24/7 technical support via phone, email, and remote desktop. Most problems are resolved within 15 minutes via remote access. The system automatically sends notifications about potential issues (e.g., printer out of paper), so we can resolve them before guests notice a problem. Regular software updates are installed automatically at night when there are no guests."
+      },
+      "q8": {
+        "question": "What if a guest doesn't want to use the kiosk?",
+        "answer": "The kiosk doesn't replace reception - it complements it! Guests who prefer human contact can still check in at reception. But statistics show that 85% of guests, after seeing how fast kiosk check-in is once, voluntarily use the kiosk next time. Younger generations (Gen Z, Millennials) expect self-service options, while older generations learn quickly when they see how simple it is."
+      }
+    }
+  },
+  "packages": {
+    "title": "Choose the Right Package",
+    "subtitle": "Tailored to your needs",
+    "priceNote": "*Contact for price",
+    "ctaButton": "See Details",
+    "popularBadge": "Most Popular",
+    "basic": {
+      "name": "BASIC",
+      "features": {
+        "payment": "Card payments",
+        "email": "Email notifications",
+        "locks": "Lock integration",
+        "qr": "QR code receipt"
+      }
+    },
+    "standard": {
+      "name": "STANDARD",
+      "features": {
+        "all": "All from Basic",
+        "eturista": "eTourist registration",
+        "cash": "Cash",
+        "pms": "PMS integration"
+      }
+    },
+    "pro": {
+      "name": "PRO",
+      "features": {
+        "all": "All from Standard",
+        "app": "Online APP",
+        "sms": "SMS notifications",
+        "custom": "Custom features"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Product Gallery",
+    "subtitle": "See our digital reception in different hotel environments",
+    "images": {
+      "img1": "Digital Reception - Front View - Modern touchscreen interface for automatic check-in",
+      "img2": "Check-in Process - Intuitive and fast guest registration process",
+      "img3": "Card Payment - Secure and simple card payment",
+      "img4": "Hotel Lobby Integration - Perfectly fits hotel space",
+      "img5": "24/7 Night Operation - Automatic reception available non-stop",
+      "img6": "Modern Reception - Design that impresses guests"
+    },
+    "lightbox": {
+      "imageOf": "Image {current} of {total}",
+      "controls": "Keys: ← → | + − | 0 | ESC"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions? Feel free to contact us and we'll respond as soon as possible.",
+    "cards": {
+      "phone": {
+        "title": "Call us",
+        "value": "+381 64 123 8587"
+      },
+      "email": {
+        "title": "Send email",
+        "value": "office@inovatechit.com"
+      },
+      "address": {
+        "title": "Our address",
+        "value": "Belgrade, Serbia"
+      }
+    },
+    "hours": {
+      "title": "Working hours",
+      "weekdays": "Monday - Friday: 09:00 - 17:00",
+      "weekend": "Saturday - Sunday: Closed"
+    },
+    "form": {
+      "title": "Send Message",
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@company.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+381 64 123 4567",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select subject",
+      "subjectOptions": {
+        "demo": "Demo Presentation",
+        "pricing": "Pricing",
+        "support": "Technical Support",
+        "other": "Other"
+      },
+      "message": "Your Message",
+      "messagePlaceholder": "Enter your message...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We'll contact you soon.",
+      "error": "Error! {message}"
+    }
+  },
+  "calendly": {
+    "title": "Schedule Demo Presentation",
+    "subtitle": "Choose a time that suits you - 30 minutes duration",
+    "features": {
+      "videoCall": "Video Call - Google Meet or Zoom",
+      "duration": "30 minutes - Full demonstration",
+      "free": "Free - No obligation"
+    }
+  },
+  "footer": {
+    "description": "The most modern machine for fully automated check-in and check-out.",
+    "pages": "Pages",
+    "company": "Company",
+    "companyName": "Inova Tech IT",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "copyright": "© 2025 Digital Reception by Inova Tech IT. All rights reserved.",
+    "website": "inovatechit.com"
+  },
+  "product": {
+    "hero": {
+      "badge": "Most modern solution on the market",
+      "title": "Next Generation Digital Reception",
+      "description": "Fully automated check-in and check-out system with integrated payment, eTourist registration, and PMS connection. Change the way you welcome guests.",
+      "features": {
+        "speed": "Check-in in 30 seconds",
+        "security": "Completely secure transactions",
+        "availability": "24/7 availability without staff"
+      },
+      "ctaDownload": "Download Brochure",
+      "ctaDemo": "Schedule Demo",
+      "stats": {
+        "availability": "Availability",
+        "checkin": "Average check-in"
+      }
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "subtitle": "Premium components for maximum reliability and performance",
+      "touchscreen": {
+        "title": "Touchscreen Display",
+        "spec1": "21.5\" Full HD (1920x1080)",
+        "spec2": "Capacitive multi-touch",
+        "spec3": "Gorilla Glass protection",
+        "spec4": "Anti-glare coating"
+      },
+      "payment": {
+        "title": "Payment System",
+        "spec1": "EMV Chip & PIN",
+        "spec2": "Contactless (NFC)",
+        "spec3": "Apple Pay / Google Pay",
+        "spec4": "PCI DSS compliant"
+      },
+      "printer": {
+        "title": "Printer",
+        "spec1": "Thermal printer",
+        "spec2": "Auto-cut function",
+        "spec3": "Receipts and keycards",
+        "spec4": "QR code support"
+      },
+      "keycard": {
+        "title": "Keycard System",
+        "spec1": "RFID technology",
+        "spec2": "Magnetic cards",
+        "spec3": "Auto-encoding",
+        "spec4": "Dispenser for 100 cards"
+      },
+      "camera": {
+        "title": "Camera & Scanner",
+        "spec1": "5MP document camera",
+        "spec2": "QR/Barcode scanner",
+        "spec3": "OCR technology",
+        "spec4": "Auto-focus"
+      },
+      "hardware": {
+        "title": "Hardware",
+        "spec1": "Intel i5 processor",
+        "spec2": "8GB RAM",
+        "spec3": "256GB SSD",
+        "spec4": "Fanless design"
+      },
+      "connectivity": {
+        "title": "Connectivity",
+        "spec1": "WiFi 6 (802.11ax)",
+        "spec2": "Gigabit Ethernet",
+        "spec3": "4G/LTE backup (optional)",
+        "spec4": "Bluetooth 5.0"
+      },
+      "power": {
+        "title": "Power & Security",
+        "spec1": "24/7 operation",
+        "spec2": "UPS backup (optional)",
+        "spec3": "Metal casing",
+        "spec4": "Anti-vandal design"
+      },
+      "software": {
+        "title": "Software Features",
+        "description": "Advanced software designed for maximum flexibility and ease of use.",
+        "features": {
+          "f1": "PMS Integration (Opera, Cloudbeds, Mews)",
+          "f2": "eTourist automatic registration",
+          "f3": "Multi-language support (10+ languages)",
+          "f4": "Real-time reporting dashboard",
+          "f5": "Email & SMS notifications",
+          "f6": "Cloud backup & sync",
+          "f7": "Remote management",
+          "f8": "Automatic updates"
+        }
+      },
+      "dimensions": {
+        "height": "Height: 150 cm",
+        "width": "Width: 60 cm",
+        "depth": "Depth: 40 cm",
+        "weight": "Weight: 45 kg",
+        "power": "Power: 220V AC",
+        "warranty": "Warranty: 2 years full service"
+      }
+    },
+    "comparison": {
+      "title": "Traditional vs. Digital Reception",
+      "subtitle": "See the difference",
+      "traditional": "Traditional",
+      "digital": "Digital",
+      "features": {
+        "time": "Check-in time",
+        "availability": "Availability",
+        "costs": "Staff costs",
+        "errors": "Data errors",
+        "languages": "Multilingual support",
+        "pms": "PMS integration",
+        "covid": "COVID safety"
+      },
+      "values": {
+        "time": {
+          "traditional": "5-15 minutes",
+          "digital": "30 seconds"
+        },
+        "availability": {
+          "traditional": "Working hours",
+          "digital": "24/7"
+        },
+        "costs": {
+          "traditional": "High",
+          "digital": "Minimal"
+        },
+        "errors": {
+          "traditional": "Frequent",
+          "digital": "Rare"
+        },
+        "languages": {
+          "traditional": "Limited",
+          "digital": "Unlimited"
+        }
+      }
+    },
+    "faq": {
+      "badge": "Technical Questions",
+      "title": "Detailed Technical Information",
+      "subtitle": "Answers to technical questions about specifications, integrations, and functionalities",
+      "ctaTitle": "Need additional technical details?",
+      "ctaSubtitle": "Schedule a meeting with our technical team",
+      "ctaButton": "Schedule Demo"
+    }
+  },
+  "about": {
+    "badge": "Leaders in hotel automation",
+    "title": "About Us",
+    "subtitle": "We transform the way hotels welcome their guests through innovative technology and excellent support.",
+    "story": {
+      "p1": "Inova Tech IT is a company specialized in developing innovative IT solutions for the hospitality industry. Founded in 2017, our mission was clear - to transform traditional reception into a modern, automated system.",
+      "p2": "Inova Tech IT has offices in Prague and Belgrade.",
+      "p3": "We recognized that hotels lose valuable time on manual check-in processes, leading to long queues, frustrated guests, and increased operational costs.",
+      "p4": "Today, with over 50 successful installations, we continue to innovate and improve our system."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Constant research and development of new technologies for hospitality."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Premium components and carefully tested software for maximum reliability."
+      },
+      "support": {
+        "title": "Support",
+        "description": "24/7 technical support and continuous partnership with clients."
+      },
+      "results": {
+        "title": "Results",
+        "description": "Focus on measurable results - cost reduction and efficiency increase."
+      }
+    },
+    "timeline": {
+      "title": "Our Evolution",
+      "year2017": {
+        "title": "Foundation",
+        "description": "Inova Tech IT launches digital reception project after researching hospitality industry needs."
+      },
+      "year2019": {
+        "title": "First Client",
+        "description": "Successful installation of the first system and positive reviews from hotels in Belgrade."
+      },
+      "year2024": {
+        "title": "Expansion",
+        "description": "Expansion to 20+ hotels across Serbia and the region. Launch of Pro package with advanced features."
+      },
+      "year2025": {
+        "title": "Future",
+        "description": "Planned expansion to EU market and development of mobile app for guests."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Automate Your Reception?",
+    "description": "Join hotels that have already saved thousands of hours and increased guest satisfaction.",
+    "ctaDemo": "Schedule Demo",
+    "ctaCall": "Call Us"
+  },
+  "newsletter": {
+    "title": "Download Brochure",
+    "subtitle": "Enter your details and you'll receive the complete brochure via email",
+    "email": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "name": "Full Name",
+    "namePlaceholder": "John Doe",
+    "phone": "Phone (optional)",
+    "phonePlaceholder": "+381 64 123 4567",
+    "consent": "I agree to the terms of use and privacy policy. I accept receiving marketing emails.",
+    "submit": "Download Brochure",
+    "success": "Successfully sent! 🎉 The brochure has been sent to your email address. Check your inbox!",
+    "duplicate": "You've already received the brochure. If you haven't received the email, check your spam folder or contact us.",
+    "error": "Error: {message}",
+    "info": "Your data is protected and will not be shared with third parties. You can unsubscribe at any time."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Inova Tech d.o.o. | Last updated: {date}",
+    "backLink": "Back to home",
+    "sections": {
+      "intro": "Introduction",
+      "consent": "Consent",
+      "collection": "Collection and use of information",
+      "personalData": "What personal data is collected",
+      "sharing": "Sharing data with third parties",
+      "cookies": "Use of Internet cookies",
+      "rights": "Your rights regarding personal data",
+      "changes": "Changes to this Privacy Statement"
+    },
+    "ctaBox": {
+      "title": "Have questions about privacy?",
+      "subtitle": "For all questions regarding data protection, contact us:",
+      "company": "Inova Tech d.o.o. - Belgrade, Republic of Serbia - www.inovatechit.com"
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Digital Reception | Automatic Check-in Kiosk for Hotels - 30 Seconds",
+      "description": "The most modern digital reception for fully automated hotel check-in in just 30 seconds. 24/7 availability, eTourist integration, cost reduction up to 60%. Over 20+ hotels use our system. Request a free demo presentation!"
+    }
+  }
+}
