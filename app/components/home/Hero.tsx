@@ -12,8 +12,9 @@ import {
   Shield,
   Star,
 } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import AnimatedDots from "../shared/AnimatedDots";
 import NewsletterModal from "../shared/NewsletterModal";
 
@@ -28,34 +29,35 @@ import NewsletterModal from "../shared/NewsletterModal";
  */
 
 export default function Hero() {
+  const t = useTranslations("hero");
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const carouselImages = [
     {
       image: "/images/masina12.jpg",
-      title: "Digitalna Recepcija",
-      subtitle: "Za Moderne Hotele",
+      title: t("carousel.slide1.title"),
+      subtitle: t("carousel.slide1.subtitle"),
     },
     {
       image: "/images/masina13.jpg",
-      title: "Automatski Check-in",
-      subtitle: "Bez Čekanja",
+      title: t("carousel.slide2.title"),
+      subtitle: t("carousel.slide2.subtitle"),
     },
     {
       image: "/images/masina12.jpg",
-      title: "24/7 Dostupnost",
-      subtitle: "Uvek Dostupno",
+      title: t("carousel.slide3.title"),
+      subtitle: t("carousel.slide3.subtitle"),
     },
     {
       image: "/images/masina9.jpg",
-      title: "24/7 Dostupnost",
-      subtitle: "Uvek Dostupno",
+      title: t("carousel.slide3.title"),
+      subtitle: t("carousel.slide3.subtitle"),
     },
     {
       image: "/images/masinacentar.jpg",
-      title: "24/7 Dostupnost",
-      subtitle: "Uvek Dostupno",
+      title: t("carousel.slide3.title"),
+      subtitle: t("carousel.slide3.subtitle"),
     },
   ];
 
@@ -111,7 +113,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-base sm:text-lg md:text-xl text-slate-600 mb-3 sm:mb-4 font-medium"
             >
-              Šta ako je moguće ...
+              {t("question")}
             </motion.p>
 
             {/* Glavni Odgovor - "CHECK-IN ZA 30s" */}
@@ -119,23 +121,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-black mb-4 sm:mb-6 text-slate-900 leading-none tracking-tight"
             >
-              <span className="inline-block">CHECK-IN ZA</span>{" "}
-              <span className="text-orange-500 inline-block relative">
-                30s
-                {/* Decorative underline */}
-                {/* <svg
-                  className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-2 sm:h-3 text-orange-500/30"
-                  viewBox="0 0 200 12"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    d="M0,7 Q50,0 100,7 T200,7"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                    fill="none"
-                  />
-                </svg> */}
-              </span>
+              {t("mainTitle")}
             </motion.h1>
 
             {/* Opis sa Highlight-ovanim Ključnim Rečima */}
@@ -144,22 +130,22 @@ export default function Hero() {
               className="max-w-5xl mx-auto mb-5 sm:mb-6"
             >
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-700 leading-relaxed px-2 sm:px-4">
-                Digitalna recepcija za sve hotele i apartmane koji razmišljaju
-                da{" "}
-                <span className="font-bold text-slate-900 bg-orange-100 px-1.5 py-0.5 rounded">
-                  potpuno automatizuju
-                </span>{" "}
-                check-in i check-out, ali imaju neke nedoumice. Zato što vaši
-                gosti zaslužuju{" "}
-                <span className="font-bold text-orange-600">brz odziv</span> čak
-                i van sezone ili u trećoj smeni{" "}
-                <span className="text-slate-600">
-                  (a Vi zaslužujete{" "}
-                  <span className="font-bold text-orange-600 ">
-                    još bolju ocenu na Booking-u
-                  </span>
-                  )
-                </span>
+                {t.rich("description", {
+                  highlight1: (chunks) => (
+                    <span className="font-bold text-slate-900 bg-orange-100 px-1.5 py-0.5 rounded">
+                      {chunks}
+                    </span>
+                  ),
+                  highlight2: (chunks) => (
+                    <span className="font-bold text-orange-600">{chunks}</span>
+                  ),
+                  highlight3: (chunks) => (
+                    <span className="text-slate-600">
+                      (a Vi zaslužujete{" "}
+                      <span className="font-bold text-orange-600">{chunks}</span>)
+                    </span>
+                  ),
+                })}
               </p>
             </motion.div>
 
@@ -173,14 +159,14 @@ export default function Hero() {
                 className="group w-full xs:w-auto px-5 sm:px-7 md:px-8 py-2.5 sm:py-3 md:py-3.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full font-bold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base active:scale-95"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span className="whitespace-nowrap">Preuzmite Brošuru</span>
+                <span className="whitespace-nowrap">{t("ctaDownload")}</span>
               </button>
               <Link
                 href="/kontakt#booking"
                 className="w-full xs:w-auto px-5 sm:px-7 md:px-8 py-2.5 sm:py-3 md:py-3.5 bg-white text-slate-900 rounded-full font-bold hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 border-2 border-slate-200 hover:border-orange-500 hover:bg-orange-50 text-sm sm:text-base active:scale-95"
               >
                 <Calendar className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span className="whitespace-nowrap">Zakažite Demo</span>
+                <span className="whitespace-nowrap">{t("ctaDemo")}</span>
               </Link>
             </motion.div>
           </motion.div>
@@ -226,14 +212,14 @@ export default function Hero() {
               <button
                 onClick={prevSlide}
                 className="absolute left-2 xs:left-3 sm:left-4 top-1/2 -translate-y-1/2 bg-white/55 hover:bg-white text-slate-800 p-1.5 xs:p-2 sm:p-2.5 rounded-full transition-all duration-300 z-20 shadow-lg hover:scale-110 active:scale-95 touch-manipulation"
-                aria-label="Previous slide"
+                aria-label={t("navigation.prev")}
               >
                 <ChevronLeft className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6" />
               </button>
               <button
                 onClick={nextSlide}
                 className="absolute right-2 xs:right-3 sm:right-4 top-1/2 -translate-y-1/2 bg-white/55 hover:bg-white text-slate-800 p-1.5 xs:p-2 sm:p-2.5 rounded-full transition-all duration-300 z-20 shadow-lg hover:scale-110 active:scale-95 touch-manipulation"
-                aria-label="Next slide"
+                aria-label={t("navigation.next")}
               >
                 <ChevronRight className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6" />
               </button>
@@ -249,7 +235,7 @@ export default function Hero() {
                         ? "bg-orange-500 w-6 xs:w-8 sm:w-10 shadow-lg"
                         : "bg-white/70 hover:bg-white/90 w-1.5 xs:w-2"
                     }`}
-                    aria-label={`Go to slide ${index + 1}`}
+                    aria-label={t("navigation.goToSlide", { number: index + 1 })}
                   />
                 ))}
               </div>
@@ -269,22 +255,22 @@ export default function Hero() {
                   {
                     icon: <Users className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
                     number: "20+",
-                    label: "Hotela",
+                    label: t("stats.hotels"),
                   },
                   {
                     icon: <TrendingUp className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
                     number: "10,000+",
-                    label: "Check-inova",
+                    label: t("stats.checkins"),
                   },
                   {
                     icon: <Shield className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
                     number: "99.9%",
-                    label: "Uptime",
+                    label: t("stats.uptime"),
                   },
                   {
                     icon: <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
                     number: "4.9/5",
-                    label: "Ocena",
+                    label: t("stats.rating"),
                   },
                 ].map((stat, index) => (
                   <div

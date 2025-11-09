@@ -11,6 +11,7 @@ import {
   Camera,
   HardDrive,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 /**
  * Product Specifications Component
@@ -26,93 +27,100 @@ import {
  */
 
 export default function ProductSpecs() {
+  const t = useTranslations("product.specs");
+
   const specs = [
     {
       icon: <Monitor className="w-6 h-6" />,
-      title: "Touchscreen Displej",
+      title: t("touchscreen.title"),
       specs: [
-        '21.5" Full HD (1920x1080)',
-        "Kapacitivni multi-touch",
-        "Gorilla Glass zaštita",
-        "Anti-glare premaz",
+        t("touchscreen.spec1"),
+        t("touchscreen.spec2"),
+        t("touchscreen.spec3"),
+        t("touchscreen.spec4"),
       ],
     },
     {
       icon: <CreditCard className="w-6 h-6" />,
-      title: "Sistem Plaćanja",
+      title: t("payment.title"),
       specs: [
-        "EMV Chip & PIN",
-        "Contactless (NFC)",
-        "Apple Pay / Google Pay",
-        "PCI DSS compliant",
+        t("payment.spec1"),
+        t("payment.spec2"),
+        t("payment.spec3"),
+        t("payment.spec4"),
       ],
     },
     {
       icon: <Printer className="w-6 h-6" />,
-      title: "Štampač",
+      title: t("printer.title"),
       specs: [
-        "Termalni štampač",
-        "Auto-cut funkcija",
-        "Računi i keycards",
-        "QR kod podrška",
+        t("printer.spec1"),
+        t("printer.spec2"),
+        t("printer.spec3"),
+        t("printer.spec4"),
       ],
     },
     {
       icon: <Lock className="w-6 h-6" />,
-      title: "Keycard Sistem",
+      title: t("keycard.title"),
       specs: [
-        "RFID tehnologija",
-        "Magnetske kartice",
-        "Auto-encoding",
-        "Dispenser za 100 kartica",
+        t("keycard.spec1"),
+        t("keycard.spec2"),
+        t("keycard.spec3"),
+        t("keycard.spec4"),
       ],
     },
     {
       icon: <Camera className="w-6 h-6" />,
-      title: "Kamera & Scanner",
+      title: t("camera.title"),
       specs: [
-        "5MP kamera za dokumente",
-        "QR/Barcode scanner",
-        "OCR tehnologija",
-        "Auto-focus",
+        t("camera.spec1"),
+        t("camera.spec2"),
+        t("camera.spec3"),
+        t("camera.spec4"),
       ],
     },
     {
       icon: <HardDrive className="w-6 h-6" />,
-      title: "Hardware",
-      specs: ["Intel i5 procesor", "8GB RAM", "256GB SSD", "Fanless dizajn"],
+      title: t("hardware.title"),
+      specs: [
+        t("hardware.spec1"),
+        t("hardware.spec2"),
+        t("hardware.spec3"),
+        t("hardware.spec4"),
+      ],
     },
     {
       icon: <Wifi className="w-6 h-6" />,
-      title: "Povezivanje",
+      title: t("connectivity.title"),
       specs: [
-        "WiFi 6 (802.11ax)",
-        "Gigabit Ethernet",
-        "4G/LTE backup (opciono)",
-        "Bluetooth 5.0",
+        t("connectivity.spec1"),
+        t("connectivity.spec2"),
+        t("connectivity.spec3"),
+        t("connectivity.spec4"),
       ],
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Napajanje & Sigurnost",
+      title: t("power.title"),
       specs: [
-        "24/7 rad",
-        "UPS backup (opciono)",
-        "Metal kućište",
-        "Anti-vandal dizajn",
+        t("power.spec1"),
+        t("power.spec2"),
+        t("power.spec3"),
+        t("power.spec4"),
       ],
     },
   ];
 
   const software = [
-    "✓ PMS Integracija (Opera, Cloudbeds, Mews)",
-    "✓ eTurista automatska prijava",
-    "✓ Multi-language podrška (10+ jezika)",
-    "✓ Real-time reporting dashboard",
-    "✓ Email & SMS notifikacije",
-    "✓ Cloud backup & sync",
-    "✓ Remote management",
-    "✓ Automatic updates",
+    `✓ ${t("software.features.f1")}`,
+    `✓ ${t("software.features.f2")}`,
+    `✓ ${t("software.features.f3")}`,
+    `✓ ${t("software.features.f4")}`,
+    `✓ ${t("software.features.f5")}`,
+    `✓ ${t("software.features.f6")}`,
+    `✓ ${t("software.features.f7")}`,
+    `✓ ${t("software.features.f8")}`,
   ];
 
   return (
@@ -130,10 +138,10 @@ export default function ProductSpecs() {
           className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Tehničke Specifikacije
+            {t("title")}
           </h2>
           <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-            Premium komponente za maksimalnu pouzdanost i performanse
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -186,11 +194,10 @@ export default function ProductSpecs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-                Softverske Mogućnosti
+                {t("software.title")}
               </h3>
               <p className="text-slate-600 mb-6">
-                Napredni softver dizajniran za maksimalnu fleksibilnost i
-                jednostavnost korišćenja.
+                {t("software.description")}
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -217,30 +224,30 @@ export default function ProductSpecs() {
 
               <div className="space-y-4">
                 <div className="flex justify-between items-center pb-3 border-b">
-                  <span className="text-slate-600">Visina:</span>
-                  <span className="font-bold text-slate-900">150 cm</span>
+                  <span className="text-slate-600">{t("dimensions.height").split(": ")[0]}:</span>
+                  <span className="font-bold text-slate-900">{t("dimensions.height").split(": ")[1]}</span>
                 </div>
                 <div className="flex justify-between items-center pb-3 border-b">
-                  <span className="text-slate-600">Širina:</span>
-                  <span className="font-bold text-slate-900">60 cm</span>
+                  <span className="text-slate-600">{t("dimensions.width").split(": ")[0]}:</span>
+                  <span className="font-bold text-slate-900">{t("dimensions.width").split(": ")[1]}</span>
                 </div>
                 <div className="flex justify-between items-center pb-3 border-b">
-                  <span className="text-slate-600">Dubina:</span>
-                  <span className="font-bold text-slate-900">40 cm</span>
+                  <span className="text-slate-600">{t("dimensions.depth").split(": ")[0]}:</span>
+                  <span className="font-bold text-slate-900">{t("dimensions.depth").split(": ")[1]}</span>
                 </div>
                 <div className="flex justify-between items-center pb-3 border-b">
-                  <span className="text-slate-600">Težina:</span>
-                  <span className="font-bold text-slate-900">45 kg</span>
+                  <span className="text-slate-600">{t("dimensions.weight").split(": ")[0]}:</span>
+                  <span className="font-bold text-slate-900">{t("dimensions.weight").split(": ")[1]}</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-600">Napajanje:</span>
-                  <span className="font-bold text-slate-900">220V AC</span>
+                  <span className="text-slate-600">{t("dimensions.power").split(": ")[0]}:</span>
+                  <span className="font-bold text-slate-900">{t("dimensions.power").split(": ")[1]}</span>
                 </div>
               </div>
 
               <div className="mt-6 p-4 bg-orange-50 rounded-lg text-center">
                 <p className="text-sm text-orange-800">
-                  <strong>Garancija:</strong> 2 godine punog servisa
+                  <strong>{t("dimensions.warranty").split(": ")[0]}:</strong> {t("dimensions.warranty").split(": ")[1]}
                 </p>
               </div>
             </div>

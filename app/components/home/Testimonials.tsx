@@ -3,6 +3,7 @@
 import { Star, Quote } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 /**
  * Testimonials Component
@@ -18,62 +19,52 @@ import Image from "next/image";
  */
 
 export default function Testimonials() {
+  const t = useTranslations("testimonials");
+
   const testimonials = [
     {
       id: 1,
-      name: "Marko Petrović",
-      role: "Vlasnik Hotela",
-      company: "Hotel Beograd",
+      name: t("reviews.marko.name"),
+      role: t("reviews.marko.role"),
+      company: t("reviews.marko.company"),
       image:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
       rating: 5,
-      text: "Digitalna recepcija je izmenila u potpunosti naš način poslovanja. Gosti su oduševljeni brzinom check-ina, a mi smo smanjili troškove osoblja za 40%. Investicija se isplatila za 6 meseci!",
-      stats: {
-        metric: "40%",
-        label: "Ušteda troškova",
-      },
+      text: t("reviews.marko.text"),
+      stat: t("reviews.marko.stat"),
     },
     {
       id: 2,
-      name: "Ana Jovanović",
-      role: "Menadžer Recepcije",
-      company: "Apartmani Novi Sad",
+      name: t("reviews.ana.name"),
+      role: t("reviews.ana.role"),
+      company: t("reviews.ana.company"),
       image:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
       rating: 5,
-      text: "Neverovatno kako tehnologija može da olakša posao. Sada možemo da primamo goste 24/7 bez dodatnog osoblja. Sistem je intuitivan i naši stariji gosti nemaju problem sa njim.",
-      stats: {
-        metric: "24/7",
-        label: "Dostupnost",
-      },
+      text: t("reviews.ana.text"),
+      stat: t("reviews.ana.stat"),
     },
     {
       id: 3,
-      name: "Đorđe Nikolić",
-      role: "Direktor",
-      company: "Resort Zlatibor",
+      name: t("reviews.djordje.name"),
+      role: t("reviews.djordje.role"),
+      company: t("reviews.djordje.company"),
       image:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
       rating: 5,
-      text: "Integracija sa našim PMS sistemom prošla je besprekorno. Podaci se automatski sinhronizuju, a eTurista prijava nam je olakšala život. Preporučujem svima!",
-      stats: {
-        metric: "5 min",
-        label: "Instalacija",
-      },
+      text: t("reviews.djordje.text"),
+      stat: t("reviews.djordje.stat"),
     },
     {
       id: 4,
-      name: "Jelena Stojanović",
-      role: "Vlasnica",
-      company: "Boutique Hotel Skadarlija",
+      name: t("reviews.jelena.name"),
+      role: t("reviews.jelena.role"),
+      company: t("reviews.jelena.company"),
       image:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
       rating: 5,
-      text: "Gosti često komentarišu kako im se sviđa moderan pristup. Mladi gosti to očekuju, a stariji brzo nauče. Povećali smo prosečnu ocenu na Booking.com za 0.5 poena!",
-      stats: {
-        metric: "+0.5",
-        label: "Rating boost",
-      },
+      text: t("reviews.jelena.text"),
+      stat: t("reviews.jelena.stat"),
     },
   ];
 
@@ -91,10 +82,10 @@ export default function Testimonials() {
           className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Šta Kažu Naši Klijenti
+            {t("title")}
           </h2>
           <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-            Više od 20+ hotela i apartmana koristi našu digitalnu recepciju
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -132,11 +123,8 @@ export default function Testimonials() {
 
               {/* Stats Badge */}
               <div className="inline-block px-4 py-2 bg-orange-100 rounded-full mb-6">
-                <span className="text-orange-600 font-bold text-xl">
-                  {testimonial.stats.metric}
-                </span>
-                <span className="text-orange-600 text-sm ml-2">
-                  {testimonial.stats.label}
+                <span className="text-orange-600 font-semibold text-base">
+                  {testimonial.stat}
                 </span>
               </div>
 

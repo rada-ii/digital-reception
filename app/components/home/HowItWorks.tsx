@@ -1,32 +1,35 @@
 "use client";
 import { Scan, CreditCard, Key, DoorOpen } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function HowItWorks() {
+  const t = useTranslations("howItWorks");
+
   const steps = [
     {
       number: "01",
       icon: <Scan className="w-8 h-8 sm:w-9 sm:h-9" />,
-      title: "SKENIRAJ",
-      description: "QR kod ili broj",
+      title: t("steps.scan.title"),
+      description: t("steps.scan.description"),
     },
     {
       number: "02",
       icon: <CreditCard className="w-8 h-8 sm:w-9 sm:h-9" />,
-      title: "PLATI",
-      description: "Karticom ili gotovinom",
+      title: t("steps.pay.title"),
+      description: t("steps.pay.description"),
     },
     {
       number: "03",
       icon: <Key className="w-8 h-8 sm:w-9 sm:h-9" />,
-      title: "PREUZMI",
-      description: "Automatski keycard",
+      title: t("steps.receive.title"),
+      description: t("steps.receive.description"),
     },
     {
       number: "04",
       icon: <DoorOpen className="w-8 h-8 sm:w-9 sm:h-9" />,
-      title: "UĐI",
-      description: "Uživaj!",
+      title: t("steps.enter.title"),
+      description: t("steps.enter.description"),
     },
   ];
 
@@ -44,10 +47,10 @@ export default function HowItWorks() {
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-3 sm:mb-4 px-4">
-            Kako Funkcioniše?
+            {t("title")}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-slate-600">
-            4 jednostavna koraka
+            {t("subtitle")}
           </p>
         </motion.div>
 

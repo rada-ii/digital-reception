@@ -2,47 +2,49 @@
 
 import { Check, X } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function ComparisonTable() {
+  const t = useTranslations("product.comparison");
   const features = [
     {
-      feature: "Vreme check-in-a",
-      traditional: "5-15 minuta",
-      digital: "30 sekundi",
+      feature: t("features.time"),
+      traditional: t("values.time.traditional"),
+      digital: t("values.time.digital"),
       highlight: true,
     },
     {
-      feature: "Dostupnost",
-      traditional: "Radno vreme",
-      digital: "24/7",
+      feature: t("features.availability"),
+      traditional: t("values.availability.traditional"),
+      digital: t("values.availability.digital"),
       highlight: true,
     },
     {
-      feature: "Troškovi osoblja",
-      traditional: "Visoki",
-      digital: "Minimalni",
+      feature: t("features.costs"),
+      traditional: t("values.costs.traditional"),
+      digital: t("values.costs.digital"),
       highlight: false,
     },
     {
-      feature: "Greške u podacima",
-      traditional: "Česte",
-      digital: "Retke",
+      feature: t("features.errors"),
+      traditional: t("values.errors.traditional"),
+      digital: t("values.errors.digital"),
       highlight: false,
     },
     {
-      feature: "Višejezična podrška",
-      traditional: "Ograničena",
-      digital: "Neograničena",
+      feature: t("features.languages"),
+      traditional: t("values.languages.traditional"),
+      digital: t("values.languages.digital"),
       highlight: false,
     },
     {
-      feature: "Integracija sa PMS",
+      feature: t("features.pms"),
       traditional: "false",
       digital: "true",
       highlight: false,
     },
     {
-      feature: "COVID bezbednost",
+      feature: t("features.covid"),
       traditional: "false",
       digital: "true",
       highlight: false,
@@ -63,10 +65,10 @@ export default function ComparisonTable() {
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-3 sm:mb-4 px-4">
-            Tradicionalna vs. Digitalna Recepcija
+            {t("title")}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-black px-4">
-            Vidite razliku
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -84,10 +86,10 @@ export default function ComparisonTable() {
                   Karakteristika
                 </th>
                 <th className="px-4 md:px-6 py-4 text-center text-sm md:text-base font-bold text-black bg-orange-100 border-b-2 border-orange-500">
-                  Tradicionalna
+                  {t("traditional")}
                 </th>
                 <th className="px-4 md:px-6 py-4 text-center text-sm md:text-base font-bold text-white bg-orange-500 border-b-2 border-orange-500">
-                  Digitalna Recepcija
+                  {t("digital")}
                 </th>
               </tr>
             </thead>
@@ -145,7 +147,7 @@ export default function ComparisonTable() {
               </h3>
               <div className="grid grid-cols-2 gap-3">
                 <div className="text-center p-3 bg-orange-100 rounded-lg">
-                  <div className="text-xs text-black mb-1">Tradicionalna</div>
+                  <div className="text-xs text-black mb-1">{t("traditional")}</div>
                   <div className="text-sm font-medium text-black">
                     {item.traditional === "true" ? (
                       <Check className="w-5 h-5 text-orange-500 mx-auto" />
@@ -157,7 +159,7 @@ export default function ComparisonTable() {
                   </div>
                 </div>
                 <div className="text-center p-3 bg-orange-500 rounded-lg">
-                  <div className="text-xs text-white mb-1">Digitalna</div>
+                  <div className="text-xs text-white mb-1">{t("digital")}</div>
                   <div className="text-sm font-bold text-white">
                     {item.digital === "true" ? (
                       <Check className="w-5 h-5 text-white mx-auto" />

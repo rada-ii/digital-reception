@@ -218,16 +218,49 @@
     "title": "Galerija Proizvoda",
     "subtitle": "Pogledajte našu digitalnu recepciju u različitim hotelskim okruženjima",
     "images": {
-      "img1": "Digitalna Recepcija - Front View - Moderan touchscreen interfejs za automatski check-in",
-      "img2": "Check-in Proces - Intuitivan i brz proces prijave gostiju",
-      "img3": "Plaćanje Karticom - Bezbedno i jednostavno kartično plaćanje",
-      "img4": "Hotel Lobby Integracija - Savršeno se uklapa u prostor hotela",
-      "img5": "Noćni Rad 24/7 - Automatska recepcija dostupna non-stop",
-      "img6": "Moderna Recepcija - Dizajn koji impresionira goste"
+      "img1": {
+        "title": "Digitalna Recepcija - Front View",
+        "description": "Moderan touchscreen interfejs za automatski check-in",
+        "alt": "Digitalna recepcija sa velikim touchscreen ekranom za hotel check-in"
+      },
+      "img2": {
+        "title": "Check-in Proces",
+        "description": "Intuitivan i brz proces prijave gostiju",
+        "alt": "Gost koristi digitalni kiosk za brzi hotel check-in za 30 sekundi"
+      },
+      "img3": {
+        "title": "Plaćanje Karticom",
+        "description": "Bezbedno i jednostavno kartično plaćanje",
+        "alt": "Bezkontaktno plaćanje karticom na digitalnoj recepciji hotela"
+      },
+      "img4": {
+        "title": "Hotel Lobby Integracija",
+        "description": "Savršeno se uklapa u prostor hotela",
+        "alt": "Moderna digitalna recepcija u luksuznom hotel lobby-ju"
+      },
+      "img5": {
+        "title": "Noćni Rad 24/7",
+        "description": "Automatska recepcija dostupna non-stop",
+        "alt": "Hotel digitalna recepcija radi 24/7 bez osoblja"
+      },
+      "img6": {
+        "title": "Moderna Recepcija",
+        "description": "Dizajn koji impresionira goste",
+        "alt": "Premium digitalni check-in kiosk sa elegantnim dizajnom"
+      }
     },
     "lightbox": {
       "imageOf": "Slika {current} od {total}",
-      "controls": "Tasteri: ← → | + − | 0 | ESC"
+      "controls": "Tasteri: ← → | + − | 0 | ESC",
+      "closeLabel": "Close lightbox",
+      "prevLabel": "Previous image",
+      "nextLabel": "Next image",
+      "zoomInLabel": "Zoom in",
+      "zoomOutLabel": "Zoom out",
+      "resetZoomLabel": "Reset zoom",
+      "zoomInTitle": "Zoom In (+)",
+      "zoomOutTitle": "Zoom Out (-)",
+      "resetZoomTitle": "Fit to Screen (0)"
     }
   },
   "contact": {
@@ -248,9 +281,15 @@
       }
     },
     "hours": {
-      "title": "Radno vreme",
-      "weekdays": "Ponedeljak - Petak: 09:00 - 17:00",
-      "weekend": "Subota - Nedelja: Zatvoreno"
+      "title": "Radno Vreme",
+      "weekdays": {
+        "label": "Ponedeljak - Petak:",
+        "hours": "09:00 - 17:00"
+      },
+      "weekend": {
+        "label": "Subota - Nedelja:",
+        "hours": "Zatvoreno"
+      }
     },
     "form": {
       "title": "Pošaljite Poruku",
@@ -272,17 +311,31 @@
       "messagePlaceholder": "Unesite vašu poruku...",
       "submit": "Pošalji Poruku",
       "sending": "Šaljem...",
-      "success": "Poruka uspešno poslata! Kontaktiraćemo vas u najkraćem roku.",
-      "error": "Greška! {message}"
+      "sent": "Poslato!",
+      "successTitle": "Poruka uspešno poslata!",
+      "successMessage": "Kontaktiraćemo vas u najkraćem roku.",
+      "errorTitle": "Greška!",
+      "validationError": "Molimo popunite sva obavezna polja",
+      "sendError": "Greška prilikom slanja",
+      "tryAgain": "Pokušajte ponovo."
     }
   },
   "calendly": {
     "title": "Zakažite Demo Prezentaciju",
     "subtitle": "Odaberite termin koji vam odgovara - trajanje 30 minuta",
     "features": {
-      "videoCall": "Video Call - Google Meet ili Zoom",
-      "duration": "30 minuta - Potpuna demonstracija",
-      "free": "Besplatno - Bez obaveze"
+      "videoCall": {
+        "title": "Video Call",
+        "description": "Google Meet ili Zoom"
+      },
+      "duration": {
+        "title": "30 minuta",
+        "description": "Potpuna demonstracija"
+      },
+      "free": {
+        "title": "Besplatno",
+        "description": "Bez obaveze"
+      }
     }
   },
   "footer": {
@@ -437,7 +490,49 @@
       "subtitle": "Odgovori na tehnička pitanja o specifikacijama, integracijama i funkcionalnostima",
       "ctaTitle": "Trebate dodatne tehničke detalje?",
       "ctaSubtitle": "Zakažite sastanak sa našim tehničkim timom",
-      "ctaButton": "Zakažite Demo"
+      "ctaButton": "Zakažite Demo",
+      "questions": {
+        "q1": {
+          "question": "Koje su tehničke specifikacije kioska?",
+          "answer": "Kiosk dolazi sa 21.5-inčnim Full HD touchscreen-om (1920x1080), Intel i5 procesorom (11. generacija), 8GB DDR4 RAM-a, 256GB NVMe SSD-om, integrisanim čitačem kartica (NFC/RFID/Contactless), termičkim printerom za račune (80mm), 1080p kamerom za QR skeniranje, i WiFi 6/Gigabit Ethernet povezivanjem. Kućište je od nehrđajućeg čelika, dimenzije: 180cm (H) x 40cm (W) x 40cm (D), težina: ~25kg sa Anti-vandal zaštitom."
+        },
+        "q2": {
+          "question": "Koje jezike podržava sistem?",
+          "answer": "Sistem podržava više od 25 jezika uključujući: Srpski, Engleski, Nemački, Francuski, Italijanski, Španski, Portugalski, Ruski, Ukrajinski, Kineski (Simplified i Traditional), Japanski, Korejski, Arapski, Turski, Grčki, Poljski, Holandski, Švedski, Norveški, Danski, Finski i mnoge druge. Jezik se automatski menja na osnovu nacionalnosti gosta iz rezervacije, ili gost može ručno izabrati jezik na početnom ekranu."
+        },
+        "q3": {
+          "question": "Koje PMS sisteme podržavate i kako izgleda integracija?",
+          "answer": "Podržavamo sve vodeće PMS sisteme: Opera Cloud, Cloudbeds, Mews, Protel, Fidelio, HotelTime, Clock PMS+, eZee FrontDesk, Little Hotelier, RoomRaccoon i mnoge druge. Integracija se vrši putem REST API ili SOAP-a i uključuje real-time sinhronizaciju rezervacija, check-in/check-out komunikaciju, folija transakcije, room status update-e i guest profile sync. Prosečno vreme integracije: 2-5 radnih dana."
+        },
+        "q4": {
+          "question": "Kako funkcioniše integracija sa eTurista (eVisitor) sistemom?",
+          "answer": "Naš sistem je zvanično sertifikovan i integrisan sa eTurista API sistemom. Automatski šalje sve potrebne podatke: lične podatke gosta, podatke o dokumentu, datum dolaska/odlaska, vrstu smeštaja, i turističku taksu. Sve se dešava u realnom vremenu bez potrebe za ručnim unosom. Potpuno kompatibilno sa srpskim zakonom o evidenciji turista. Eliminise ručni unos i greške."
+        },
+        "q5": {
+          "question": "Koje načine plaćanja podržava?",
+          "answer": "Podržavamo: 1) Visa, Mastercard, American Express, Maestro, Dina Card kartice putem integrisanog POS terminala, 2) Contactless NFC plaćanja (Apple Pay, Google Pay, Samsung Pay), 3) QR code plaćanja (DinaQR, PaySpot), 4) Direct billing na PMS (plaćanje pri checkout-u). Integracija sa svim vodećim PSP-ovima u regionu (Monri, CorvusPay, Stripe). PCI DSS Level 1 Compliant sa potpunom enkriptijom."
+        },
+        "q6": {
+          "question": "Da li sistem radi offline?",
+          "answer": "Da, sistem ima napredan offline režim! U slučaju prekida internet konekcije, kiosk nastavlja da radi koristeći lokalni cache rezervacija za narednih 7 dana. Gosti mogu završiti check-in, sistem kešira transakcije, i sve se automatski sinhronizuje kada se internet vrati. Preporučujemo backup 4G/LTE konekciju za maksimalnu pouzdanost (99.9% uptime)."
+        },
+        "q7": {
+          "question": "Kako se vrši održavanje i update sistema?",
+          "answer": "Software update-i se vrše automatski (noćni update-i 2-4 AM) ili manuelno prema vašim preferencijama. Možete izabrati da li želite automatske update-e ili da ručno odobrite svaki update. Notifikacije o novim verzijama stižu putem admin panela. Hardware održavanje preporučujemo jednom godišnje (čišćenje, kalibracija). U paketu dobijate 12 meseci besplatnih update-a. Remote administracija putem Cloud Dashboard-a."
+        },
+        "q8": {
+          "question": "Kakva je zaštita podataka i GDPR usklađenost?",
+          "answer": "Sistem je potpuno GDPR compliant. Svi podaci se enkriptuju (AES-256), čuvaju se na serverima u EU (Frankfurt/Amsterdam), automatski se brišu nakon zakonski predviđenog roka (3 godine), i imamo DPA (Data Processing Agreement) za svaku instalaciju. SSL/TLS 1.3 za sve konekcije, 2FA autentifikacija za admin panel, audit log svih radnji, i potpuna transparentnost u korišćenju podataka. ISO 27001 i SOC 2 Type II sertifikovani."
+        },
+        "q9": {
+          "question": "Mogu li prilagoditi izgled i branding kioska?",
+          "answer": "Apsolutno! Nudimo potpuno custom branding: vaš logo, boje, fontovi, background slike, video prezentacije, custom welcome poruke, multilanguage content, i branding na fizičkom kiosku (vinyl wrap). U Enterprise paketu nudimo i potpuno custom UI dizajn prilagođen vašem brendu. Dizajn se postavlja putem admin panela bez potrebe za kodom. Drag-and-drop editor sa live preview."
+        },
+        "q10": {
+          "question": "Šta se dešava ako gost ima problem tokom check-in-a?",
+          "answer": "Sistem ima 'Help' dugme koje gosta povezuje sa recepcijom putem video poziva ili intercom-a. Takođe, kiosk automatski detektuje probleme (nevalidna kartica, greška u dokumentu) i prikazuje jasna uputstva. Vaše osoblje može remote preuzeti kontrolu nad kiosk-om i pomoći gostu. Imamo i 24/7 tehničku podršku. Multi-level support: on-screen help → video call → remote assistance → 24/7 tech support."
+        }
+      }
     }
   },
   "about": {
@@ -445,13 +540,16 @@
     "title": "O Nama",
     "subtitle": "Transformišemo način na koji hoteli primaju svoje goste kroz inovativnu tehnologiju i vrhunsku podršku.",
     "story": {
+      "title": "Naša Priča",
+      "subtitle": "Principi koji vode naš rad i odnose sa klijentima",
       "p1": "Inova Tech IT je kompanija specijalizovana za razvoj inovativnih IT rešenja u oblasti hotelijerstva. Osnovana 2017. godine, naša misija je bila jasna - transformisati tradicionalnu recepciju u moderan, automatizovan sistem.",
       "p2": "Inova Tech IT je kompanija koja ima predstavnistva u Pragu i Beogradu.",
-      "p3": "Prepoznali smo da hoteli gube dragoceno vreme na manuelne check-in procese, što dovodi do dugih redova, frustriranih gostiju i povećanih operativnih troškova.",
-      "p4": "Danas, sa više od 50 uspešnih instalacija, nastavljamo da inoviramo i poboljšavamo naš sistem."
+      "p3": "Prepoznali smo da hoteli gube dragoceno vreme na manuelne check-in procese, što dovodi do dugih redova, frustriranih gostiju i povećanih operativnih troškova. Naše rešenje - Digitalna Recepcija - omogućava check-in za samo 30 sekundi, 24/7 dostupnost i značajno smanjenje troškova.",
+      "p4": "Danas, sa više od 50 uspešnih instalacija, nastavljamo da inoviramo i poboljšavamo naš sistem. Svaki feedback od klijenata nas čini boljima, svaki uspeh naših partnera je i naš uspeh."
     },
     "values": {
       "title": "Naše Vrednosti",
+      "subtitle": "Principi koji vode naš rad i odnose sa klijentima",
       "innovation": {
         "title": "Inovacija",
         "description": "Konstantno istraživanje i razvoj novih tehnologija za hotelijerstvo."
@@ -471,19 +569,24 @@
     },
     "timeline": {
       "title": "Naša Evolucija",
+      "subtitle": "Putovanje od ideje do lidera na tržištu",
       "year2017": {
+        "year": "2017",
         "title": "Osnivanje",
         "description": "Inova Tech IT pokreće projekat digitalne recepcije nakon istraživanja potreba hotelijerske industrije."
       },
       "year2019": {
+        "year": "2019",
         "title": "Prvi Klijent",
         "description": "Uspešna instalacija prvog sistema i pozitivne recenzije od hotela u Beogradu."
       },
       "year2024": {
+        "year": "2024",
         "title": "Ekspanzija",
         "description": "Proširenje na 20+ hotela širom Srbije i region. Lansiranje Pro paketa sa naprednim funkcijama."
       },
       "year2025": {
+        "year": "2025",
         "title": "Budućnost",
         "description": "Planirana ekspanzija na EU tržište i razvoj mobilne aplikacije za goste."
       }
@@ -502,13 +605,37 @@
     "emailPlaceholder": "vas@email.com",
     "name": "Ime i Prezime",
     "namePlaceholder": "Petar Petrović",
-    "phone": "Telefon (opciono)",
+    "phone": "Telefon",
+    "phoneOptional": "(opciono)",
     "phonePlaceholder": "+381 64 123 4567",
-    "consent": "Slažem se sa uslovima korišćenja i politikom privatnosti. Prihvatam da primam marketinške email poruke.",
+    "consent": "Slažem se sa",
+    "consentTerms": "uslovima korišćenja",
+    "consentAnd": "i",
+    "consentPrivacy": "politikom privatnosti",
+    "consentMarketing": "Prihvatam da primam marketinške email poruke.",
     "submit": "Preuzmite Brošuru",
-    "success": "Uspešno poslato! 🎉 Brošura je poslata na vašu email adresu. Proverite inbox!",
-    "duplicate": "Već ste primili brošuru. Ukoliko niste primili email, proverite spam folder ili nas kontaktirajte.",
-    "error": "Greška: {message}",
+    "sending": "Šaljem...",
+    "sent": "Poslato!",
+    "closeModal": "Zatvori modal",
+    "required": "*",
+    "validation": {
+      "emailRequired": "Email adresa je obavezna",
+      "emailInvalid": "Unesite validnu email adresu",
+      "nameRequired": "Ime je obavezno",
+      "consentRequired": "Morate prihvatiti uslove korišćenja i politiku privatnosti"
+    },
+    "success": {
+      "title": "Uspešno poslato! 🎉",
+      "message": "Brošura je poslata na vašu email adresu. Proverite inbox!"
+    },
+    "duplicate": {
+      "title": "Već ste primili brošuru",
+      "message": "Ukoliko niste primili email, proverite spam folder ili nas kontaktirajte."
+    },
+    "error": {
+      "title": "Greška",
+      "default": "Greška prilikom slanja. Pokušajte ponovo."
+    },
     "info": "Vaši podaci su zaštićeni i neće biti deljeni sa trećim licima. Možete se odjaviti u bilo kom trenutku."
   },
   "privacy": {

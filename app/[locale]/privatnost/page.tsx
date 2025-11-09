@@ -1,6 +1,7 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import { Shield, Mail, Phone, ArrowLeft } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/routing";
 
 /**
  * Politika Privatnosti Stranica
@@ -16,7 +17,8 @@ export const metadata: Metadata = {
     "Politika privatnosti za Inova Tech d.o.o. - kako čuvamo vaše lične, poslovne i finansijske podatke u skladu sa zakonima Republike Srbije",
 };
 
-export default function PolitikaPrivatnosti() {
+export default async function PolitikaPrivatnosti() {
+  const t = await getTranslations("privacy");
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -27,18 +29,17 @@ export default function PolitikaPrivatnosti() {
             className="inline-flex items-center gap-2 mb-6 text-white/90 hover:text-white transition"
           >
             <ArrowLeft className="w-4 h-4" />
-            Nazad na početnu
+            {t("backLink")}
           </Link>
 
           <div className="flex items-center gap-4 mb-4">
             <Shield className="w-12 h-12" />
             <h1 className="text-4xl md:text-5xl font-bold">
-              Politika Privatnosti
+              {t("title")}
             </h1>
           </div>
           <p className="text-lg text-white/90">
-            Inova Tech d.o.o. | Poslednje ažurirano:{" "}
-            {new Date().toLocaleDateString("sr-RS")}
+            {t("subtitle", { date: new Date().toLocaleDateString("sr-RS") })}
           </p>
         </div>
       </div>
@@ -47,7 +48,7 @@ export default function PolitikaPrivatnosti() {
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Uvod */}
         <section className="mb-12 p-6 bg-white rounded-xl border-l-4 border-orange-500 shadow-sm">
-          <h2 className="text-2xl font-bold text-black mb-4">Uvod</h2>
+          <h2 className="text-2xl font-bold text-black mb-4">{t("sections.intro")}</h2>
           <p className="text-black leading-relaxed mb-4">
             Firmi Inova Tech d.o.o. je posvećena zaštiti vaše privatnosti i
             zaštiti vaših ličnih, poslovnih i finansijskih podataka.
@@ -72,7 +73,7 @@ export default function PolitikaPrivatnosti() {
           {/* 1. Saglasnost */}
           <section>
             <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
-              1. Saglasnost
+              1. {t("sections.consent")}
             </h2>
             <div className="bg-white p-6 rounded-lg border border-black/10">
               <p className="text-black leading-relaxed mb-4">
@@ -92,7 +93,7 @@ export default function PolitikaPrivatnosti() {
           {/* 2. Prikupljanje i korišćenje informacija */}
           <section>
             <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
-              2. Prikupljanje i korišćenje informacija
+              2. {t("sections.collection")}
             </h2>
             <div className="bg-white p-6 rounded-lg border border-black/10">
               <p className="text-black leading-relaxed mb-4">
@@ -137,7 +138,7 @@ export default function PolitikaPrivatnosti() {
           {/* 3. Koji lični podaci se prikupljaju */}
           <section>
             <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
-              3. Koji lični podaci se prikupljaju
+              3. {t("sections.personalData")}
             </h2>
             <div className="bg-white p-6 rounded-lg border border-black/10">
               <ul className="space-y-3 text-black">
@@ -169,7 +170,7 @@ export default function PolitikaPrivatnosti() {
           {/* 4. Upotreba sakupljenih informacija */}
           <section>
             <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
-              4. Deljenje podataka sa trećim licima
+              4. {t("sections.sharing")}
             </h2>
             <div className="bg-white p-6 rounded-lg border border-black/10">
               <p className="text-black leading-relaxed mb-4">
@@ -217,7 +218,7 @@ export default function PolitikaPrivatnosti() {
           {/* 5. Kolačići (Cookies) */}
           <section>
             <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
-              5. Korišćenje Internet kolačića (Cookies)
+              5. {t("sections.cookies")}
             </h2>
             <div className="bg-white p-6 rounded-lg border border-black/10">
               <p className="text-black leading-relaxed mb-4">
@@ -274,7 +275,7 @@ export default function PolitikaPrivatnosti() {
           {/* 6. Prava korisnika */}
           <section>
             <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
-              6. Vaša prava u vezi sa ličnim podacima
+              6. {t("sections.rights")}
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-white p-5 rounded-lg border border-black/10 hover:border-orange-500 transition">
@@ -334,7 +335,7 @@ export default function PolitikaPrivatnosti() {
           {/* 7. Promene politike */}
           <section>
             <h2 className="text-2xl font-bold text-black mb-4 pb-2 border-b-2 border-orange-500">
-              7. Promene ove Izjave o privatnosti
+              7. {t("sections.changes")}
             </h2>
             <div className="bg-white p-6 rounded-lg border border-black/10">
               <p className="text-black leading-relaxed mb-4">
@@ -357,10 +358,10 @@ export default function PolitikaPrivatnosti() {
         {/* Kontakt za pitanja */}
         <div className="bg-orange-500 text-white p-8 rounded-2xl mt-12">
           <h2 className="text-2xl font-bold mb-4">
-            Imate pitanja o privatnosti?
+            {t("ctaBox.title")}
           </h2>
           <p className="mb-6">
-            Za sva pitanja u vezi sa zaštitom podataka, kontaktirajte nas:
+            {t("ctaBox.subtitle")}
           </p>
 
           <div className="space-y-3 mb-6">
@@ -383,11 +384,7 @@ export default function PolitikaPrivatnosti() {
 
           <div className="pt-6 border-t border-white/20">
             <p className="text-sm text-white/90 leading-relaxed">
-              <strong className="text-white">Inova Tech d.o.o.</strong>
-              <br />
-              Beograd, Republika Srbija
-              <br />
-              www.inovatechit.com
+              {t("ctaBox.company")}
             </p>
           </div>
         </div>

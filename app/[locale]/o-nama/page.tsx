@@ -14,6 +14,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CTASection from "@/components/shared/CTASection";
 import SectionNavigation from "@/components/layout/SectionNavigation";
+import { useTranslations } from "next-intl";
 
 /**
  * About Page
@@ -37,30 +38,28 @@ import SectionNavigation from "@/components/layout/SectionNavigation";
  */
 
 export default function AboutPage() {
+  const t = useTranslations("about");
+
   const values = [
     {
       icon: <Lightbulb className="w-8 h-8" />,
-      title: "Inovacija",
-      description:
-        "Konstantno istraživanje i razvoj novih tehnologija za hotelijerstvo.",
+      title: t("values.innovation.title"),
+      description: t("values.innovation.description"),
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Kvalitet",
-      description:
-        "Premium komponente i pažljivo testiran softver za maksimalnu pouzdanost.",
+      title: t("values.quality.title"),
+      description: t("values.quality.description"),
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Podrška",
-      description:
-        "24/7 tehnička podrška i kontinuirano partnerstvo sa klijentima.",
+      title: t("values.support.title"),
+      description: t("values.support.description"),
     },
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Rezultati",
-      description:
-        "Fokus na merljive rezultate - smanjenje troškova i povećanje efikasnosti.",
+      title: t("values.results.title"),
+      description: t("values.results.description"),
     },
   ];
 
@@ -73,28 +72,24 @@ export default function AboutPage() {
 
   const timeline = [
     {
-      year: "2017",
-      title: "Osnivanje",
-      description:
-        "Inova Tech IT pokreće projekat digitalne recepcije nakon istraživanja potreba hotelijerske industrije.",
+      year: t("timeline.year2017.year"),
+      title: t("timeline.year2017.title"),
+      description: t("timeline.year2017.description"),
     },
     {
-      year: "2019",
-      title: "Prvi Klijent",
-      description:
-        "Uspešna instalacija prvog sistema i pozitivne recenzije od hotela u Beogradu.",
+      year: t("timeline.year2019.year"),
+      title: t("timeline.year2019.title"),
+      description: t("timeline.year2019.description"),
     },
     {
-      year: "2024",
-      title: "Ekspanzija",
-      description:
-        "Proširenje na 20+ hotela širom Srbije i region. Lansiranje Pro paketa sa naprednim funkcijama.",
+      year: t("timeline.year2024.year"),
+      title: t("timeline.year2024.title"),
+      description: t("timeline.year2024.description"),
     },
     {
-      year: "2025",
-      title: "Budućnost",
-      description:
-        "Planirana ekspanzija na EU tržište i razvoj mobilne aplikacije za goste.",
+      year: t("timeline.year2025.year"),
+      title: t("timeline.year2025.title"),
+      description: t("timeline.year2025.description"),
     },
   ];
 
@@ -116,16 +111,15 @@ export default function AboutPage() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 rounded-full text-orange-600 font-semibold text-sm mb-6">
                 <Award className="w-4 h-4" />
-                Lideri u hotelskoj automatizaciji
+                {t("badge")}
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-500 mb-6">
-                O Nama
+                {t("title")}
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-                Transformišemo način na koji hoteli primaju svoje goste kroz
-                inovativnu tehnologiju i vrhunsku podršku.
+                {t("subtitle")}
               </p>
             </motion.div>
 
@@ -157,36 +151,14 @@ export default function AboutPage() {
                 transition={{ duration: 0.6 }}
               >
                 <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-                  Naša Priča
+                  {t("story.title")}
                 </h2>
 
                 <div className="space-y-4 text-orange-500 leading-relaxed">
-                  <p>
-                    Inova Tech IT je kompanija specijalizovana za razvoj
-                    inovativnih IT rešenja u oblasti hotelijerstva. Osnovana
-                    2017. godine, naša misija je bila jasna - transformisati
-                    tradicionalnu recepciju u moderan, automatizovan sistem.
-                  </p>
-
-                  <p>
-                    Inova Tech IT je kompanija koja ima predstavnistva u Pragu i
-                    Beogradu.
-                  </p>
-
-                  <p>
-                    Prepoznali smo da hoteli gube dragoceno vreme na manuelne
-                    check-in procese, što dovodi do dugih redova, frustriranih
-                    gostiju i povećanih operativnih troškova. Naše rešenje -
-                    Digitalna Recepcija - omogućava check-in za samo 30 sekundi,
-                    24/7 dostupnost i značajno smanjenje troškova.
-                  </p>
-
-                  <p>
-                    Danas, sa više od 50 uspešnih instalacija, nastavljamo da
-                    inoviramo i poboljšavamo naš sistem. Svaki feedback od
-                    klijenata nas čini boljima, svaki uspeh naših partnera je i
-                    naš uspeh.
-                  </p>
+                  <p>{t("story.p1")}</p>
+                  <p>{t("story.p2")}</p>
+                  <p>{t("story.p3")}</p>
+                  <p>{t("story.p4")}</p>
                 </div>
               </motion.div>
 
@@ -219,10 +191,10 @@ export default function AboutPage() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-                Naše Vrednosti
+                {t("values.title")}
               </h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Principi koji vode naš rad i odnose sa klijentima
+                {t("values.subtitle")}
               </p>
             </motion.div>
 
@@ -285,10 +257,10 @@ export default function AboutPage() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-                Naša Evolucija
+                {t("timeline.title")}
               </h2>
               <p className="text-lg text-slate-600">
-                Putovanje od ideje do lidera na tržištu
+                {t("timeline.subtitle")}
               </p>
             </motion.div>
 

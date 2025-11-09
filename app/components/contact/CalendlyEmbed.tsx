@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 import { Calendar } from "lucide-react";
 
 /**
@@ -22,6 +23,8 @@ import { Calendar } from "lucide-react";
  */
 
 export default function CalendlyEmbed() {
+  const t = useTranslations("calendly");
+
   // Učitaj Calendly widget script
   useEffect(() => {
     const script = document.createElement("script");
@@ -43,11 +46,9 @@ export default function CalendlyEmbed() {
       <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-6 text-white">
         <div className="flex items-center gap-3 mb-2">
           <Calendar className="w-8 h-8" />
-          <h3 className="text-2xl font-bold">Zakažite Demo Prezentaciju</h3>
+          <h3 className="text-2xl font-bold">{t("title")}</h3>
         </div>
-        <p className="text-white/90">
-          Odaberite termin koji vam odgovara - trajanje 30 minuta
-        </p>
+        <p className="text-white/90">{t("subtitle")}</p>
       </div>
 
       {/* Calendly Widget */}
@@ -61,16 +62,28 @@ export default function CalendlyEmbed() {
       <div className="p-6 bg-slate-50 border-t">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-sm">
           <div>
-            <div className="font-bold text-slate-900 mb-1">📹 Video Call</div>
-            <div className="text-slate-600">Google Meet ili Zoom</div>
+            <div className="font-bold text-slate-900 mb-1">
+              📹 {t("features.videoCall.title")}
+            </div>
+            <div className="text-slate-600">
+              {t("features.videoCall.description")}
+            </div>
           </div>
           <div>
-            <div className="font-bold text-slate-900 mb-1">⏱️ 30 minuta</div>
-            <div className="text-slate-600">Potpuna demonstracija</div>
+            <div className="font-bold text-slate-900 mb-1">
+              ⏱️ {t("features.duration.title")}
+            </div>
+            <div className="text-slate-600">
+              {t("features.duration.description")}
+            </div>
           </div>
           <div>
-            <div className="font-bold text-slate-900 mb-1">🎁 Besplatno</div>
-            <div className="text-slate-600">Bez obaveze</div>
+            <div className="font-bold text-slate-900 mb-1">
+              🎁 {t("features.free.title")}
+            </div>
+            <div className="text-slate-600">
+              {t("features.free.description")}
+            </div>
           </div>
         </div>
       </div>

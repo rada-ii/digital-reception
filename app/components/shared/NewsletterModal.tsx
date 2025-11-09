@@ -10,6 +10,7 @@ import {
   CheckCircle,
   AlertCircle,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 /**
  * Newsletter Modal Component
@@ -33,6 +34,7 @@ export default function NewsletterModal({
   isOpen,
   onClose,
 }: NewsletterModalProps) {
+  const t = useTranslations("newsletter");
   const [formData, setFormData] = useState({
     email: "",
     name: "",
@@ -68,27 +70,25 @@ export default function NewsletterModal({
 
     // Validacija
     if (!formData.email.trim()) {
-      setErrorMessage("Email adresa je obavezna");
+      setErrorMessage(t("validation.emailRequired"));
       setStatus("error");
       return;
     }
 
     if (!isValidEmail(formData.email)) {
-      setErrorMessage("Unesite validnu email adresu");
+      setErrorMessage(t("validation.emailInvalid"));
       setStatus("error");
       return;
     }
 
     if (!formData.name.trim()) {
-      setErrorMessage("Ime je obavezno");
+      setErrorMessage(t("validation.nameRequired"));
       setStatus("error");
       return;
     }
 
     if (!formData.gdprConsent) {
-      setErrorMessage(
-        "Morate prihvatiti uslove korišćenja i politiku privatnosti"
-      );
+      setErrorMessage(t("validation.consentRequired"));
       setStatus("error");
       return;
     }
@@ -111,12 +111,10 @@ export default function NewsletterModal({
         // Proveri da li je duplikat email
         if (response.status === 409) {
           setStatus("duplicate");
-          setErrorMessage(
-            data.message || "Već ste primili brošuru na ovaj email"
-          );
+          setErrorMessage(data.message || t("duplicate.title"));
           return;
         }
-        throw new Error(data.error || "Greška prilikom slanja");
+        throw new Error(data.error || t("error.default"));
       }
 
       setStatus("success");
@@ -127,9 +125,7 @@ export default function NewsletterModal({
       }, 3000);
     } catch (error: any) {
       setStatus("error");
-      setErrorMessage(
-        error.message || "Greška prilikom slanja. Pokušajte ponovo."
-      );
+      setErrorMessage(error.message || t("error.default"));
     }
   };
 
@@ -167,7 +163,7 @@ export default function NewsletterModal({
             onClick={handleClose}
             disabled={status === "loading"}
             className="absolute top-4 right-4 p-2 rounded-full hover:bg-slate-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed z-10"
-            aria-label="Zatvori modal"
+            aria-label={t("closeModal")}
           >
             <X className="w-5 h-5 text-slate-600" />
           </button>
@@ -180,10 +176,10 @@ export default function NewsletterModal({
               </div>
             </div>
             <h2 className="text-2xl font-bold text-white text-center mb-2">
-              Preuzmite Brošuru
+              {t("title")}
             </h2>
             <p className="text-orange-50 text-center text-sm">
-              Unesite vaše podatke i dobićete kompletnu brošuru na email
+              {t("subtitle")}
             </p>
           </div>
 
@@ -195,10 +191,10 @@ export default function NewsletterModal({
                 <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-green-900">
-                    Uspešno poslato! 🎉
+                    {t("success.title")}
                   </p>
                   <p className="text-sm text-green-700">
-                    Brošura je poslata na vašu email adresu. Proverite inbox!
+                    {t("success.message")}
                   </p>
                 </div>
               </div>
@@ -209,12 +205,11 @@ export default function NewsletterModal({
                 <AlertCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-blue-900">
-                    Već ste primili brošuru
+                    {t("duplicate.title")}
                   </p>
                   <p className="text-sm text-blue-700">{errorMessage}</p>
                   <p className="text-sm text-blue-700 mt-2">
-                    Ukoliko niste primili email, proverite spam folder ili nas
-                    kontaktirajte.
+                    {t("duplicate.message")}
                   </p>
                 </div>
               </div>
@@ -224,7 +219,7 @@ export default function NewsletterModal({
               <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4 flex items-start gap-3 animate-in slide-in-from-top duration-300">
                 <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-red-900">Greška</p>
+                  <p className="font-semibold text-red-900">{t("error.title")}</p>
                   <p className="text-sm text-red-700">{errorMessage}</p>
                 </div>
               </div>
@@ -238,7 +233,7 @@ export default function NewsletterModal({
                   htmlFor="email"
                   className="block text-sm font-medium text-slate-700 mb-2"
                 >
-                  Email Adresa <span className="text-red-500">*</span>
+                  {t("email")} <span className="text-red-500">{t("required")}</span>
                 </label>
                 <div className="relative">
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -250,10 +245,10 @@ export default function NewsletterModal({
                     onChange={handleChange}
                     required
                     disabled={status === "loading" || status === "success"}
-                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg 
+                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg
                               focus:ring-2 focus:ring-orange-500 focus:border-transparent
                               disabled:bg-slate-100 disabled:cursor-not-allowed transition-all"
-                    placeholder="vas@email.com"
+                    placeholder={t("emailPlaceholder")}
                   />
                 </div>
               </div>
@@ -264,7 +259,7 @@ export default function NewsletterModal({
                   htmlFor="name"
                   className="block text-sm font-medium text-slate-700 mb-2"
                 >
-                  Ime i Prezime <span className="text-red-500">*</span>
+                  {t("name")} <span className="text-red-500">{t("required")}</span>
                 </label>
                 <div className="relative">
                   <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -276,10 +271,10 @@ export default function NewsletterModal({
                     onChange={handleChange}
                     required
                     disabled={status === "loading" || status === "success"}
-                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg 
+                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg
                               focus:ring-2 focus:ring-orange-500 focus:border-transparent
                               disabled:bg-slate-100 disabled:cursor-not-allowed transition-all"
-                    placeholder="Petar Petrović"
+                    placeholder={t("namePlaceholder")}
                   />
                 </div>
               </div>
@@ -290,8 +285,8 @@ export default function NewsletterModal({
                   htmlFor="phone"
                   className="block text-sm font-medium text-slate-700 mb-2"
                 >
-                  Telefon{" "}
-                  <span className="text-slate-400 text-xs">(opciono)</span>
+                  {t("phone")}{" "}
+                  <span className="text-slate-400 text-xs">{t("phoneOptional")}</span>
                 </label>
                 <div className="relative">
                   <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -302,10 +297,10 @@ export default function NewsletterModal({
                     value={formData.phone}
                     onChange={handleChange}
                     disabled={status === "loading" || status === "success"}
-                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg 
+                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg
                               focus:ring-2 focus:ring-orange-500 focus:border-transparent
                               disabled:bg-slate-100 disabled:cursor-not-allowed transition-all"
-                    placeholder="+381 64 123 4567"
+                    placeholder={t("phonePlaceholder")}
                   />
                 </div>
               </div>
@@ -320,28 +315,28 @@ export default function NewsletterModal({
                     onChange={handleChange}
                     required
                     disabled={status === "loading" || status === "success"}
-                    className="mt-1 w-4 h-4 text-orange-500 border-slate-300 rounded 
+                    className="mt-1 w-4 h-4 text-orange-500 border-slate-300 rounded
                               focus:ring-2 focus:ring-orange-500 disabled:cursor-not-allowed"
                   />
                   <span className="text-sm text-slate-700 leading-relaxed">
-                    Slažem se sa{" "}
+                    {t("consent")}{" "}
                     <a
                       href="/uslovi-korisenja"
                       target="_blank"
                       className="text-orange-500 hover:underline"
                     >
-                      uslovima korišćenja
+                      {t("consentTerms")}
                     </a>{" "}
-                    i{" "}
+                    {t("consentAnd")}{" "}
                     <a
                       href="/politika-privatnosti"
                       target="_blank"
                       className="text-orange-500 hover:underline"
                     >
-                      politikom privatnosti
+                      {t("consentPrivacy")}
                     </a>
-                    . Prihvatam da primam marketinške email poruke.{" "}
-                    <span className="text-red-500">*</span>
+                    . {t("consentMarketing")}{" "}
+                    <span className="text-red-500">{t("required")}</span>
                   </span>
                 </label>
               </div>
@@ -350,7 +345,7 @@ export default function NewsletterModal({
               <button
                 type="submit"
                 disabled={status === "loading" || status === "success"}
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold 
+                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold
                           py-3.5 px-6 rounded-lg transition-all duration-300
                           disabled:bg-slate-400 disabled:cursor-not-allowed
                           flex items-center justify-center gap-2 shadow-lg hover:shadow-xl
@@ -359,25 +354,24 @@ export default function NewsletterModal({
                 {status === "loading" ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    Šaljem...
+                    {t("sending")}
                   </>
                 ) : status === "success" ? (
                   <>
                     <CheckCircle className="w-5 h-5" />
-                    Poslato!
+                    {t("sent")}
                   </>
                 ) : (
                   <>
                     <Download className="w-5 h-5" />
-                    Preuzmite Brošuru
+                    {t("submit")}
                   </>
                 )}
               </button>
 
               {/* Info Text */}
               <p className="text-xs text-center text-slate-500 leading-relaxed">
-                Vaši podaci su zaštićeni i neće biti deljeni sa trećim licima.
-                Možete se odjaviti u bilo kom trenutku.
+                {t("info")}
               </p>
             </form>
           </div>

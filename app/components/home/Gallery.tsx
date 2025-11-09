@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import {
   X,
   ChevronLeft,
@@ -13,6 +14,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 export default function Gallery() {
+  const t = useTranslations("gallery");
+
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [zoomLevel, setZoomLevel] = useState(1);
 
@@ -20,44 +23,44 @@ export default function Gallery() {
     {
       id: 1,
       url: "/images/masina3.jpg",
-      title: "Digitalna Recepcija - Front View",
-      description: "Moderan touchscreen interfejs za automatski check-in",
-      alt: "Digitalna recepcija sa velikim touchscreen ekranom za hotel check-in",
+      title: t("images.img1.title"),
+      description: t("images.img1.description"),
+      alt: t("images.img1.alt"),
     },
     {
       id: 2,
       url: "/images/masina6.jpg",
-      title: "Check-in Proces",
-      description: "Intuitivan i brz proces prijave gostiju",
-      alt: "Gost koristi digitalni kiosk za brzi hotel check-in za 30 sekundi",
+      title: t("images.img2.title"),
+      description: t("images.img2.description"),
+      alt: t("images.img2.alt"),
     },
     {
       id: 3,
       url: "/images/masina2.jpg",
-      title: "Plaćanje Karticom",
-      description: "Bezbedno i jednostavno kartično plaćanje",
-      alt: "Bezkontaktno plaćanje karticom na digitalnoj recepciji hotela",
+      title: t("images.img3.title"),
+      description: t("images.img3.description"),
+      alt: t("images.img3.alt"),
     },
     {
       id: 4,
       url: "/images/masina5.jpg",
-      title: "Hotel Lobby Integracija",
-      description: "Savršeno se uklapa u prostor hotela",
-      alt: "Moderna digitalna recepcija u luksuznom hotel lobby-ju",
+      title: t("images.img4.title"),
+      description: t("images.img4.description"),
+      alt: t("images.img4.alt"),
     },
     {
       id: 5,
       url: "/images/masina10.jpg",
-      title: "Noćni Rad 24/7",
-      description: "Automatska recepcija dostupna non-stop",
-      alt: "Hotel digitalna recepcija radi 24/7 bez osoblja",
+      title: t("images.img5.title"),
+      description: t("images.img5.description"),
+      alt: t("images.img5.alt"),
     },
     {
       id: 6,
       url: "/images/masina13.jpg",
-      title: "Moderna Recepcija",
-      description: "Dizajn koji impresionira goste",
-      alt: "Premium digitalni check-in kiosk sa elegantnim dizajnom",
+      title: t("images.img6.title"),
+      description: t("images.img6.description"),
+      alt: t("images.img6.alt"),
     },
   ];
 
@@ -135,11 +138,10 @@ export default function Gallery() {
           className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Galerija Proizvoda
+            {t("title")}
           </h2>
           <p className="text-lg sm:text-xl text-orange-500 max-w-3xl mx-auto">
-            Pogledajte našu digitalnu recepciju u različitim hotelskim
-            okruženjima
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -198,7 +200,7 @@ export default function Gallery() {
               <button
                 onClick={closeLightbox}
                 className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition"
-                aria-label="Close lightbox"
+                aria-label={t("lightbox.closeLabel")}
               >
                 <X className="w-6 h-6" />
               </button>
@@ -214,8 +216,8 @@ export default function Gallery() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="p-3 bg-white/10 hover:bg-orange-500 rounded-full text-white transition backdrop-blur-sm"
-                aria-label="Zoom in"
-                title="Zoom In (+)"
+                aria-label={t("lightbox.zoomInLabel")}
+                title={t("lightbox.zoomInTitle")}
               >
                 <ZoomIn className="w-6 h-6" />
               </motion.button>
@@ -228,8 +230,8 @@ export default function Gallery() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="p-3 bg-white/10 hover:bg-orange-500 rounded-full text-white transition backdrop-blur-sm"
-                aria-label="Reset zoom"
-                title="Fit to Screen (0)"
+                aria-label={t("lightbox.resetZoomLabel")}
+                title={t("lightbox.resetZoomTitle")}
               >
                 <Maximize2 className="w-6 h-6" />
               </motion.button>
@@ -242,8 +244,8 @@ export default function Gallery() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="p-3 bg-white/10 hover:bg-orange-500 rounded-full text-white transition backdrop-blur-sm"
-                aria-label="Zoom out"
-                title="Zoom Out (-)"
+                aria-label={t("lightbox.zoomOutLabel")}
+                title={t("lightbox.zoomOutTitle")}
               >
                 <ZoomOut className="w-6 h-6" />
               </motion.button>
@@ -256,7 +258,7 @@ export default function Gallery() {
                 prevImage();
               }}
               className="absolute left-20 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-full text-white transition z-10 backdrop-blur-sm"
-              aria-label="Previous image"
+              aria-label={t("lightbox.prevLabel")}
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
@@ -266,7 +268,7 @@ export default function Gallery() {
                 nextImage();
               }}
               className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-full text-white transition z-10 backdrop-blur-sm"
-              aria-label="Next image"
+              aria-label={t("lightbox.nextLabel")}
             >
               <ChevronRight className="w-8 h-8" />
             </button>
@@ -309,11 +311,12 @@ export default function Gallery() {
               </p>
               <div className="flex items-center justify-between">
                 <p className="text-xs text-white/60">
-                  Slika {selectedImage + 1} od {images.length}
+                  {t("lightbox.imageOf", {
+                    current: selectedImage + 1,
+                    total: images.length,
+                  })}
                 </p>
-                <p className="text-xs text-white/60">
-                  Tasteri: ← → | + − | 0 | ESC
-                </p>
+                <p className="text-xs text-white/60">{t("lightbox.controls")}</p>
               </div>
             </div>
           </motion.div>

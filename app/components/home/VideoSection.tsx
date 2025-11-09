@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Play, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 /**
  * Video Section Component
@@ -19,11 +20,14 @@ import { motion, AnimatePresence } from "framer-motion";
  */
 
 export default function VideoSection() {
+  const t = useTranslations("video");
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   const videoUrl =
     "https://www.youtube.com/embed/YP10mh0BNZM?si=ES-3ZP8jvrnlH9sZ";
   const thumbnailUrl = "/images/masina-video.jpg";
+
+  const overlayParts = t("overlay").split(" - ");
 
   return (
     <section
@@ -39,11 +43,10 @@ export default function VideoSection() {
           className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Pogledajte Kako Funkcioniše
+            {t("title")}
           </h2>
           <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-            2-minutni video koji pokazuje kompletnu funkcionalnost digitalne
-            recepcije
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -82,10 +85,10 @@ export default function VideoSection() {
             {/* Text Overlay */}
             <div className="absolute bottom-2 left-14 right-8 text-white z-10">
               <h3 className="text-xl sm:text-2xl font-bold ">
-                Check-in za 30 sekundi
+                {overlayParts[0]}
               </h3>
               <p className="text-sm sm:text-base text-white/90">
-                Kompletna demonstracija sistema
+                {overlayParts[1]}
               </p>
             </div>
           </div>
@@ -93,9 +96,9 @@ export default function VideoSection() {
           {/* Stats Below Video */}
           <div className="grid grid-cols-3 gap-4 sm:gap-6 mt-8">
             {[
-              { number: "30s", label: "Brzi Check-in" },
-              { number: "24/7", label: "Dostupnost" },
-              { number: "100%", label: "Sigurnost" },
+              { number: "30s", label: t("stats.speed") },
+              { number: "24/7", label: t("stats.availability") },
+              { number: "100%", label: t("stats.security") },
             ].map((stat, index) => (
               <motion.div
                 key={index}

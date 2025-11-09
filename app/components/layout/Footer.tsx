@@ -1,10 +1,13 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+  const navT = useTranslations("navbar.links");
   return (
     <footer className="bg-slate-900 text-white py-12 sm:py-14 md:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
@@ -17,10 +20,10 @@ export default function Footer() {
             className="xs:col-span-2 lg:col-span-1"
           >
             <h3 className="text-orange-500 text-lg sm:text-xl font-bold mb-3 sm:mb-4">
-              Digitalna Recepcija
+              {t("logoAlt") || "Digitalna Recepcija"}
             </h3>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Najmodernija mašina za potpuno automatizovan check-in i check-out.
+              {t("description")}
             </p>
           </motion.div>
 
@@ -31,29 +34,29 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <h4 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg">
-              Stranice
+              {t("pages")}
             </h4>
             <div className="space-y-2 text-slate-400 text-sm">
               <Link href="/" className="block hover:text-orange-500 transition">
-                Početna
+                {navT("home")}
               </Link>
               <Link
                 href="/proizvod"
                 className="block hover:text-orange-500 transition"
               >
-                Proizvod
+                {navT("product")}
               </Link>
               <Link
                 href="/kontakt"
                 className="block hover:text-orange-500 transition"
               >
-                Kontakt
+                {navT("contact")}
               </Link>
               <Link
                 href="/o-nama"
                 className="block hover:text-orange-500 transition"
               >
-                O Nama
+                {navT("about")}
               </Link>
             </div>
           </motion.div>
@@ -65,7 +68,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h4 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg">
-              Kompanija
+              {t("company")}
             </h4>
             <div className="space-y-2 text-slate-400 text-sm">
               <a
@@ -74,13 +77,13 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="block hover:text-orange-500 transition"
               >
-                Inova Tech IT
+                {t("companyName")}
               </a>
               <Link
                 href="/privatnost"
                 className="block hover:text-orange-500 transition"
               >
-                Politika Privatnosti
+                {t("privacy")}
               </Link>
             </div>
           </motion.div>
@@ -92,7 +95,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h4 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg">
-              Kontakt
+              {t("contact")}
             </h4>
             <div className="space-y-2.5 sm:space-y-3 text-slate-400 text-sm">
               <a
@@ -116,7 +119,7 @@ export default function Footer() {
                 className="flex items-center gap-2 hover:text-orange-500 transition"
               >
                 <MapPin className="w-4 h-4 flex-shrink-0" />
-                <span>inovatechit.com</span>
+                <span>{t("website")}</span>
               </a>
             </div>
           </motion.div>
@@ -130,8 +133,7 @@ export default function Footer() {
           className="border-t border-slate-800 pt-6 sm:pt-8 text-center"
         >
           <p className="text-slate-400 text-xs sm:text-sm">
-            © {new Date().getFullYear()} Digitalna Recepcija by Inova Tech IT.
-            Sva prava zadržana.
+            {t("copyright")}
           </p>
         </motion.div>
       </div>

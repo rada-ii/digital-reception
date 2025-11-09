@@ -1,40 +1,40 @@
 "use client";
 
 import { Check, ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function PackagesTeaser() {
+  const t = useTranslations("packages");
+
   const packages = [
     {
-      name: "OSNOVNI",
-      // price: "Od 999€",
+      name: t("basic.name"),
       features: [
-        "Plaćanje karticama",
-        "Email obaveštenja",
-        "Integracija brava",
-        "QR kod račun",
+        t("basic.features.payment"),
+        t("basic.features.email"),
+        t("basic.features.locks"),
+        t("basic.features.qr"),
       ],
     },
     {
-      name: "STANDARD",
-      // price: "Od 1,499€",
+      name: t("standard.name"),
       popular: true,
       features: [
-        "Sve iz Osnovnog",
-        "eTurista prijava",
-        "Gotovina",
-        "PMS integracija",
+        t("standard.features.all"),
+        t("standard.features.eturista"),
+        t("standard.features.cash"),
+        t("standard.features.pms"),
       ],
     },
     {
-      name: "PRO",
-      // price: "Od 1,999€",
+      name: t("pro.name"),
       features: [
-        "Sve iz Standard",
-        "Online APP",
-        "SMS notifikacije",
-        "Custom funkcije",
+        t("pro.features.all"),
+        t("pro.features.app"),
+        t("pro.features.sms"),
+        t("pro.features.custom"),
       ],
     },
   ];
@@ -50,10 +50,10 @@ export default function PackagesTeaser() {
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-3 sm:mb-4 px-4">
-            Izaberite Pravi Paket
+            {t("title")}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-slate-600">
-            Prilagođeno vašim potrebama
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -74,7 +74,7 @@ export default function PackagesTeaser() {
             >
               {pkg.popular && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white px-3 sm:px-4 py-1 rounded-full text-xs font-bold shadow-lg whitespace-nowrap">
-                  Najpopularniji
+                  {t("popularBadge")}
                 </div>
               )}
 
@@ -85,7 +85,7 @@ export default function PackagesTeaser() {
                 <div className="text-3xl sm:text-4xl font-black text-orange-500 mb-2">
                   {pkg.price}
                 </div>
-                <p className="text-xs text-slate-500">*Kontaktirajte za cenu</p>
+                <p className="text-xs text-slate-500">{t("priceNote")}</p>
               </div>
 
               <ul className="space-y-2.5 sm:space-y-3 mb-6 sm:mb-8">
@@ -103,7 +103,7 @@ export default function PackagesTeaser() {
                 href="/proizvod"
                 className="w-full block text-center px-5 sm:px-6 py-2.5 sm:py-3 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition group text-sm sm:text-base"
               >
-                Vidi Detalje
+                {t("ctaButton")}
                 <ArrowRight className="inline-block w-3.5 h-3.5 sm:w-4 sm:h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>

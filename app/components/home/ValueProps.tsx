@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Zap, DollarSign, Clock, Shield } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 /**
  * 🎯 Value Props Section - FULLSCREEN
@@ -13,33 +14,35 @@ import { Zap, DollarSign, Clock, Shield } from "lucide-react";
  */
 
 export default function ValueProps() {
+  const t = useTranslations("valueProps");
+
   const valueProps = [
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "BRZINA",
-      description: "Check-in za 30 sekundi",
-      details: "Smanjite troškove do 60%",
+      title: t("speed.title"),
+      description: t("speed.feature"),
+      details: t("speed.description"),
       color: "orange",
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
-      title: "ŠTEDNJA",
-      description: "Smanjite troškove do 60%",
-      details: "Uštedite hiljade sati i novca",
+      title: t("savings.title"),
+      description: t("savings.feature"),
+      details: t("savings.description"),
       color: "black",
     },
     {
       icon: <Clock className="w-8 h-8" />,
-      title: "24/7",
-      description: "Gosti dolaze kad žele",
-      details: "Uvek dostupno bez dodatnog osoblja",
+      title: t("availability.title"),
+      description: t("availability.feature"),
+      details: t("availability.description"),
       color: "orangeLight",
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "SIGURNOST",
-      description: "Potpuno sigurne transakcije",
-      details: "Šifrovana plaćanja i podaci",
+      title: t("security.title"),
+      description: t("security.feature"),
+      details: t("security.description"),
       color: "blackLight",
     },
   ];
@@ -92,7 +95,7 @@ export default function ValueProps() {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4"
           >
-            Zašto Digitalna Recepcija?
+            {t("title")}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -101,7 +104,7 @@ export default function ValueProps() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto"
           >
-            4 ključne prednosti koje donose revoluciju u hotelsku industriju
+            {t("subtitle")}
           </motion.p>
         </div>
 
