@@ -218,16 +218,49 @@
     "title": "Galerija Proizvoda",
     "subtitle": "Pogledajte našu digitalnu recepciju u različitim hotelskim okruženjima",
     "images": {
-      "img1": "Digitalna Recepcija - Prednji Pogled - Moderan touchscreen sučelje za automatski check-in",
-      "img2": "Check-in Proces - Intuitivan i brz proces prijave gostiju",
-      "img3": "Plaćanje Karticom - Sigurno i jednostavno plaćanje karticom",
-      "img4": "Integracija u Hotel Lobby - Savršeno se uklapa u prostor hotela",
-      "img5": "Noćni Rad 24/7 - Automatska recepcija dostupna non-stop",
-      "img6": "Moderna Recepcija - Dizajn koji impresionira goste"
+      "img1": {
+        "title": "Digitalna Recepcija - Prednji Pogled",
+        "description": "Moderan touchscreen sučelje za automatski check-in",
+        "alt": "Digitalna recepcija sa velikim touchscreen ekranom za hotel check-in"
+      },
+      "img2": {
+        "title": "Check-in Proces",
+        "description": "Intuitivan i brz proces prijave gostiju",
+        "alt": "Gost koristi digitalni kiosk za brzi hotel check-in za 30 sekundi"
+      },
+      "img3": {
+        "title": "Plaćanje Karticom",
+        "description": "Sigurno i jednostavno plaćanje karticom",
+        "alt": "Beskontaktno plaćanje karticom na digitalnoj recepciji hotela"
+      },
+      "img4": {
+        "title": "Integracija u Hotel Lobby",
+        "description": "Savršeno se uklapa u prostor hotela",
+        "alt": "Moderna digitalna recepcija u luksuznom hotel lobby-ju"
+      },
+      "img5": {
+        "title": "Noćni Rad 24/7",
+        "description": "Automatska recepcija dostupna non-stop",
+        "alt": "Hotel digitalna recepcija radi 24/7 bez osoblja"
+      },
+      "img6": {
+        "title": "Moderna Recepcija",
+        "description": "Dizajn koji impresionira goste",
+        "alt": "Premium digitalni check-in kiosk sa elegantnim dizajnom"
+      }
     },
     "lightbox": {
       "imageOf": "Slika {current} od {total}",
-      "controls": "Tipke: ← → | + − | 0 | ESC"
+      "controls": "Tipke: ← → | + − | 0 | ESC",
+      "closeLabel": "Zatvori prikaz",
+      "prevLabel": "Prethodna slika",
+      "nextLabel": "Sljedeća slika",
+      "zoomInLabel": "Povećaj",
+      "zoomOutLabel": "Smanji",
+      "resetZoomLabel": "Resetuj zoom",
+      "zoomInTitle": "Povećaj (+)",
+      "zoomOutTitle": "Smanji (-)",
+      "resetZoomTitle": "Prilagodi ekranu (0)"
     }
   },
   "contact": {

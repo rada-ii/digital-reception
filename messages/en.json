@@ -218,16 +218,49 @@
     "title": "Product Gallery",
     "subtitle": "See our digital reception in different hotel environments",
     "images": {
-      "img1": "Digital Reception - Front View - Modern touchscreen interface for automatic check-in",
-      "img2": "Check-in Process - Intuitive and fast guest registration process",
-      "img3": "Card Payment - Secure and simple card payment",
-      "img4": "Hotel Lobby Integration - Perfectly fits hotel space",
-      "img5": "24/7 Night Operation - Automatic reception available non-stop",
-      "img6": "Modern Reception - Design that impresses guests"
+      "img1": {
+        "title": "Digital Reception - Front View",
+        "description": "Modern touchscreen interface for automatic check-in",
+        "alt": "Digital reception with large touchscreen for hotel check-in"
+      },
+      "img2": {
+        "title": "Check-in Process",
+        "description": "Intuitive and fast guest registration process",
+        "alt": "Guest using digital kiosk for fast hotel check-in in 30 seconds"
+      },
+      "img3": {
+        "title": "Card Payment",
+        "description": "Secure and simple card payment",
+        "alt": "Contactless card payment at hotel digital reception"
+      },
+      "img4": {
+        "title": "Hotel Lobby Integration",
+        "description": "Perfectly fits hotel space",
+        "alt": "Modern digital reception in luxury hotel lobby"
+      },
+      "img5": {
+        "title": "24/7 Night Operation",
+        "description": "Automatic reception available non-stop",
+        "alt": "Hotel digital reception operating 24/7 without staff"
+      },
+      "img6": {
+        "title": "Modern Reception",
+        "description": "Design that impresses guests",
+        "alt": "Premium digital check-in kiosk with elegant design"
+      }
     },
     "lightbox": {
       "imageOf": "Image {current} of {total}",
-      "controls": "Keys: ← → | + − | 0 | ESC"
+      "controls": "Keys: ← → | + − | 0 | ESC",
+      "closeLabel": "Close lightbox",
+      "prevLabel": "Previous image",
+      "nextLabel": "Next image",
+      "zoomInLabel": "Zoom in",
+      "zoomOutLabel": "Zoom out",
+      "resetZoomLabel": "Reset zoom",
+      "zoomInTitle": "Zoom In (+)",
+      "zoomOutTitle": "Zoom Out (-)",
+      "resetZoomTitle": "Fit to Screen (0)"
     }
   },
   "contact": {
