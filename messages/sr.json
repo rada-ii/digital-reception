@@ -266,6 +266,11 @@
   "contact": {
     "title": "Kontaktirajte Nas",
     "subtitle": "Imate pitanja? Slobodno nas kontaktirajte i odgovorićemo u najkraćem roku.",
+    "hero": {
+      "badge": "Tu smo za vas 24/7",
+      "title": "Kontaktirajte Nas",
+      "subtitle": "Imate pitanja o digitalnoj recepciji? Želite demo prezentaciju?\nJavite nam se - odgovorićemo u roku od 24 sata!"
+    },
     "cards": {
       "phone": {
         "title": "Pozovite nas",
@@ -318,6 +323,25 @@
       "validationError": "Molimo popunite sva obavezna polja",
       "sendError": "Greška prilikom slanja",
       "tryAgain": "Pokušajte ponovo."
+    },
+    "faq": {
+      "title": "Brzi Odgovori",
+      "q1": {
+        "question": "Koliko traje instalacija?",
+        "answer": "Standardna instalacija traje 2-4 sata i uključuje kompletnu konfiguraciju i obuku osoblja."
+      },
+      "q2": {
+        "question": "Da li postoji demo?",
+        "answer": "Da! Zakažite demo prezentaciju putem Calendly-a i vidite sistem uživo u trajanju od 30 minuta."
+      },
+      "q3": {
+        "question": "Koja je cena?",
+        "answer": "Kontaktirajte nas za tačan cenovnik prilagođen vašim potrebama."
+      },
+      "q4": {
+        "question": "Tehnička podrška?",
+        "answer": "Nudimo 24/7 tehničku podršku, remote management i redovne software update-ove."
+      }
     }
   },
   "calendly": {

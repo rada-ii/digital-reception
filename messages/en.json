@@ -233,6 +233,11 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "Have questions? Feel free to contact us and we'll respond as soon as possible.",
+    "hero": {
+      "badge": "We're here for you 24/7",
+      "title": "Contact Us",
+      "subtitle": "Have questions about digital reception? Want a demo presentation?\nGet in touch - we'll respond within 24 hours!"
+    },
     "cards": {
       "phone": {
         "title": "Call us",
@@ -274,6 +279,25 @@
       "sending": "Sending...",
       "success": "Message sent successfully! We'll contact you soon.",
       "error": "Error! {message}"
+    },
+    "faq": {
+      "title": "Quick Answers",
+      "q1": {
+        "question": "How long does installation take?",
+        "answer": "Standard installation takes 2-4 hours and includes complete configuration and staff training."
+      },
+      "q2": {
+        "question": "Is there a demo available?",
+        "answer": "Yes! Schedule a demo presentation via Calendly and see the system live for 30 minutes."
+      },
+      "q3": {
+        "question": "What's the price?",
+        "answer": "Contact us for exact pricing tailored to your needs."
+      },
+      "q4": {
+        "question": "Technical support?",
+        "answer": "We offer 24/7 technical support, remote management, and regular software updates."
+      }
     }
   },
   "calendly": {
@@ -437,7 +461,49 @@
       "subtitle": "Answers to technical questions about specifications, integrations, and functionalities",
       "ctaTitle": "Need additional technical details?",
       "ctaSubtitle": "Schedule a meeting with our technical team",
-      "ctaButton": "Schedule Demo"
+      "ctaButton": "Schedule Demo",
+      "questions": {
+        "q1": {
+          "question": "What are the technical specifications of the kiosk?",
+          "answer": "The kiosk comes with a 21.5-inch Full HD touchscreen (1920x1080), Intel i5 processor (11th generation), 8GB DDR4 RAM, 256GB NVMe SSD, integrated card reader (NFC/RFID/Contactless), thermal receipt printer (80mm), 1080p camera for QR scanning, and WiFi 6/Gigabit Ethernet connectivity. The housing is made of stainless steel, dimensions: 180cm (H) x 40cm (W) x 40cm (D), weight: ~25kg with anti-vandal protection."
+        },
+        "q2": {
+          "question": "Which languages does the system support?",
+          "answer": "The system supports over 25 languages including: Serbian, English, German, French, Italian, Spanish, Portuguese, Russian, Ukrainian, Chinese (Simplified and Traditional), Japanese, Korean, Arabic, Turkish, Greek, Polish, Dutch, Swedish, Norwegian, Danish, Finnish, and many others. The language automatically changes based on the guest's nationality from the reservation, or guests can manually select the language on the initial screen."
+        },
+        "q3": {
+          "question": "Which PMS systems do you support and how does integration work?",
+          "answer": "We support all leading PMS systems: Opera Cloud, Cloudbeds, Mews, Protel, Fidelio, HotelTime, Clock PMS+, eZee FrontDesk, Little Hotelier, RoomRaccoon, and many others. Integration is done via REST API or SOAP and includes real-time synchronization of reservations, check-in/check-out communication, folio transactions, room status updates, and guest profile sync. Average integration time: 2-5 business days."
+        },
+        "q4": {
+          "question": "How does integration with the eTurista (eVisitor) system work?",
+          "answer": "Our system is officially certified and integrated with the eTurista API system. It automatically sends all required data: guest personal information, document data, arrival/departure dates, accommodation type, and tourist tax. Everything happens in real-time without manual entry. Fully compliant with Serbian law on tourist registration. Eliminates manual entry and errors."
+        },
+        "q5": {
+          "question": "Which payment methods are supported?",
+          "answer": "We support: 1) Visa, Mastercard, American Express, Maestro, Dina Card via integrated POS terminal, 2) Contactless NFC payments (Apple Pay, Google Pay, Samsung Pay), 3) QR code payments (DinaQR, PaySpot), 4) Direct billing to PMS (payment at checkout). Integration with all leading PSPs in the region (Monri, CorvusPay, Stripe). PCI DSS Level 1 Compliant with full encryption."
+        },
+        "q6": {
+          "question": "Does the system work offline?",
+          "answer": "Yes, the system has advanced offline mode! In case of internet connection loss, the kiosk continues to operate using local cache of reservations for the next 7 days. Guests can complete check-in, the system caches transactions, and everything automatically syncs when internet returns. We recommend backup 4G/LTE connection for maximum reliability (99.9% uptime)."
+        },
+        "q7": {
+          "question": "How is system maintenance and updates performed?",
+          "answer": "Software updates are performed automatically (night updates 2-4 AM) or manually according to your preferences. You can choose whether you want automatic updates or to manually approve each update. Notifications about new versions arrive via admin panel. Hardware maintenance is recommended once a year (cleaning, calibration). The package includes 12 months of free updates. Remote administration via Cloud Dashboard."
+        },
+        "q8": {
+          "question": "What about data protection and GDPR compliance?",
+          "answer": "The system is fully GDPR compliant. All data is encrypted (AES-256), stored on EU servers (Frankfurt/Amsterdam), automatically deleted after the legally required period (3 years), and we have a DPA (Data Processing Agreement) for each installation. SSL/TLS 1.3 for all connections, 2FA authentication for admin panel, audit log of all actions, and complete transparency in data usage. ISO 27001 and SOC 2 Type II certified."
+        },
+        "q9": {
+          "question": "Can I customize the kiosk appearance and branding?",
+          "answer": "Absolutely! We offer complete custom branding: your logo, colors, fonts, background images, video presentations, custom welcome messages, multilanguage content, and branding on the physical kiosk (vinyl wrap). In the Enterprise package, we also offer completely custom UI design tailored to your brand. Design is set up via admin panel without needing code. Drag-and-drop editor with live preview."
+        },
+        "q10": {
+          "question": "What happens if a guest has a problem during check-in?",
+          "answer": "The system has a 'Help' button that connects the guest with reception via video call or intercom. Also, the kiosk automatically detects problems (invalid card, document error) and displays clear instructions. Your staff can remotely take control of the kiosk and help the guest. We also have 24/7 technical support. Multi-level support: on-screen help → video call → remote assistance → 24/7 tech support."
+        }
+      }
     }
   },
   "about": {
@@ -445,13 +511,16 @@
     "title": "About Us",
     "subtitle": "We transform the way hotels welcome their guests through innovative technology and excellent support.",
     "story": {
+      "title": "Our Story",
+      "subtitle": "Principles that guide our work and relationships with clients",
       "p1": "Inova Tech IT is a company specialized in developing innovative IT solutions for the hospitality industry. Founded in 2017, our mission was clear - to transform traditional reception into a modern, automated system.",
       "p2": "Inova Tech IT has offices in Prague and Belgrade.",
-      "p3": "We recognized that hotels lose valuable time on manual check-in processes, leading to long queues, frustrated guests, and increased operational costs.",
-      "p4": "Today, with over 50 successful installations, we continue to innovate and improve our system."
+      "p3": "We recognized that hotels lose valuable time on manual check-in processes, leading to long queues, frustrated guests, and increased operational costs. Our solution - Digital Reception - enables check-in in just 30 seconds, 24/7 availability, and significant cost reduction.",
+      "p4": "Today, with over 50 successful installations, we continue to innovate and improve our system. Every feedback from clients makes us better, every success of our partners is our success."
     },
     "values": {
       "title": "Our Values",
+      "subtitle": "Principles that guide our work and relationships with clients",
       "innovation": {
         "title": "Innovation",
         "description": "Constant research and development of new technologies for hospitality."
@@ -471,19 +540,24 @@
     },
     "timeline": {
       "title": "Our Evolution",
+      "subtitle": "Journey from idea to market leader",
       "year2017": {
+        "year": "2017",
         "title": "Foundation",
         "description": "Inova Tech IT launches digital reception project after researching hospitality industry needs."
       },
       "year2019": {
+        "year": "2019",
         "title": "First Client",
         "description": "Successful installation of the first system and positive reviews from hotels in Belgrade."
       },
       "year2024": {
+        "year": "2024",
         "title": "Expansion",
         "description": "Expansion to 20+ hotels across Serbia and the region. Launch of Pro package with advanced features."
       },
       "year2025": {
+        "year": "2025",
         "title": "Future",
         "description": "Planned expansion to EU market and development of mobile app for guests."
       }

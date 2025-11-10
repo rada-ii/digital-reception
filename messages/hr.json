@@ -233,6 +233,11 @@
   "contact": {
     "title": "Kontaktirajte Nas",
     "subtitle": "Imate pitanja? Slobodno nas kontaktirajte i odgovorit ćemo u najkraćem roku.",
+    "hero": {
+      "badge": "Tu smo za vas 24/7",
+      "title": "Kontaktirajte Nas",
+      "subtitle": "Imate pitanja o digitalnoj recepciji? Želite demo prezentaciju?\nJavite nam se - odgovorit ćemo u roku od 24 sata!"
+    },
     "cards": {
       "phone": {
         "title": "Nazovite nas",
@@ -274,6 +279,25 @@
       "sending": "Šaljem...",
       "success": "Poruka uspješno poslana! Kontaktirat ćemo vas u najkraćem roku.",
       "error": "Greška! {message}"
+    },
+    "faq": {
+      "title": "Brzi Odgovori",
+      "q1": {
+        "question": "Koliko traje instalacija?",
+        "answer": "Standardna instalacija traje 2-4 sata i uključuje kompletnu konfiguraciju i obuku osoblja."
+      },
+      "q2": {
+        "question": "Postoji li demo?",
+        "answer": "Da! Zakažite demo prezentaciju putem Calendly-a i vidite sustav uživo u trajanju od 30 minuta."
+      },
+      "q3": {
+        "question": "Koja je cijena?",
+        "answer": "Kontaktirajte nas za točan cjenik prilagođen vašim potrebama."
+      },
+      "q4": {
+        "question": "Tehnička podrška?",
+        "answer": "Nudimo 24/7 tehničku podršku, remote management i redovne software update-ove."
+      }
     }
   },
   "calendly": {
@@ -437,7 +461,49 @@
       "subtitle": "Odgovori na tehnička pitanja o specifikacijama, integracijama i funkcionalnostima",
       "ctaTitle": "Trebate dodatne tehničke detalje?",
       "ctaSubtitle": "Zakažite sastanak s našim tehničkim timom",
-      "ctaButton": "Zakažite Demo"
+      "ctaButton": "Zakažite Demo",
+      "questions": {
+        "q1": {
+          "question": "Koje su tehničke specifikacije kioska?",
+          "answer": "Kiosk dolazi sa 21.5-inčnim Full HD touchscreen-om (1920x1080), Intel i5 procesorom (11. generacija), 8GB DDR4 RAM-a, 256GB NVMe SSD-om, integrisanim čitačem kartica (NFC/RFID/Contactless), termičkim printerom za račune (80mm), 1080p kamerom za QR skeniranje, i WiFi 6/Gigabit Ethernet povezivanjem. Kućište je od nehrđajućeg čelika, dimenzije: 180cm (H) x 40cm (W) x 40cm (D), težina: ~25kg sa Anti-vandal zaštitom."
+        },
+        "q2": {
+          "question": "Koje jezike podržava sustav?",
+          "answer": "Sustav podržava više od 25 jezika uključujući: Srpski, Engleski, Njemački, Francuski, Talijanski, Španjolski, Portugalski, Ruski, Ukrajinski, Kineski (Simplified i Traditional), Japanski, Korejski, Arapski, Turski, Grčki, Poljski, Nizozemski, Švedski, Norveški, Danski, Finski i mnoge druge. Jezik se automatski mijenja na osnovu nacionalnosti gosta iz rezervacije, ili gost može ručno izabrati jezik na početnom ekranu."
+        },
+        "q3": {
+          "question": "Koje PMS sustave podržavate i kako izgleda integracija?",
+          "answer": "Podržavamo sve vodeće PMS sustave: Opera Cloud, Cloudbeds, Mews, Protel, Fidelio, HotelTime, Clock PMS+, eZee FrontDesk, Little Hotelier, RoomRaccoon i mnoge druge. Integracija se vrši putem REST API ili SOAP-a i uključuje real-time sinhronizaciju rezervacija, check-in/check-out komunikaciju, folija transakcije, room status update-e i guest profile sync. Prosječno vrijeme integracije: 2-5 radnih dana."
+        },
+        "q4": {
+          "question": "Kako funkcionira integracija sa eTurista (eVisitor) sustavom?",
+          "answer": "Naš sustav je zvanično certificiran i integrisan sa eTurista API sustavom. Automatski šalje sve potrebne podatke: lične podatke gosta, podatke o dokumentu, datum dolaska/odlaska, vrstu smještaja, i turističku taksu. Sve se događa u realnom vremenu bez potrebe za ručnim unosom. Potpuno kompatibilno sa srpskim zakonom o evidenciji turista. Eliminira ručni unos i greške."
+        },
+        "q5": {
+          "question": "Koje načine plaćanja podržava?",
+          "answer": "Podržavamo: 1) Visa, Mastercard, American Express, Maestro, Dina Card kartice putem integrisanog POS terminala, 2) Contactless NFC plaćanja (Apple Pay, Google Pay, Samsung Pay), 3) QR code plaćanja (DinaQR, PaySpot), 4) Direct billing na PMS (plaćanje pri checkout-u). Integracija sa svim vodećim PSP-ovima u regiji (Monri, CorvusPay, Stripe). PCI DSS Level 1 Compliant sa potpunom enkriptacijom."
+        },
+        "q6": {
+          "question": "Radi li sustav offline?",
+          "answer": "Da, sustav ima napredan offline režim! U slučaju prekida internet konekcije, kiosk nastavlja da radi koristeći lokalni cache rezervacija za narednih 7 dana. Gosti mogu završiti check-in, sustav kešira transakcije, i sve se automatski sinhronizuje kada se internet vrati. Preporučujemo backup 4G/LTE konekciju za maksimalnu pouzdanost (99.9% uptime)."
+        },
+        "q7": {
+          "question": "Kako se vrši održavanje i update sustava?",
+          "answer": "Software update-i se vrše automatski (noćni update-i 2-4 AM) ili manuelno prema vašim preferencijama. Možete izabrati želite li automatske update-e ili da ručno odobrite svaki update. Notifikacije o novim verzijama stižu putem admin panela. Hardware održavanje preporučujemo jednom godišnje (čišćenje, kalibracija). U paketu dobivate 12 mjeseci besplatnih update-a. Remote administracija putem Cloud Dashboard-a."
+        },
+        "q8": {
+          "question": "Kakva je zaštita podataka i GDPR usklađenost?",
+          "answer": "Sustav je potpuno GDPR compliant. Svi podaci se enkriptuju (AES-256), čuvaju se na serverima u EU (Frankfurt/Amsterdam), automatski se brišu nakon zakonski predviđenog roka (3 godine), i imamo DPA (Data Processing Agreement) za svaku instalaciju. SSL/TLS 1.3 za sve konekcije, 2FA autentifikacija za admin panel, audit log svih radnji, i potpuna transparentnost u korištenju podataka. ISO 27001 i SOC 2 Type II certificirani."
+        },
+        "q9": {
+          "question": "Mogu li prilagoditi izgled i branding kioska?",
+          "answer": "Apsolutno! Nudimo potpuno custom branding: vaš logo, boje, fontove, background slike, video prezentacije, custom welcome poruke, multilanguage content, i branding na fizičkom kiosku (vinyl wrap). U Enterprise paketu nudimo i potpuno custom UI dizajn prilagođen vašem brendu. Dizajn se postavlja putem admin panela bez potrebe za kodom. Drag-and-drop editor sa live preview."
+        },
+        "q10": {
+          "question": "Što se događa ako gost ima problem tijekom check-in-a?",
+          "answer": "Sustav ima 'Help' dugme koje gosta povezuje sa recepcijom putem video poziva ili intercom-a. Također, kiosk automatski detektuje probleme (nevalidna kartica, greška u dokumentu) i prikazuje jasna uputstva. Vaše osoblje može remote preuzeti kontrolu nad kiosk-om i pomoći gostu. Imamo i 24/7 tehničku podršku. Multi-level support: on-screen help → video call → remote assistance → 24/7 tech support."
+        }
+      }
     }
   },
   "about": {
@@ -445,13 +511,16 @@
     "title": "O Nama",
     "subtitle": "Transformiramo način na koji hoteli primaju svoje goste kroz inovativnu tehnologiju i vrhunsku podršku.",
     "story": {
+      "title": "Naša Priča",
+      "subtitle": "Principi koji vode naš rad i odnose s klijentima",
       "p1": "Inova Tech IT je tvrtka specijalizirana za razvoj inovativnih IT rješenja u području hotelijerstva. Osnovana 2017. godine, naša misija je bila jasna - transformirati tradicionalnu recepciju u moderan, automatizirani sustav.",
       "p2": "Inova Tech IT ima predstavništva u Pragu i Beogradu.",
-      "p3": "Prepoznali smo da hoteli gube dragocjeno vrijeme na manualne check-in procese, što dovodi do dugih redova, frustriranih gostiju i povećanih operativnih troškova.",
-      "p4": "Danas, s više od 50 uspješnih instalacija, nastavljamo inovirati i poboljšavati naš sustav."
+      "p3": "Prepoznali smo da hoteli gube dragocjeno vrijeme na manualne check-in procese, što dovodi do dugih redova, frustriranih gostiju i povećanih operativnih troškova. Naše rješenje - Digitalna Recepcija - omogućava check-in za samo 30 sekundi, 24/7 dostupnost i značajno smanjenje troškova.",
+      "p4": "Danas, s više od 50 uspješnih instalacija, nastavljamo inovirati i poboljšavati naš sustav. Svaki feedback od klijenata nas čini boljima, svaki uspjeh naših partnera je i naš uspjeh."
     },
     "values": {
       "title": "Naše Vrijednosti",
+      "subtitle": "Principi koji vode naš rad i odnose s klijentima",
       "innovation": {
         "title": "Inovacija",
         "description": "Konstantno istraživanje i razvoj novih tehnologija za hotelijerstvo."
@@ -471,19 +540,24 @@
     },
     "timeline": {
       "title": "Naša Evolucija",
+      "subtitle": "Putovanje od ideje do lidera na tržištu",
       "year2017": {
+        "year": "2017",
         "title": "Osnivanje",
         "description": "Inova Tech IT pokreće projekt digitalne recepcije nakon istraživanja potreba hotelijerske industrije."
       },
       "year2019": {
+        "year": "2019",
         "title": "Prvi Klijent",
         "description": "Uspješna instalacija prvog sustava i pozitivne recenzije od hotela u Beogradu."
       },
       "year2024": {
+        "year": "2024",
         "title": "Ekspanzija",
         "description": "Proširenje na 20+ hotela širom Srbije i regije. Lansiranje Pro paketa s naprednim funkcijama."
       },
       "year2025": {
+        "year": "2025",
         "title": "Budućnost",
         "description": "Planirana ekspanzija na EU tržište i razvoj mobilne aplikacije za goste."
       }
