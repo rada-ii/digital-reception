@@ -1,0 +1,396 @@
+{
+  "common": {
+    "language": "Srpski",
+    "loading": "Učitavanje...",
+    "error": "Greška",
+    "success": "Uspeh",
+    "close": "Zatvori",
+    "back": "Nazad",
+    "next": "Sledeće",
+    "submit": "Pošalji",
+    "cancel": "Otkaži",
+    "save": "Sačuvaj",
+    "edit": "Izmeni",
+    "delete": "Obriši",
+    "confirm": "Potvrdi",
+    "yes": "Da",
+    "no": "Ne"
+  },
+
+  "navbar": {
+    "home": "Početna",
+    "product": "Proizvod",
+    "about": "O Nama",
+    "contact": "Kontakt",
+    "demo": "Zakažite Demo",
+    "menuOpen": "Otvori meni",
+    "menuClose": "Zatvori meni",
+    "changeLanguage": "Promeni jezik"
+  },
+
+  "hero": {
+    "badge": "Nova Generacija Digitalne Recepcije",
+    "subtitle": "Šta ako je moguće...",
+    "title": "CHECK-IN ZA",
+    "titleHighlight": "30 SEKUNDI",
+    "description": "Digitalna recepcija koja transformiše vaš hotel. Potpuno automatizovan check-in proces koji oduševljava goste i smanjuje troškove do 60%.",
+    "primaryCta": "Zakažite Demo Prezentaciju",
+    "secondaryCta": "Pogledajte Video",
+    "stats": {
+      "hotels": "20+ hotela",
+      "checkIns": "10,000+ check-in-a",
+      "rating": "4.9/5 ocena"
+    }
+  },
+
+  "valueProps": {
+    "title": "Zašto Digitalna Recepcija?",
+    "subtitle": "Revolucionarna tehnologija koja menja način rada hotela",
+    "speed": {
+      "title": "Brzina",
+      "description": "Check-in za samo 30 sekundi. Gosti su srećni, redovi nestaju."
+    },
+    "savings": {
+      "title": "Štednja",
+      "description": "Smanjite troškove recepcije do 60%. Više prostora za rast."
+    },
+    "availability": {
+      "title": "24/7 Dostupnost",
+      "description": "Nikad ne spava. Vaši gosti mogu da se prijave kad god stignu."
+    },
+    "security": {
+      "title": "Sigurnost",
+      "description": "GDPR usaglašeno. Svi podaci su šifrovani i bezbedni."
+    }
+  },
+
+  "howItWorks": {
+    "title": "Kako Funkcioniše?",
+    "subtitle": "4 jednostavna koraka do automatizovanog check-in-a",
+    "steps": {
+      "scan": {
+        "title": "Skeniraj Dokument",
+        "description": "Gost skenira pasoš ili ličnu kartu na touchscreen kiosku"
+      },
+      "pay": {
+        "title": "Plati",
+        "description": "Automatska obrada plaćanja putem POS terminala ili online"
+      },
+      "key": {
+        "title": "Preuzmi Ključ",
+        "description": "Sistem automatski izdaje keycard ili generiše QR kod"
+      },
+      "checkin": {
+        "title": "Uđi u Sobu",
+        "description": "Gost odmah ulazi u sobu bez čekanja na recepciji"
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "Šta Kažu Naši Klijenti?",
+    "subtitle": "Preko 20+ hotela širom regiona već koristi našu digitalnu recepciju",
+    "items": [
+      {
+        "name": "Marko Petrović",
+        "role": "Hotel Manager, Belgrade Luxury Hotel",
+        "content": "Digitalna recepcija je revolucionisala naš posao. Gosti su oduševljeni brzinom check-in-a, a mi smo smanjili troškove za 40%.",
+        "rating": 5
+      },
+      {
+        "name": "Ana Jovanović",
+        "role": "Vlasnica, Boutique Hotel Adriatic",
+        "content": "Sada možemo da primamo goste 24/7 bez potrebe za dodatnim osobljem. Investicija se isplatila za 6 meseci!",
+        "rating": 5
+      },
+      {
+        "name": "Stefan Nikolić",
+        "role": "IT Manager, Grand Resort",
+        "content": "Integracija sa našim PMS sistemom je bila glatka. Tehnička podrška je odlična, sistem radi bez problema.",
+        "rating": 5
+      },
+      {
+        "name": "Jelena Simić",
+        "role": "General Manager, City Hotel",
+        "content": "Gosti posebno vole touchscreen interfejs. Moderno, brzo, intuitivno. Naša recepcija izgleda kao iz budućnosti!",
+        "rating": 5
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Često Postavljana Pitanja",
+    "subtitle": "Sve što treba da znate o digitalnoj recepciji",
+    "items": [
+      {
+        "question": "Koliko traje instalacija?",
+        "answer": "Instalacija digitalne recepcije traje između 2-4 sata, u zavisnosti od kompleksnosti integracije sa postojećim sistemima. Naš tim će se pobrinuti da sve bude podešeno i testirano pre nego što napustimo vašu lokaciju."
+      },
+      {
+        "question": "Koliko košta digitalna recepcija?",
+        "answer": "Cena digitalne recepcije počinje od 999€ za osnovni paket koji uključuje touchscreen kiosk, softver, instalaciju i obuku. Nudimo i mesečne pakete od 99€/mesečno. Kontaktirajte nas za detaljnu ponudu prilagođenu vašim potrebama."
+      },
+      {
+        "question": "Da li se integriše sa PMS sistemom?",
+        "answer": "Da! Digitalna recepcija se integriše sa većinom popularnih PMS sistema kao što su Opera, Cloudbeds, Mews, Protel i drugi. Naš API omogućava seamless integraciju i sinhronizaciju svih podataka."
+      },
+      {
+        "question": "Šta ako gost treba pomoć?",
+        "answer": "Kiosk ima integrisan video poziv koji omogućava gostima da se direktno povežu sa vašim osobljem ili našom podrškom 24/7. Takođe možete postaviti kiosk blizu recepcije za dodatnu sigurnost."
+      },
+      {
+        "question": "Da li je sistem siguran?",
+        "answer": "Apsolutno! Digitalna recepcija je GDPR usaglašena, koristi end-to-end enkripciju, i sve podaci se čuvaju na sigurnim serverima. Integrisan je sa eTurista sistemom za automatsku prijavu gostiju."
+      },
+      {
+        "question": "Koja je garancija?",
+        "answer": "Nudimo 2 godine garancije na sav hardver i besplatne software update-ove. Tehnička podrška je dostupna 24/7 putem telefona, email-a ili remote access-a."
+      },
+      {
+        "question": "Da li mogu da prilagodim izgled?",
+        "answer": "Da! Možete u potpunosti prilagoditi boje, logo, jezik i interfejs kiošća da odgovara vašem brendu. Nudimo i različite teme i layout opcije."
+      },
+      {
+        "question": "Kako funkcioniše plaćanje?",
+        "answer": "Kiosk može biti integrisan sa POS terminalom za kartično plaćanje, ili možete koristiti online payment gateway (Stripe, PayPal). Gosti mogu platiti kreditnom karticom, debitnom karticom ili putem mobilnog uređaja."
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Kontaktirajte Nas",
+    "subtitle": "Imate pitanja o digitalnoj recepciji? Želite demo prezentaciju?",
+    "description": "Javite nam se - odgovorićemo u roku od 24 sata!",
+    "badge": "Tu smo za vas 24/7",
+    "form": {
+      "title": "Pošaljite Poruku",
+      "name": {
+        "label": "Ime i Prezime",
+        "placeholder": "Petar Petrović",
+        "required": "Ime je obavezno"
+      },
+      "email": {
+        "label": "Email Adresa",
+        "placeholder": "petar@firma.rs",
+        "required": "Email je obavezan",
+        "invalid": "Email adresa nije validna"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "+381 64 123 4567"
+      },
+      "subject": {
+        "label": "Predmet",
+        "placeholder": "Izaberite predmet",
+        "options": {
+          "demo": "Demo Prezentacija",
+          "pricing": "Cenovnik",
+          "support": "Tehnička Podrška",
+          "other": "Ostalo"
+        }
+      },
+      "message": {
+        "label": "Vaša Poruka",
+        "placeholder": "Unesite vašu poruku...",
+        "required": "Poruka je obavezna"
+      },
+      "submit": "Pošalji Poruku",
+      "sending": "Šaljem...",
+      "sent": "Poslato!",
+      "success": {
+        "title": "Poruka uspešno poslata!",
+        "description": "Kontaktiraćemo vas u najkraćem roku."
+      },
+      "error": {
+        "title": "Greška!",
+        "description": "Greška prilikom slanja. Pokušajte ponovo.",
+        "required": "Molimo popunite sva obavezna polja"
+      }
+    },
+    "info": {
+      "phone": {
+        "title": "Pozovite nas",
+        "value": "+381 64 123 8587"
+      },
+      "email": {
+        "title": "Pošaljite email",
+        "value": "office@inovatechit.com"
+      },
+      "address": {
+        "title": "Naša adresa",
+        "value": "Beograd, Srbija"
+      },
+      "hours": {
+        "title": "Radno Vreme",
+        "weekdays": "Ponedeljak - Petak:",
+        "weekdaysTime": "09:00 - 17:00",
+        "weekend": "Subota - Nedelja:",
+        "weekendTime": "Zatvoreno"
+      }
+    },
+    "quickAnswers": {
+      "title": "Brzi Odgovori",
+      "installation": {
+        "question": "Koliko traje instalacija?",
+        "answer": "Standardna instalacija traje 2-4 sata i uključuje kompletnu konfiguraciju i obuku osoblja."
+      },
+      "demo": {
+        "question": "Da li postoji demo?",
+        "answer": "Da! Zakažite demo prezentaciju putem Calendly-a i vidite sistem uživo u trajanju od 30 minuta."
+      },
+      "pricing": {
+        "question": "Koja je cena?",
+        "answer": "Kontaktirajte nas za tačan cenovnik prilagođen vašim potrebama."
+      },
+      "support": {
+        "question": "Tehnička podrška?",
+        "answer": "Nudimo 24/7 tehničku podršku, remote management i redovne software update-ove."
+      }
+    }
+  },
+
+  "footer": {
+    "tagline": "Revolucija u hotelskoj industriji počinje ovde.",
+    "company": {
+      "title": "Kompanija",
+      "about": "O Nama",
+      "product": "Proizvod",
+      "contact": "Kontakt",
+      "privacy": "Politika Privatnosti"
+    },
+    "support": {
+      "title": "Podrška",
+      "faq": "Često Pitanja",
+      "documentation": "Dokumentacija",
+      "technical": "Tehnička Podrška"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "phone": "Telefon",
+      "email": "Email",
+      "address": "Adresa"
+    },
+    "copyright": "© 2024 Digitalna Recepcija. Sva prava zadržana.",
+    "madeBy": "Napravljeno sa ❤️ od strane Inova Tech IT"
+  },
+
+  "cta": {
+    "title": "Spremni Da Transformišete Vaš Hotel?",
+    "description": "Zakažite besplatnu demo prezentaciju i vidite kako digitalna recepcija može revolucionisati vaš posao.",
+    "primary": "Zakažite Demo Sada",
+    "secondary": "Kontaktirajte Nas",
+    "features": [
+      "Besplatna demo prezentacija",
+      "Bez obaveza",
+      "Personalizovana ponuda"
+    ]
+  },
+
+  "product": {
+    "hero": {
+      "badge": "Nova Generacija",
+      "title": "Upoznajte Našu Digitalnu Recepciju",
+      "subtitle": "Touchscreen kiosk koji revolucioniše hotel check-in proces",
+      "description": "Moderna, elegantna i intuitivna digitalna recepcija dizajnirana za hotele koji žele da pruže vrhunsko iskustvo svojim gostima.",
+      "cta": "Zatražite Ponudu"
+    },
+    "specs": {
+      "title": "Tehničke Specifikacije",
+      "subtitle": "Visokokvalitetan hardver i napredni softver",
+      "hardware": {
+        "title": "Hardver",
+        "screen": "32\" 4K Touchscreen",
+        "processor": "Intel i7 procesor",
+        "ram": "16GB RAM",
+        "storage": "512GB SSD",
+        "camera": "Full HD kamera",
+        "scanner": "Passport/ID scanner",
+        "printer": "Keycard printer"
+      },
+      "software": {
+        "title": "Softver",
+        "pms": "PMS integracija",
+        "eTurist": "eTurista automatska prijava",
+        "payment": "Payment gateway",
+        "languages": "Multi-language podrška",
+        "customization": "Potpuna personalizacija",
+        "updates": "Automatski update-ovi"
+      }
+    },
+    "faq": {
+      "title": "Često Pitanja O Proizvodu",
+      "subtitle": "Tehnička pitanja i odgovori"
+    }
+  },
+
+  "about": {
+    "title": "O Nama",
+    "subtitle": "Transformišemo hotelsku industriju kroz inovativnu tehnologiju",
+    "mission": {
+      "title": "Naša Misija",
+      "description": "Verujemo da tehnologija može da učini hotelsku industriju boljom za sve - za vlasnike hotela, osoblje i goste. Naša digitalna recepcija je rezultat godina istraživanja i razvoja."
+    },
+    "story": {
+      "title": "Naša Priča",
+      "description": "Počeli smo sa jednostavnom idejom: šta ako bi gosti mogli da se prijave u hotel brzo kao što se prijavljuju na let? Danas, više od 20 hotela koristi našu tehnologiju."
+    },
+    "values": {
+      "title": "Naše Vrednosti",
+      "innovation": {
+        "title": "Inovacija",
+        "description": "Konstantno unapređujemo našu tehnologiju"
+      },
+      "quality": {
+        "title": "Kvalitet",
+        "description": "Najviši standardi u svakom detalju"
+      },
+      "support": {
+        "title": "Podrška",
+        "description": "Tu smo za naše klijente 24/7"
+      }
+    }
+  },
+
+  "packages": {
+    "title": "Izaberite Svoj Paket",
+    "subtitle": "Prilagođena rešenja za svaki tip hotela",
+    "basic": {
+      "name": "Osnovni",
+      "price": "999€",
+      "description": "Idealno za male hotele",
+      "features": [
+        "Touchscreen kiosk 24\"",
+        "Osnovna PMS integracija",
+        "Passport scanner",
+        "Email podrška"
+      ]
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "1.499€",
+      "description": "Najpopularniji izbor",
+      "features": [
+        "Touchscreen kiosk 32\"",
+        "Potpuna PMS integracija",
+        "eTurista automatizacija",
+        "Keycard printer",
+        "24/7 podrška"
+      ],
+      "badge": "Najpopularnije"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "1.999€",
+      "description": "Za velike hotele",
+      "features": [
+        "Touchscreen kiosk 43\"",
+        "Advanced PMS integracija",
+        "eTurista + eVisitor",
+        "Payment terminal",
+        "Keycard printer",
+        "Dedikovan support",
+        "Custom dizajn"
+      ]
+    }
+  }
+}

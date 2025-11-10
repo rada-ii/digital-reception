@@ -1,0 +1,396 @@
+{
+  "common": {
+    "language": "English",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+
+  "navbar": {
+    "home": "Home",
+    "product": "Product",
+    "about": "About Us",
+    "contact": "Contact",
+    "demo": "Schedule Demo",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "changeLanguage": "Change language"
+  },
+
+  "hero": {
+    "badge": "Next Generation Digital Reception",
+    "subtitle": "What if it's possible...",
+    "title": "CHECK-IN IN",
+    "titleHighlight": "30 SECONDS",
+    "description": "Digital reception that transforms your hotel. Fully automated check-in process that delights guests and reduces costs by up to 60%.",
+    "primaryCta": "Schedule Demo Presentation",
+    "secondaryCta": "Watch Video",
+    "stats": {
+      "hotels": "20+ hotels",
+      "checkIns": "10,000+ check-ins",
+      "rating": "4.9/5 rating"
+    }
+  },
+
+  "valueProps": {
+    "title": "Why Digital Reception?",
+    "subtitle": "Revolutionary technology changing the way hotels operate",
+    "speed": {
+      "title": "Speed",
+      "description": "Check-in in just 30 seconds. Happy guests, no queues."
+    },
+    "savings": {
+      "title": "Savings",
+      "description": "Reduce reception costs by up to 60%. More room to grow."
+    },
+    "availability": {
+      "title": "24/7 Availability",
+      "description": "Never sleeps. Your guests can check in whenever they arrive."
+    },
+    "security": {
+      "title": "Security",
+      "description": "GDPR compliant. All data is encrypted and secure."
+    }
+  },
+
+  "howItWorks": {
+    "title": "How Does It Work?",
+    "subtitle": "4 simple steps to automated check-in",
+    "steps": {
+      "scan": {
+        "title": "Scan Document",
+        "description": "Guest scans passport or ID on the touchscreen kiosk"
+      },
+      "pay": {
+        "title": "Pay",
+        "description": "Automatic payment processing via POS terminal or online"
+      },
+      "key": {
+        "title": "Get Key",
+        "description": "System automatically issues keycard or generates QR code"
+      },
+      "checkin": {
+        "title": "Enter Room",
+        "description": "Guest immediately enters room without waiting at reception"
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "What Our Clients Say?",
+    "subtitle": "Over 20+ hotels across the region already use our digital reception",
+    "items": [
+      {
+        "name": "Marko Petrović",
+        "role": "Hotel Manager, Belgrade Luxury Hotel",
+        "content": "Digital reception revolutionized our business. Guests love the fast check-in, and we reduced costs by 40%.",
+        "rating": 5
+      },
+      {
+        "name": "Ana Jovanović",
+        "role": "Owner, Boutique Hotel Adriatic",
+        "content": "Now we can welcome guests 24/7 without additional staff. The investment paid off in 6 months!",
+        "rating": 5
+      },
+      {
+        "name": "Stefan Nikolić",
+        "role": "IT Manager, Grand Resort",
+        "content": "Integration with our PMS system was smooth. Technical support is excellent, the system works flawlessly.",
+        "rating": 5
+      },
+      {
+        "name": "Jelena Simić",
+        "role": "General Manager, City Hotel",
+        "content": "Guests especially love the touchscreen interface. Modern, fast, intuitive. Our reception looks like from the future!",
+        "rating": 5
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about digital reception",
+    "items": [
+      {
+        "question": "How long does installation take?",
+        "answer": "Digital reception installation takes between 2-4 hours, depending on the complexity of integration with existing systems. Our team will ensure everything is set up and tested before we leave your location."
+      },
+      {
+        "question": "How much does digital reception cost?",
+        "answer": "Digital reception pricing starts at €999 for the basic package which includes touchscreen kiosk, software, installation and training. We also offer monthly packages from €99/month. Contact us for a detailed quote tailored to your needs."
+      },
+      {
+        "question": "Does it integrate with PMS systems?",
+        "answer": "Yes! Digital reception integrates with most popular PMS systems such as Opera, Cloudbeds, Mews, Protel and others. Our API enables seamless integration and synchronization of all data."
+      },
+      {
+        "question": "What if a guest needs help?",
+        "answer": "The kiosk has an integrated video call that allows guests to connect directly with your staff or our 24/7 support. You can also place the kiosk near reception for added security."
+      },
+      {
+        "question": "Is the system secure?",
+        "answer": "Absolutely! Digital reception is GDPR compliant, uses end-to-end encryption, and all data is stored on secure servers. It's integrated with the eTurista system for automatic guest registration."
+      },
+      {
+        "question": "What's the warranty?",
+        "answer": "We offer 2 years warranty on all hardware and free software updates. Technical support is available 24/7 via phone, email or remote access."
+      },
+      {
+        "question": "Can I customize the appearance?",
+        "answer": "Yes! You can fully customize colors, logo, language and kiosk interface to match your brand. We offer various themes and layout options."
+      },
+      {
+        "question": "How does payment work?",
+        "answer": "The kiosk can be integrated with a POS terminal for card payments, or you can use an online payment gateway (Stripe, PayPal). Guests can pay by credit card, debit card or via mobile device."
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions about digital reception? Want a demo presentation?",
+    "description": "Get in touch - we'll respond within 24 hours!",
+    "badge": "We're here for you 24/7",
+    "form": {
+      "title": "Send Message",
+      "name": {
+        "label": "Full Name",
+        "placeholder": "John Doe",
+        "required": "Name is required"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "john@company.com",
+        "required": "Email is required",
+        "invalid": "Email address is not valid"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+381 64 123 4567"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Select subject",
+        "options": {
+          "demo": "Demo Presentation",
+          "pricing": "Pricing",
+          "support": "Technical Support",
+          "other": "Other"
+        }
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Enter your message...",
+        "required": "Message is required"
+      },
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "sent": "Sent!",
+      "success": {
+        "title": "Message sent successfully!",
+        "description": "We'll contact you as soon as possible."
+      },
+      "error": {
+        "title": "Error!",
+        "description": "Error sending message. Please try again.",
+        "required": "Please fill in all required fields"
+      }
+    },
+    "info": {
+      "phone": {
+        "title": "Call us",
+        "value": "+381 64 123 8587"
+      },
+      "email": {
+        "title": "Send email",
+        "value": "office@inovatechit.com"
+      },
+      "address": {
+        "title": "Our address",
+        "value": "Belgrade, Serbia"
+      },
+      "hours": {
+        "title": "Working Hours",
+        "weekdays": "Monday - Friday:",
+        "weekdaysTime": "09:00 AM - 05:00 PM",
+        "weekend": "Saturday - Sunday:",
+        "weekendTime": "Closed"
+      }
+    },
+    "quickAnswers": {
+      "title": "Quick Answers",
+      "installation": {
+        "question": "How long does installation take?",
+        "answer": "Standard installation takes 2-4 hours and includes complete configuration and staff training."
+      },
+      "demo": {
+        "question": "Is there a demo?",
+        "answer": "Yes! Schedule a demo presentation via Calendly and see the system live in a 30-minute session."
+      },
+      "pricing": {
+        "question": "What's the price?",
+        "answer": "Contact us for accurate pricing tailored to your needs."
+      },
+      "support": {
+        "question": "Technical support?",
+        "answer": "We offer 24/7 technical support, remote management and regular software updates."
+      }
+    }
+  },
+
+  "footer": {
+    "tagline": "The revolution in hotel industry starts here.",
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "product": "Product",
+      "contact": "Contact",
+      "privacy": "Privacy Policy"
+    },
+    "support": {
+      "title": "Support",
+      "faq": "FAQ",
+      "documentation": "Documentation",
+      "technical": "Technical Support"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    },
+    "copyright": "© 2024 Digital Reception. All rights reserved.",
+    "madeBy": "Made with ❤️ by Inova Tech IT"
+  },
+
+  "cta": {
+    "title": "Ready to Transform Your Hotel?",
+    "description": "Schedule a free demo presentation and see how digital reception can revolutionize your business.",
+    "primary": "Schedule Demo Now",
+    "secondary": "Contact Us",
+    "features": [
+      "Free demo presentation",
+      "No obligations",
+      "Personalized offer"
+    ]
+  },
+
+  "product": {
+    "hero": {
+      "badge": "Next Generation",
+      "title": "Meet Our Digital Reception",
+      "subtitle": "Touchscreen kiosk that revolutionizes hotel check-in process",
+      "description": "Modern, elegant and intuitive digital reception designed for hotels that want to provide exceptional experience to their guests.",
+      "cta": "Request Quote"
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "subtitle": "High-quality hardware and advanced software",
+      "hardware": {
+        "title": "Hardware",
+        "screen": "32\" 4K Touchscreen",
+        "processor": "Intel i7 processor",
+        "ram": "16GB RAM",
+        "storage": "512GB SSD",
+        "camera": "Full HD camera",
+        "scanner": "Passport/ID scanner",
+        "printer": "Keycard printer"
+      },
+      "software": {
+        "title": "Software",
+        "pms": "PMS integration",
+        "eTurist": "eTurista automatic registration",
+        "payment": "Payment gateway",
+        "languages": "Multi-language support",
+        "customization": "Full customization",
+        "updates": "Automatic updates"
+      }
+    },
+    "faq": {
+      "title": "Product FAQ",
+      "subtitle": "Technical questions and answers"
+    }
+  },
+
+  "about": {
+    "title": "About Us",
+    "subtitle": "Transforming the hotel industry through innovative technology",
+    "mission": {
+      "title": "Our Mission",
+      "description": "We believe that technology can make the hotel industry better for everyone - for hotel owners, staff and guests. Our digital reception is the result of years of research and development."
+    },
+    "story": {
+      "title": "Our Story",
+      "description": "We started with a simple idea: what if guests could check into a hotel as quickly as they check into a flight? Today, more than 20 hotels use our technology."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Constantly improving our technology"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Highest standards in every detail"
+      },
+      "support": {
+        "title": "Support",
+        "description": "We're here for our clients 24/7"
+      }
+    }
+  },
+
+  "packages": {
+    "title": "Choose Your Package",
+    "subtitle": "Tailored solutions for every type of hotel",
+    "basic": {
+      "name": "Basic",
+      "price": "€999",
+      "description": "Ideal for small hotels",
+      "features": [
+        "24\" Touchscreen kiosk",
+        "Basic PMS integration",
+        "Passport scanner",
+        "Email support"
+      ]
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "€1,499",
+      "description": "Most popular choice",
+      "features": [
+        "32\" Touchscreen kiosk",
+        "Full PMS integration",
+        "eTurista automation",
+        "Keycard printer",
+        "24/7 support"
+      ],
+      "badge": "Most Popular"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "€1,999",
+      "description": "For large hotels",
+      "features": [
+        "43\" Touchscreen kiosk",
+        "Advanced PMS integration",
+        "eTurista + eVisitor",
+        "Payment terminal",
+        "Keycard printer",
+        "Dedicated support",
+        "Custom design"
+      ]
+    }
+  }
+}

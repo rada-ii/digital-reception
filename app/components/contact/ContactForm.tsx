@@ -9,6 +9,7 @@ import {
   CheckCircle,
   AlertCircle,
 } from "lucide-react";
+import { useLanguage } from "@/lib/translations/LanguageContext";
 
 /**
  * 🎯 Contact Form Component - REDIZAJNIRAN
@@ -20,6 +21,8 @@ import {
  */
 
 export default function ContactForm() {
+  const { t } = useLanguage();
+
   const [formData, setFormData] = useState({
     ime: "",
     email: "",
@@ -41,7 +44,7 @@ export default function ContactForm() {
       !formData.email.trim() ||
       !formData.poruka.trim()
     ) {
-      setErrorMessage("Molimo popunite sva obavezna polja");
+      setErrorMessage(t("contact.form.error.required"));
       return;
     }
 
@@ -60,7 +63,7 @@ export default function ContactForm() {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || "Greška prilikom slanja");
+        throw new Error(data.error || t("contact.form.error.description"));
       }
 
       setStatus("success");
@@ -78,7 +81,7 @@ export default function ContactForm() {
     } catch (error: any) {
       setStatus("error");
       setErrorMessage(
-        error.message || "Greška prilikom slanja. Pokušajte ponovo."
+        error.message || t("contact.form.error.description")
       );
     }
   };
@@ -98,10 +101,9 @@ export default function ContactForm() {
     <div className="max-w-4xl mx-auto space-y-8">
       {/* Kontakt Informacije - Kartica */}
       <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 text-white shadow-2xl">
-        <h2 className="text-3xl font-bold mb-6">Kontaktirajte Nas</h2>
+        <h2 className="text-3xl font-bold mb-6">{t("contact.title")}</h2>
         <p className="text-orange-50 mb-8 text-lg">
-          Imate pitanja? Slobodno nas kontaktirajte i odgovorićemo u najkraćem
-          roku.
+          {t("contact.subtitle")}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -115,9 +117,9 @@ export default function ContactForm() {
             </div>
             <div className="text-center">
               <p className="text-sm text-orange-100 font-medium mb-1">
-                Pozovite nas
+                {t("contact.info.phone.title")}
               </p>
-              <p className="font-bold">+381 64 123 8587</p>
+              <p className="font-bold">{t("contact.info.phone.value")}</p>
             </div>
           </a>
 
@@ -131,9 +133,9 @@ export default function ContactForm() {
             </div>
             <div className="text-center">
               <p className="text-sm text-orange-100 font-medium mb-1">
-                Pošaljite email
+                {t("contact.info.email.title")}
               </p>
-              <p className="font-bold text-sm">office@inovatechit.com</p>
+              <p className="font-bold text-sm">{t("contact.info.email.value")}</p>
             </div>
           </a>
 
@@ -144,28 +146,28 @@ export default function ContactForm() {
             </div>
             <div className="text-center">
               <p className="text-sm text-orange-100 font-medium mb-1">
-                Naša adresa
+                {t("contact.info.address.title")}
               </p>
-              <p className="font-bold">Beograd, Srbija</p>
+              <p className="font-bold">{t("contact.info.address.value")}</p>
             </div>
           </div>
         </div>
 
         {/* Radno vreme */}
         <div className="mt-6 p-4 bg-white/10 backdrop-blur-sm rounded-xl">
-          <h3 className="font-bold mb-3">Radno Vreme</h3>
+          <h3 className="font-bold mb-3">{t("contact.info.hours.title")}</h3>
           <div className="grid grid-cols-2 gap-2 text-sm">
             <div>
-              <span className="text-orange-100">Ponedeljak - Petak:</span>
+              <span className="text-orange-100">{t("contact.info.hours.weekdays")}</span>
             </div>
             <div className="text-right">
-              <span className="font-semibold">09:00 - 17:00</span>
+              <span className="font-semibold">{t("contact.info.hours.weekdaysTime")}</span>
             </div>
             <div>
-              <span className="text-orange-100">Subota - Nedelja:</span>
+              <span className="text-orange-100">{t("contact.info.hours.weekend")}</span>
             </div>
             <div className="text-right">
-              <span className="font-semibold">Zatvoreno</span>
+              <span className="font-semibold">{t("contact.info.hours.weekendTime")}</span>
             </div>
           </div>
         </div>
@@ -174,7 +176,7 @@ export default function ContactForm() {
       {/* Kontakt Forma */}
       <div className="bg-white p-8 rounded-2xl shadow-2xl">
         <h3 className="text-2xl font-bold text-slate-900 mb-6">
-          Pošaljite Poruku
+          {t("contact.form.title")}
         </h3>
 
         {/* Status Messages */}
@@ -183,10 +185,10 @@ export default function ContactForm() {
             <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
             <div>
               <p className="font-semibold text-green-900">
-                Poruka uspešno poslata!
+                {t("contact.form.success.title")}
               </p>
               <p className="text-sm text-green-700">
-                Kontaktiraćemo vas u najkraćem roku.
+                {t("contact.form.success.description")}
               </p>
             </div>
           </div>
@@ -196,7 +198,7 @@ export default function ContactForm() {
           <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4 flex items-start gap-3">
             <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
             <div>
-              <p className="font-semibold text-red-900">Greška!</p>
+              <p className="font-semibold text-red-900">{t("contact.form.error.title")}</p>
               <p className="text-sm text-red-700">{errorMessage}</p>
             </div>
           </div>
@@ -210,7 +212,7 @@ export default function ContactForm() {
                 htmlFor="ime"
                 className="block text-sm font-medium text-slate-700 mb-2"
               >
-                Ime i Prezime <span className="text-red-500">*</span>
+                {t("contact.form.name.label")} <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -220,10 +222,10 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 disabled={status === "loading" || status === "success"}
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg 
+                className="w-full px-4 py-3 border border-slate-300 rounded-lg
                           focus:ring-2 focus:ring-orange-500 focus:border-transparent
                           disabled:bg-slate-100 disabled:cursor-not-allowed"
-                placeholder="Petar Petrović"
+                placeholder={t("contact.form.name.placeholder")}
               />
             </div>
 
@@ -233,7 +235,7 @@ export default function ContactForm() {
                 htmlFor="email"
                 className="block text-sm font-medium text-slate-700 mb-2"
               >
-                Email Adresa <span className="text-red-500">*</span>
+                {t("contact.form.email.label")} <span className="text-red-500">*</span>
               </label>
               <input
                 type="email"
@@ -243,10 +245,10 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 disabled={status === "loading" || status === "success"}
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg 
+                className="w-full px-4 py-3 border border-slate-300 rounded-lg
                           focus:ring-2 focus:ring-orange-500 focus:border-transparent
                           disabled:bg-slate-100 disabled:cursor-not-allowed"
-                placeholder="petar@firma.rs"
+                placeholder={t("contact.form.email.placeholder")}
               />
             </div>
           </div>
@@ -258,7 +260,7 @@ export default function ContactForm() {
                 htmlFor="telefon"
                 className="block text-sm font-medium text-slate-700 mb-2"
               >
-                Telefon
+                {t("contact.form.phone.label")}
               </label>
               <input
                 type="tel"
@@ -267,10 +269,10 @@ export default function ContactForm() {
                 value={formData.telefon}
                 onChange={handleChange}
                 disabled={status === "loading" || status === "success"}
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg 
+                className="w-full px-4 py-3 border border-slate-300 rounded-lg
                           focus:ring-2 focus:ring-orange-500 focus:border-transparent
                           disabled:bg-slate-100 disabled:cursor-not-allowed"
-                placeholder="+381 64 123 4567"
+                placeholder={t("contact.form.phone.placeholder")}
               />
             </div>
 
@@ -280,7 +282,7 @@ export default function ContactForm() {
                 htmlFor="predmet"
                 className="block text-sm font-medium text-slate-700 mb-2"
               >
-                Predmet
+                {t("contact.form.subject.label")}
               </label>
               <select
                 id="predmet"
@@ -288,15 +290,15 @@ export default function ContactForm() {
                 value={formData.predmet}
                 onChange={handleChange}
                 disabled={status === "loading" || status === "success"}
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg 
+                className="w-full px-4 py-3 border border-slate-300 rounded-lg
                           focus:ring-2 focus:ring-orange-500 focus:border-transparent
                           disabled:bg-slate-100 disabled:cursor-not-allowed"
               >
-                <option value="">Izaberite predmet</option>
-                <option value="demo">Demo Prezentacija</option>
-                <option value="cenovnik">Cenovnik</option>
-                <option value="tehnicka-podrska">Tehnička Podrška</option>
-                <option value="ostalo">Ostalo</option>
+                <option value="">{t("contact.form.subject.placeholder")}</option>
+                <option value="demo">{t("contact.form.subject.options.demo")}</option>
+                <option value="cenovnik">{t("contact.form.subject.options.pricing")}</option>
+                <option value="tehnicka-podrska">{t("contact.form.subject.options.support")}</option>
+                <option value="ostalo">{t("contact.form.subject.options.other")}</option>
               </select>
             </div>
           </div>
@@ -307,7 +309,7 @@ export default function ContactForm() {
               htmlFor="poruka"
               className="block text-sm font-medium text-slate-700 mb-2"
             >
-              Vaša Poruka <span className="text-red-500">*</span>
+              {t("contact.form.message.label")} <span className="text-red-500">*</span>
             </label>
             <textarea
               id="poruka"
@@ -317,10 +319,10 @@ export default function ContactForm() {
               required
               rows={5}
               disabled={status === "loading" || status === "success"}
-              className="w-full px-4 py-3 border border-slate-300 rounded-lg 
+              className="w-full px-4 py-3 border border-slate-300 rounded-lg
                         focus:ring-2 focus:ring-orange-500 focus:border-transparent
                         disabled:bg-slate-100 disabled:cursor-not-allowed resize-none"
-              placeholder="Unesite vašu poruku..."
+              placeholder={t("contact.form.message.placeholder")}
             />
           </div>
 
@@ -328,7 +330,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={status === "loading" || status === "success"}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold 
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold
                       py-3 px-6 rounded-lg transition-all duration-300
                       disabled:bg-slate-400 disabled:cursor-not-allowed
                       flex items-center justify-center gap-2 shadow-lg hover:shadow-xl
@@ -337,17 +339,17 @@ export default function ContactForm() {
             {status === "loading" ? (
               <>
                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                Šaljem...
+                {t("contact.form.sending")}
               </>
             ) : status === "success" ? (
               <>
                 <CheckCircle className="w-5 h-5" />
-                Poslato!
+                {t("contact.form.sent")}
               </>
             ) : (
               <>
                 <Send className="w-5 h-5" />
-                Pošalji Poruku
+                {t("contact.form.submit")}
               </>
             )}
           </button>

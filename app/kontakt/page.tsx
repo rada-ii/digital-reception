@@ -7,6 +7,7 @@ import Footer from "../components/layout/Footer";
 import ContactForm from "../components/contact/ContactForm";
 import CalendlyEmbed from "../components/contact/CalendlyEmbed";
 import SectionNavigation from "@/components/layout/SectionNavigation";
+import { useLanguage } from "@/lib/translations/LanguageContext";
 
 /**
  * Contact Page
@@ -27,29 +28,31 @@ import SectionNavigation from "@/components/layout/SectionNavigation";
  */
 
 export default function ContactPage() {
+  const { t } = useLanguage();
+
   const contactInfo = [
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Telefon",
-      content: "+381 64 1238587",
+      title: t("contact.info.phone.title"),
+      content: t("contact.info.phone.value"),
       link: "tel:+381641238587",
     },
     {
       icon: <Mail className="w-6 h-6" />,
-      title: "Email",
-      content: "office@inovatechit.com",
+      title: t("contact.info.email.title"),
+      content: t("contact.info.email.value"),
       link: "mailto:office@inovatechit.com",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Adresa",
-      content: "Beograd, Srbija",
+      title: t("contact.info.address.title"),
+      content: t("contact.info.address.value"),
       link: "https://inovatechit.com",
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "Radno Vreme",
-      content: "Pon-Pet: 09:00 - 17:00",
+      title: t("contact.info.hours.title"),
+      content: `${t("contact.info.hours.weekdays")} ${t("contact.info.hours.weekdaysTime")}`,
       link: null,
     },
   ];
@@ -71,17 +74,17 @@ export default function ContactPage() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 rounded-full text-orange-600 font-semibold text-sm mb-6">
                 <MessageCircle className="w-4 h-4" />
-                Tu smo za vas 24/7
+                {t("contact.badge")}
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-                Kontaktirajte Nas
+                {t("contact.title")}
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto mb-8">
-                Imate pitanja o digitalnoj recepciji? Želite demo prezentaciju?
+                {t("contact.subtitle")}
                 <br />
-                Javite nam se - odgovorićemo u roku od 24 sata!
+                {t("contact.description")}
               </p>
             </motion.div>
           </div>
@@ -174,47 +177,43 @@ export default function ContactPage() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-orange-500 mb-6">
-                Brzi Odgovori
+                {t("contact.quickAnswers.title")}
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                 <div className="bg-slate-50 rounded-xl p-6">
                   <h3 className="font-bold text-slate-900 mb-2">
-                    Koliko traje instalacija?
+                    {t("contact.quickAnswers.installation.question")}
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Standardna instalacija traje 2-4 sata i uključuje kompletnu
-                    konfiguraciju i obuku osoblja.
+                    {t("contact.quickAnswers.installation.answer")}
                   </p>
                 </div>
 
                 <div className="bg-slate-50 rounded-xl p-6">
                   <h3 className="font-bold text-slate-900 mb-2">
-                    Da li postoji demo?
+                    {t("contact.quickAnswers.demo.question")}
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Da! Zakažite demo prezentaciju putem Calendly-a i vidite
-                    sistem uživo u trajanju od 30 minuta.
+                    {t("contact.quickAnswers.demo.answer")}
                   </p>
                 </div>
 
                 <div className="bg-slate-50 rounded-xl p-6">
                   <h3 className="font-bold text-slate-900 mb-2">
-                    Koja je cena?
+                    {t("contact.quickAnswers.pricing.question")}
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Kontaktirajte nas za tačan cenovnik prilagođen vašim
-                    potrebama.
+                    {t("contact.quickAnswers.pricing.answer")}
                   </p>
                 </div>
 
                 <div className="bg-slate-50 rounded-xl p-6">
                   <h3 className="font-bold text-slate-900 mb-2">
-                    Tehnička podrška?
+                    {t("contact.quickAnswers.support.question")}
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Nudimo 24/7 tehničku podršku, remote management i redovne
-                    software update-ove.
+                    {t("contact.quickAnswers.support.answer")}
                   </p>
                 </div>
               </div>

@@ -3,17 +3,19 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from "@/lib/translations/LanguageContext";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   const navLinks = [
-    { href: "/", label: "Početna" },
-    { href: "/proizvod", label: "Proizvod" },
-    { href: "/kontakt", label: "Kontakt" },
-    { href: "/o-nama", label: "O Nama" },
+    { href: "/", label: t("navbar.home") },
+    { href: "/proizvod", label: t("navbar.product") },
+    { href: "/kontakt", label: t("navbar.contact") },
+    { href: "/o-nama", label: t("navbar.about") },
   ];
 
   return (
@@ -70,6 +72,16 @@ export default function Navbar() {
               </Link>
             ))}
 
+            {/* Language Switcher */}
+            <button
+              onClick={() => setLanguage(language === "sr" ? "en" : "sr")}
+              className="ml-2 px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-slate-800 flex items-center gap-1.5"
+              aria-label={t("navbar.changeLanguage")}
+            >
+              <Globe className="w-4 h-4" />
+              <span className="uppercase">{language}</span>
+            </button>
+
             {/* Telefon Button */}
             <motion.a
               href="tel:+381641238587"
@@ -84,6 +96,16 @@ export default function Navbar() {
           </div>
 
           <div className="lg:hidden flex items-center gap-2 pr-4">
+            {/* Language Switcher - Mobile */}
+            <button
+              onClick={() => setLanguage(language === "sr" ? "en" : "sr")}
+              className="p-2 hover:bg-slate-800 rounded-lg transition flex items-center gap-1"
+              aria-label={t("navbar.changeLanguage")}
+            >
+              <Globe className="w-4 h-4" />
+              <span className="text-xs uppercase">{language}</span>
+            </button>
+
             <motion.a
               href="tel:+381641238587"
               whileHover={{ scale: 1.05 }}
@@ -97,7 +119,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 hover:bg-slate-800 rounded-lg transition touch-manipulation"
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-label={isMenuOpen ? t("navbar.menuClose") : t("navbar.menuOpen")}
             >
               {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
