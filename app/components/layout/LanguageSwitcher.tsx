@@ -68,13 +68,13 @@ export default function LanguageSwitcher() {
                   }`}
                 >
                   <span className="text-2xl">{lang.flag}</span>
-                  <span className="text-sm font-medium relative">
+                  <span className="text-sm font-medium">
                     {lang.name}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
                   </span>
                   {locale === lang.code && (
                     <span className="ml-auto text-orange-400">✓</span>
                   )}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
                 </button>
               ))}
             </motion.div>

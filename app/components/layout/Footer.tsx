@@ -4,7 +4,6 @@ import { Link } from "@/i18n/routing";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -21,15 +20,12 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="xs:col-span-2 lg:col-span-1 flex flex-col items-start"
           >
-            {/* ✅ FIXED: Logo wrapper sa flex za alignment */}
+            {/* Logo kao tekst */}
             <Link href="/" className="inline-flex items-center mb-4 sm:mb-5">
-              <Image
-                src="/3.png"
-                alt="Digitalna Recepcija"
-                width={200}
-                height={100}
-                className="h-36 sm:h-40 w-auto"
-              />
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
+                <span className="text-orange-500">Digitalna</span>{" "}
+                <span>Recepcija</span>
+              </h2>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
               {t("description")}
