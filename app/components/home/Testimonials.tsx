@@ -130,7 +130,7 @@ export default function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-4">
-                <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden">
+                <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden mt-4">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}
