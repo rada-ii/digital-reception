@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-10">
         <div className="flex justify-between items-center h-16 sm:h-20">
-          {/* ✅ FIXED: Logo sa flex items-center za vertikalno centriranje */}
+          {/* Logo sa flex items-center za vertikalno centriranje */}
           <Link href="/" className="group flex-shrink-0 flex items-center">
             <motion.div
               className="flex items-center"
@@ -36,20 +36,18 @@ export default function Navbar() {
               transition={{ type: "spring", stiffness: 400 }}
             >
               {/* Desktop Logo - Full logo with text */}
-              {/* ✅ FIXED: Smanjene dimenzije da odgovaraju navbar visini, uklonjeno negative positioning */}
               <div className="hidden sm:block">
                 <Image
                   src="/2.png"
                   alt={t("logoAlt")}
                   width={280}
-                  height={240}
+                  height={60}
                   priority
-                  className="h-40 sm:h-30 md:h-[350px] w-auto"
+                  className="block h-12 sm:h-14 md:h-16 w-auto object-contain"
                 />
               </div>
 
               {/* Mobile Logo - Icon only (orange circle) */}
-              {/* ✅ FIXED: Uklonjeno pt-4 i relative positioning */}
               <div className="sm:hidden">
                 <Image
                   src="/1.png"
@@ -57,7 +55,7 @@ export default function Navbar() {
                   width={44}
                   height={44}
                   priority
-                  className="h-11 w-11"
+                  className="block h-11 w-11 object-contain"
                 />
               </div>
             </motion.div>
