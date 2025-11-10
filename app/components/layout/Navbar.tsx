@@ -107,9 +107,10 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="block py-2.5 text-white/80 hover:text-white hover:bg-slate-800 rounded-lg px-4 transition text-sm sm:text-base"
+                    className="relative block py-2.5 px-4 text-sm sm:text-base font-medium text-white/80 hover:text-white transition-colors group"
                   >
                     {link.label}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
                   </Link>
                 ))}
               </div>
