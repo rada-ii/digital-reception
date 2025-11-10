@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -27,37 +26,19 @@ export default function Navbar() {
       className="bg-slate-900/95 backdrop-blur-md text-white sticky top-0 z-50 shadow-lg border-b border-slate-800"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-10">
-        <div className="flex justify-between items-center h-16 sm:h-20">
-          {/* Logo sa flex items-center za vertikalno centriranje */}
+        <div className="flex justify-between items-center h-12 sm:h-14">
+          {/* Logo kao tekst */}
           <Link href="/" className="group flex-shrink-0 flex items-center">
             <motion.div
               className="flex items-center"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
-              {/* Desktop Logo - Full logo with text */}
-              <div className="hidden sm:block">
-                <Image
-                  src="/2.png"
-                  alt={t("logoAlt")}
-                  width={280}
-                  height={60}
-                  priority
-                  className="block h-12 sm:h-14 md:h-16 w-auto object-contain"
-                />
-              </div>
-
-              {/* Mobile Logo - Icon only (orange circle) */}
-              <div className="sm:hidden">
-                <Image
-                  src="/1.png"
-                  alt={t("logoAltMobile")}
-                  width={44}
-                  height={44}
-                  priority
-                  className="block h-11 w-11 object-contain"
-                />
-              </div>
+              <h1 className="text-lg sm:text-xl font-bold text-white">
+                <span className="text-orange-500">Digitalna</span>{" "}
+                <span className="hidden sm:inline">Recepcija</span>
+                <span className="sm:hidden">R</span>
+              </h1>
             </motion.div>
           </Link>
 
