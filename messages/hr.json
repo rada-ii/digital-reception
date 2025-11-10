@@ -197,7 +197,7 @@
       "name": "STANDARD",
       "features": {
         "all": "Sve iz Osnovnog",
-        "eturista": "eTourist prijava",
+        "eturista": "eVisitor prijava",
         "cash": "Gotovina",
         "pms": "PMS integracija"
       }

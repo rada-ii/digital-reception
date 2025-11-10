@@ -197,7 +197,7 @@
       "name": "STANDARD",
       "features": {
         "all": "All from Basic",
-        "eturista": "eTourist registration",
+        "eturista": "Automatic guest registration / Immigration Records",
         "cash": "Cash",
         "pms": "PMS integration"
       }
