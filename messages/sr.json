@@ -15,11 +15,9 @@
   },
   "hero": {
     "question": "Šta ako je moguće ...",
-    "mainTitle": "CHECK-IN ZA 30s",
-    "description": "Digitalna recepcija za sve hotele i apartmane koji razmišljaju da {highlight1} check-in i check-out, ali imaju neke nedoumice. Zato što vaši gosti zaslužuju {highlight2} čak i van sezone ili u trećoj smeni (a Vi zaslužujete {highlight3})",
-    "highlight1": "potpuno automatizuju",
-    "highlight2": "brz odziv",
-    "highlight3": "još bolju ocenu na Booking-u",
+    "mainTitlePart1": "CHECK-IN ZA",
+    "mainTitlePart2": "30s",
+    "description": "Digitalna recepcija za sve hotele i apartmane koji razmišljaju da <highlight1>potpuno automatizuju</highlight1> check-in i check-out, ali imaju neke nedoumice. Zato što vaši gosti zaslužuju <highlight2>brz odziv</highlight2> čak i van sezone ili u trećoj smeni <highlight3>(a Vi zaslužujete još bolju ocenu na Booking-u)</highlight3>",
     "ctaDownload": "Preuzmite Brošuru",
     "ctaDemo": "Zakažite Demo",
     "carousel": {

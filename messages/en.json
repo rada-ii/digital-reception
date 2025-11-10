@@ -15,11 +15,9 @@
   },
   "hero": {
     "question": "What if it were possible ...",
-    "mainTitle": "CHECK-IN IN 30s",
-    "description": "Digital reception for all hotels and apartments considering {highlight1} check-in and check-out, but have some doubts. Because your guests deserve {highlight2} even in the off-season or during the night shift (and you deserve {highlight3})",
-    "highlight1": "complete automation of",
-    "highlight2": "quick response",
-    "highlight3": "an even better rating on Booking",
+    "mainTitlePart1": "CHECK-IN IN",
+    "mainTitlePart2": "30s",
+    "description": "Digital reception for all hotels and apartments considering <highlight1>complete automation of</highlight1> check-in and check-out, but have some doubts. Because your guests deserve <highlight2>quick response</highlight2> even in the off-season or during the night shift <highlight3>(and you deserve an even better rating on Booking.com)</highlight3>",
     "ctaDownload": "Download Brochure",
     "ctaDemo": "Schedule Demo",
     "carousel": {

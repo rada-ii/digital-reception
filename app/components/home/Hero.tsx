@@ -127,7 +127,23 @@ export default function Hero() {
               variants={itemVariants}
               className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-black mb-4 sm:mb-6 text-slate-900 leading-none tracking-tight"
             >
-              {t("mainTitle")}
+              <span className="inline-block">{t("mainTitlePart1")}</span>{" "}
+              <span className="text-orange-500 inline-block relative">
+                {t("mainTitlePart2")}
+                {/* Decorative underline */}
+                {/* <svg
+                  className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-2 sm:h-3 text-orange-500/30"
+                  viewBox="0 0 200 12"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M0,7 Q50,0 100,7 T200,7"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    fill="none"
+                  />
+                </svg> */}
+              </span>
             </motion.h1>
 
             {/* Opis sa Highlight-ovanim Ključnim Rečima */}
@@ -145,12 +161,33 @@ export default function Hero() {
                   highlight2: (chunks) => (
                     <span className="font-bold text-orange-600">{chunks}</span>
                   ),
-                  highlight3: (chunks) => (
-                    <span className="text-slate-600">
-                      (a Vi zaslužujete{" "}
-                      <span className="font-bold text-orange-600">{chunks}</span>)
-                    </span>
-                  ),
+                  highlight3: (chunks) => {
+                    const text = String(chunks);
+                    // Extract the inner text for the orange highlight
+                    const patterns = [
+                      /\(a Vi zaslužujete (.+?)\)/,
+                      /\(and you deserve (.+?)\)/,
+                      /\(a Vi zaslužujete (.+?)\)/
+                    ];
+
+                    for (const pattern of patterns) {
+                      const match = text.match(pattern);
+                      if (match) {
+                        const innerText = match[1];
+                        const prefix = text.includes('and you') ? 'and you deserve' : 'a Vi zaslužujete';
+                        return (
+                          <span className="text-slate-600">
+                            ({prefix}{" "}
+                            <span className="font-bold text-orange-600 ">
+                              {innerText}
+                            </span>
+                            )
+                          </span>
+                        );
+                      }
+                    }
+                    return <span className="text-slate-600">{chunks}</span>;
+                  },
                 })}
               </p>
             </motion.div>
@@ -241,7 +278,9 @@ export default function Hero() {
                         ? "bg-orange-500 w-6 xs:w-8 sm:w-10 shadow-lg"
                         : "bg-white/70 hover:bg-white/90 w-1.5 xs:w-2"
                     }`}
-                    aria-label={t("navigation.goToSlide", { number: index + 1 })}
+                    aria-label={t("navigation.goToSlide", {
+                      number: index + 1,
+                    })}
                   />
                 ))}
               </div>
