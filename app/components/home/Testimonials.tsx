@@ -122,7 +122,7 @@ export default function Testimonials() {
               </p>
 
               {/* Stats Badge */}
-              <div className="inline-block px-4 py-2 bg-orange-100 rounded-full mb-6">
+              <div className="inline px-4 py-2 bg-orange-100 rounded-full mb-6">
                 <span className="text-orange-600 font-semibold text-base">
                   {testimonial.stat}
                 </span>

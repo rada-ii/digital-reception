@@ -12,7 +12,6 @@ import {
   Shield,
   Star,
 } from "lucide-react";
-import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import AnimatedDots from "../shared/AnimatedDots";
@@ -32,6 +31,13 @@ export default function Hero() {
   const t = useTranslations("hero");
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleDemoClick = () => {
+    window.open(
+      "https://calendly.com/boris-inovatechit/digital-reception-intro",
+      "_blank"
+    );
+  };
 
   const carouselImages = [
     {
@@ -161,13 +167,13 @@ export default function Hero() {
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                 <span className="whitespace-nowrap">{t("ctaDownload")}</span>
               </button>
-              <Link
-                href="/kontakt#booking"
+              <button
+                onClick={handleDemoClick}
                 className="w-full xs:w-auto px-5 sm:px-7 md:px-8 py-2.5 sm:py-3 md:py-3.5 bg-white text-slate-900 rounded-full font-bold hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 border-2 border-slate-200 hover:border-orange-500 hover:bg-orange-50 text-sm sm:text-base active:scale-95"
               >
                 <Calendar className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                 <span className="whitespace-nowrap">{t("ctaDemo")}</span>
-              </Link>
+              </button>
             </motion.div>
           </motion.div>
 

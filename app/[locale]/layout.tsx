@@ -25,13 +25,14 @@ export const viewport: Viewport = {
 
 type Props = {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 // Generate metadata for each locale
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta.home" });
 
   return {
@@ -169,8 +170,10 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: Props) {
+  const { locale } = await params;
+
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
     notFound();

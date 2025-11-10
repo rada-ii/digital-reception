@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -27,35 +27,37 @@ export default function Navbar() {
       className="bg-slate-900/95 backdrop-blur-md text-white sticky top-0 z-50 shadow-lg border-b border-slate-800"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-10">
-        <div className="flex justify-between items-center h-14 sm:h-16">
-          <Link href="/" className="group flex-shrink-0">
+        <div className="flex justify-between items-center h-16 sm:h-20">
+          {/* ✅ FIXED: Logo sa flex items-center za vertikalno centriranje */}
+          <Link href="/" className="group flex-shrink-0 flex items-center">
             <motion.div
-              className="relative"
+              className="flex items-center"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
               {/* Desktop Logo - Full logo with text */}
+              {/* ✅ FIXED: Smanjene dimenzije da odgovaraju navbar visini, uklonjeno negative positioning */}
               <div className="hidden sm:block">
                 <Image
                   src="/2.png"
                   alt={t("logoAlt")}
-                  width={400}
-                  height={200}
+                  width={280}
+                  height={240}
                   priority
-                  className="h-78 md:h-76 lg:h-100 xl:h-100 w-100% relative right-35
-                  "
+                  className="h-40 sm:h-30 md:h-[350px] w-auto"
                 />
               </div>
 
               {/* Mobile Logo - Icon only (orange circle) */}
-              <div className="sm:hidden ">
+              {/* ✅ FIXED: Uklonjeno pt-4 i relative positioning */}
+              <div className="sm:hidden">
                 <Image
                   src="/1.png"
                   alt={t("logoAltMobile")}
-                  width={60}
-                  height={60}
+                  width={44}
+                  height={44}
                   priority
-                  className="h-50 w-50 pt-4 relative right-14"
+                  className="h-11 w-11"
                 />
               </div>
             </motion.div>
@@ -75,32 +77,10 @@ export default function Navbar() {
 
             {/* Language Switcher */}
             <LanguageSwitcher />
-
-            {/* Telefon Button */}
-            <motion.a
-              href={`tel:${t("phone")}`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="ml-2 xl:ml-4 flex items-center gap-2 px-4 xl:px-5 py-2 bg-orange-500 rounded-full hover:bg-orange-600 transition font-semibold text-xs xl:text-sm whitespace-nowrap"
-            >
-              <Phone className="w-3.5 h-3.5 xl:w-4 xl:h-4" />
-              <span className="hidden xl:inline">{t("phone")}</span>
-              <span className="xl:hidden">{t("call")}</span>
-            </motion.a>
           </div>
 
           <div className="lg:hidden flex items-center gap-2 pr-4">
             <LanguageSwitcher />
-
-            <motion.a
-              href={`tel:${t("phone")}`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 bg-orange-500 rounded-full hover:bg-orange-600 transition font-semibold text-xs sm:text-sm"
-            >
-              <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              <span className="hidden xs:inline">{t("call")}</span>
-            </motion.a>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -132,13 +112,6 @@ export default function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                <a
-                  href={`tel:${t("phone")}`}
-                  className="flex items-center justify-center gap-2 px-5 py-3 bg-orange-500 rounded-full hover:bg-orange-600 transition font-semibold mx-4 mt-3 text-sm sm:text-base"
-                >
-                  <Phone className="w-4 h-4" />
-                  {t("phone")}
-                </a>
               </div>
             </motion.div>
           )}
