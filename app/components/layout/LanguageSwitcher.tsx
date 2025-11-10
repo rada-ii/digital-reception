@@ -29,14 +29,14 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center gap-2 px-3 xl:px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-all"
+        className="group relative inline-flex items-center gap-2 px-3 xl:px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-all"
         aria-label="Change language"
       >
         <Globe className="w-4 h-4" />
         <span className="hidden sm:inline text-sm font-medium">
           {currentLanguage?.name}
         </span>
-        <span className="text-lg">{currentLanguage?.flag}</span>
+        <span className="text-base leading-none">{currentLanguage?.flag}</span>
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
       </button>
 
