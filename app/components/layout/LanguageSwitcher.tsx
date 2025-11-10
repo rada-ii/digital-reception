@@ -29,7 +29,7 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center gap-2 px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors"
+        className="group relative flex items-center gap-2 px-3 xl:px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-all"
         aria-label="Change language"
       >
         <Globe className="w-4 h-4" />
@@ -61,16 +61,15 @@ export default function LanguageSwitcher() {
                 <button
                   key={lang.code}
                   onClick={() => handleLanguageChange(lang.code)}
-                  className={`group w-full px-4 py-3 flex items-center gap-3 hover:bg-slate-700 transition-colors text-left relative ${
+                  className={`group w-full px-4 py-3 flex items-center gap-3 hover:bg-slate-700 transition-all text-left relative ${
                     locale === lang.code
                       ? "bg-slate-700/50 text-orange-400"
                       : "text-white/80 hover:text-white"
                   }`}
                 >
                   <span className="text-2xl">{lang.flag}</span>
-                  <span className="text-sm font-medium relative">
+                  <span className="text-sm font-medium">
                     {lang.name}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
                   </span>
                   {locale === lang.code && (
                     <span className="ml-auto text-orange-400">✓</span>
