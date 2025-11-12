@@ -47,7 +47,13 @@ export default function ContactPage() {
       icon: <MapPin className="w-6 h-6" />,
       title: t("cards.address.title"),
       content: t("cards.address.value"),
-      link: "https://inovatechit.com",
+      link: "https://maps.google.com/?q=Ratka+Mitrovića+130,+Beograd",
+    },
+    {
+      icon: <MapPin className="w-6 h-6" />,
+      title: t("cards.addressMain.title"),
+      content: t("cards.addressMain.value"),
+      link: "https://maps.google.com/?q=Milady+Horakove+600/38,+Praha",
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -91,7 +97,7 @@ export default function ContactPage() {
         {/* Contact Info Cards */}
         <section className="py-12 px-4 sm:px-6 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {contactInfo.map((info, index) => (
                 <motion.div
                   key={index}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ChevronDown, Settings } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -148,12 +149,12 @@ export default function ProductFAQ() {
               </p>
             </div>
 
-            <a
+            <Link
               href="/kontakt"
               className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-lg transition-colors shadow-md hover:shadow-lg text-sm sm:text-base whitespace-nowrap"
             >
               {t("ctaButton")}
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

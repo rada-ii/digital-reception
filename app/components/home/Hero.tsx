@@ -117,7 +117,7 @@ export default function Hero() {
             {/* Pitanje - "Šta ako je moguće..." */}
             <motion.p
               variants={itemVariants}
-              className="text-base sm:text-lg md:text-xl text-slate-600 mb-3 sm:mb-4 font-medium"
+              className="text-base sm:text-lg md:text-xl text-orange-500 mb-3 sm:mb-4 font-medium"
             >
               {t("question")}
             </motion.p>
@@ -167,14 +167,16 @@ export default function Hero() {
                     const patterns = [
                       /\(a Vi zaslužujete (.+?)\)/,
                       /\(and you deserve (.+?)\)/,
-                      /\(a Vi zaslužujete (.+?)\)/
+                      /\(a Vi zaslužujete (.+?)\)/,
                     ];
 
                     for (const pattern of patterns) {
                       const match = text.match(pattern);
                       if (match) {
                         const innerText = match[1];
-                        const prefix = text.includes('and you') ? 'and you deserve' : 'a Vi zaslužujete';
+                        const prefix = text.includes("and you")
+                          ? "and you deserve"
+                          : "a Vi zaslužujete";
                         return (
                           <span className="text-slate-600">
                             ({prefix}{" "}

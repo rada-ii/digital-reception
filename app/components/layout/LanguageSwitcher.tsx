@@ -29,11 +29,11 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center gap-2 px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors"
+        className="group relative flex items-center gap-2 px-3 py-1 text-sm font-medium text-white/80 hover:text-white transition-colors"
         aria-label="Change language"
       >
         <Globe className="w-4 h-4" />
-        <span className="hidden sm:inline text-sm font-medium">
+        <span className="hidden sm:inline text-xs font-medium">
           {currentLanguage?.name}
         </span>
         <span className="text-lg">{currentLanguage?.flag}</span>
@@ -55,7 +55,7 @@ export default function LanguageSwitcher() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="absolute right-0 mt-2 w-48 bg-slate-800 rounded-lg shadow-xl border border-slate-700 overflow-hidden z-50"
+              className="absolute right-0 mt-2 w-36 bg-slate-800 rounded-lg shadow-xl border border-slate-700 overflow-hidden z-50"
             >
               {languages.map((lang) => (
                 <button
@@ -68,9 +68,7 @@ export default function LanguageSwitcher() {
                   }`}
                 >
                   <span className="text-2xl">{lang.flag}</span>
-                  <span className="text-sm font-medium">
-                    {lang.name}
-                  </span>
+                  <span className="text-xs font-medium">{lang.name}</span>
                   {locale === lang.code && (
                     <span className="ml-auto text-orange-400">✓</span>
                   )}

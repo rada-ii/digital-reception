@@ -12,7 +12,6 @@ export default function Footer() {
     <footer className="bg-slate-900 text-white py-12 sm:py-14 md:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-10 sm:mb-12">
-          {/* ✅ FIXED: Dodato flex items-start za vertical alignment */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -21,10 +20,17 @@ export default function Footer() {
             className="xs:col-span-2 lg:col-span-1 flex flex-col items-start"
           >
             {/* Logo kao tekst */}
-            <Link href="/" className="inline-flex items-center mb-4 sm:mb-5">
-              <h2 className="text-xl sm:text-2xl font-bold text-white">
-                <span className="text-orange-500">Digitalna</span>{" "}
-                <span>Recepcija</span>
+            <Link
+              href="/"
+              className="group inline-flex items-center mb-4 sm:mb-5 transition-colors duration-300"
+            >
+              <h2 className="text-xl sm:text-2xl font-bold">
+                <span className="text-orange-500 group-hover:text-white transition-colors duration-300">
+                  Digitalna
+                </span>{" "}
+                <span className="text-orange-500 group-hover:text-white transition-colors duration-300">
+                  Recepcija
+                </span>
               </h2>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">

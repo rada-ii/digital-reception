@@ -50,7 +50,7 @@ export default function Gallery() {
     },
     {
       id: 5,
-      url: "/images/masina10.jpg",
+      url: "/images/masina11.jpg",
       title: t("images.img5.title"),
       description: t("images.img5.description"),
       alt: t("images.img5.alt"),
@@ -316,7 +316,9 @@ export default function Gallery() {
                     total: images.length,
                   })}
                 </p>
-                <p className="text-xs text-white/60">{t("lightbox.controls")}</p>
+                <p className="text-xs text-white/60">
+                  {t("lightbox.controls")}
+                </p>
               </div>
             </div>
           </motion.div>

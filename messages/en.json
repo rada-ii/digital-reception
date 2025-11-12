@@ -279,8 +279,12 @@
         "value": "office@inovatechit.com"
       },
       "address": {
-        "title": "Our address",
-        "value": "Belgrade, Serbia"
+        "title": "R&D/Production",
+        "value": "Ratka Mitrovića 130, 11000 Beograd"
+      },
+      "addressMain": {
+        "title": "Main office",
+        "value": "Milady Horakove 600/38, 17000 Praha, Holesovice"
       }
     },
     "hours": {
