@@ -9,8 +9,8 @@ export default function Footer() {
   const t = useTranslations("footer");
   const navT = useTranslations("navbar.links");
   return (
-    <footer className="bg-slate-900 text-white py-12 sm:py-14 md:py-16 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-slate-900 text-white py-12 sm:py-14 md:py-16 px-8 sm:px-12 md:px-16 lg:px-20">
+      <div className="max-w-7xl mx-auto sm:px-8 md:px-10">
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-10 sm:mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -43,6 +43,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
+            className="sm:flex sm:flex-col lg:items-center"
           >
             <h4 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg">
               {t("pages")}

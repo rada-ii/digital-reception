@@ -32,7 +32,7 @@ export default function VideoSection() {
   return (
     <section
       id="video"
-      className="py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6 scroll-mt-16 min-h-[70svh]"
+      className="py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6 scroll-mt-16 sm:min-h-[70svh]"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div

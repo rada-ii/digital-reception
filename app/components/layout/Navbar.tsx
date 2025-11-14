@@ -26,8 +26,8 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
       className="bg-slate-900/95 backdrop-blur-md text-white sticky top-0 z-50 shadow-lg border-b border-slate-800"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-10">
-        <div className="flex justify-between items-center h-16 lg:h-20">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex justify-between items-center h-10 lg:h-14">
           {/* Logo */}
           <Link href="/" className="group flex-shrink-0">
             <motion.div
@@ -38,20 +38,20 @@ export default function Navbar() {
               <Image
                 src="/2.png"
                 alt="Digitalna Recepcija"
-                width={220}
-                height={55}
+                width={200}
+                height={40}
                 priority
-                className="hidden lg:block h-120 -ml-24 w-auto"
+                className="hidden lg:block h-100 -ml-24 w-auto"
               />
 
               {/* MOBILE & TABLET - Samo ikona */}
               <Image
                 src="/1.png"
                 alt="Digitalna Recepcija"
-                width={50}
-                height={50}
+                width={37}
+                height={37}
                 priority
-                className="block lg:hidden h-50 -ml-10 pt-4 w-auto"
+                className="block lg:hidden h-37 -ml-10 pt-2 w-auto"
               />
             </motion.div>
           </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center gap-2 pr-4">
+          <div className="lg:hidden flex items-center gap-2 pr-2">
             <LanguageSwitcher />
 
             <button
@@ -103,10 +103,12 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="relative block py-2.5 px-4 text-sm sm:text-base font-medium text-white/80 hover:text-white transition-colors group"
+                    className="block py-2.5 px-4 text-sm sm:text-base font-medium text-white/80 hover:text-white transition-colors group"
                   >
-                    {link.label}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
+                    <span className="relative inline-block">
+                      {link.label}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
+                    </span>
                   </Link>
                 ))}
               </div>

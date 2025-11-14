@@ -29,15 +29,17 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center gap-2 px-3 py-1 text-sm font-medium text-white/80 hover:text-white transition-colors"
+        className="group flex items-center gap-2 px-3 py-1 text-sm font-medium text-white/80 hover:text-white transition-colors"
         aria-label="Change language"
       >
-        <Globe className="w-4 h-4" />
-        <span className="hidden sm:inline text-xs font-medium">
-          {currentLanguage?.name}
+        <span className="relative inline-flex items-center gap-2">
+          <Globe className="w-4 h-4" />
+          <span className="hidden sm:inline text-s font-medium">
+            {currentLanguage?.name}
+          </span>
+          <span className="text-lg">{currentLanguage?.flag}</span>
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
         </span>
-        <span className="text-lg">{currentLanguage?.flag}</span>
-        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
       </button>
 
       <AnimatePresence>
@@ -61,18 +63,20 @@ export default function LanguageSwitcher() {
                 <button
                   key={lang.code}
                   onClick={() => handleLanguageChange(lang.code)}
-                  className={`group w-full px-4 py-3 flex items-center gap-3 transition-colors text-left relative ${
+                  className={`group w-full px-4 py-3 flex items-center gap-3 transition-colors text-left ${
                     locale === lang.code
                       ? "text-orange-400"
                       : "text-white/80 hover:text-white"
                   }`}
                 >
-                  <span className="text-2xl">{lang.flag}</span>
-                  <span className="text-xs font-medium">{lang.name}</span>
+                  <span className="relative inline-flex items-center gap-3">
+                    <span className="text-2xl">{lang.flag}</span>
+                    <span className="text-xs font-medium">{lang.name}</span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
+                  </span>
                   {locale === lang.code && (
                     <span className="ml-auto text-orange-400">✓</span>
                   )}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
                 </button>
               ))}
             </motion.div>

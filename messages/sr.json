@@ -99,15 +99,15 @@
     "reviews": {
       "marko": {
         "name": "Marko Petrović",
-        "role": "Vlasnik Hotela",
+        "role": "Vlasnik",
         "company": "Hotel Beograd",
         "text": "Digitalna recepcija je izmenila u potpunosti naš način poslovanja. Gosti su oduševljeni brzinom check-ina, a mi smo smanjili troškove osoblja za 40%. Investicija se isplatila za 6 meseci!",
         "stat": "40% Ušteda troškova"
       },
       "ana": {
         "name": "Ana Jovanović",
-        "role": "Menadžer Recepcije",
-        "company": "Apartmani Novi Sad",
+        "role": "Recepcioner",
+        "company": "Apartmani Niš",
         "text": "Neverovatno kako tehnologija može da olakša posao. Sada možemo da primamo goste 24/7 bez dodatnog osoblja. Sistem je intuitivan i naši stariji gosti nemaju problem sa njim.",
         "stat": "24/7 Dostupnost"
       },
@@ -120,8 +120,8 @@
       },
       "jelena": {
         "name": "Jelena Stojanović",
-        "role": "Vlasnica",
-        "company": "Boutique Hotel Skadarlija",
+        "role": "Menadžer",
+        "company": "Hotel Skadarlija",
         "text": "Gosti često komentarišu kako im se sviđa moderan pristup. Mladi gosti to očekuju, a stariji brzo nauče. Povećali smo prosečnu ocenu na Booking.com za 0.5 poena!",
         "stat": "+0.5 Rating boost"
       }
@@ -132,7 +132,7 @@
     "subtitle": "2-minutni video koji pokazuje kompletnu funkcionalnost digitalne recepcije",
     "overlay": "Check-in za 30 sekundi - Kompletna demonstracija sistema",
     "stats": {
-      "speed": "Brzi Check-in",
+      "speed": "Check-in",
       "availability": "Dostupnost",
       "security": "Sigurnost"
     }
@@ -150,7 +150,7 @@
       },
       "q2": {
         "question": "Koliko košta i koliko brzo se isplati investicija?",
-        "answer": "Pozovite nas ili zakazite demo sastanak za tacne cene koje se formiraju prem vasim potreba i paketima usluga. U cenu je uključeno: touchscreen kiosk, instalacija, PMS integracija, obuka osoblja, prva godina održavanja. Većina hotela vrati investiciju za 8-12 meseci kroz smanjenje troškova osoblja, povećanje efikasnosti i veće zadovoljstvo gostiju (bolje ocene = više rezervacija)."
+        "answer": "Pozovite nas ili zakazite demo sastanak za tačne cene koje se formiraju prema vašim potreba i paketima usluga. U cenu je uključeno: touchscreen kiosk, instalacija, PMS integracija, obuka osoblja, prva godina održavanja. Većina hotela vrati investiciju za 8-12 meseci kroz smanjenje troškova osoblja, povećanje efikasnosti i veće zadovoljstvo gostiju (bolje ocene = više rezervacija)."
       },
       "q3": {
         "question": "Kako izgleda proces check-in-a za gosta?",
@@ -514,7 +514,7 @@
       "badge": "Tehnička Pitanja",
       "title": "Detaljne Tehničke Informacije",
       "subtitle": "Odgovori na tehnička pitanja o specifikacijama, integracijama i funkcionalnostima",
-      "ctaTitle": "Trebate dodatne tehničke detalje?",
+      "ctaTitle": "Želite još tehničkih detalja?",
       "ctaSubtitle": "Zakažite sastanak sa našim tehničkim timom",
       "ctaButton": "Zakažite Demo",
       "questions": {

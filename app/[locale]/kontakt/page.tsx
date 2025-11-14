@@ -58,7 +58,7 @@ export default function ContactPage() {
     {
       icon: <Clock className="w-6 h-6" />,
       title: t("hours.title"),
-      content: t("hours.weekdays"),
+      content: `${t("hours.weekdays.label")} ${t("hours.weekdays.hours")}`,
       link: null,
     },
   ];

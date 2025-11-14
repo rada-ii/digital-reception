@@ -107,7 +107,7 @@ export default function Hero() {
     >
       {animatedDots}
       <div className="relative min-h-[70svh] flex flex-col justify-around py-8 sm:py-10 md:py-12 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto w-full">
+        <div className="max-w-7xl mx-auto w-full ">
           <motion.div
             className="text-center mb-6 sm:mb-8"
             variants={containerVariants}
@@ -221,7 +221,7 @@ export default function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative w-full h-[170px] xs:h-[260px] sm:h-[200px] md:h-[250px] lg:h-[300px] mb-6 sm:mb-8 md:mb-10"
+            className="relative max-w-7xl mx-auto h-[230px] xs:h-[260px] sm:h-[200px] md:h-[250px] lg:h-[300px] mb-6 sm:mb-8 md:mb-10 px-4 sm:px-0"
           >
             <div className="relative h-full rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-xl">
               {carouselImages.map((slide, index) => (

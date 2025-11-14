@@ -29,9 +29,7 @@ type Props = {
 };
 
 // Generate metadata for each locale
-export async function generateMetadata({
-  params,
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta.home" });
 
@@ -94,7 +92,7 @@ export async function generateMetadata({
           url: "https://hotelsync.org/og-image.jpg",
           width: 1200,
           height: 630,
-          alt: "Digitalna Recepcija - Automatski Hotel Check-in Kiosk",
+          alt: "Digitalna Recepcija - Automatski Check-in Kiosk",
         },
       ],
     },
@@ -168,10 +166,7 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: Props) {
+export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
   // Ensure that the incoming `locale` is valid

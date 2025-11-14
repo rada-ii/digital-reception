@@ -99,15 +99,15 @@
     "reviews": {
       "marko": {
         "name": "Marko Petrović",
-        "role": "Vlasnik Hotela",
+        "role": "Vlasnik",
         "company": "Hotel Beograd",
         "text": "Digitalna recepcija je u potpunosti promijenila naš način poslovanja. Gosti su oduševljeni brzinom check-ina, a mi smo smanjili troškove osoblja za 40%. Investicija se isplatila za 6 mjeseci!",
         "stat": "40% Ušteda troškova"
       },
       "ana": {
         "name": "Ana Jovanović",
-        "role": "Menadžer Recepcije",
-        "company": "Apartmani Novi Sad",
+        "role": "Recepcioner",
+        "company": "Apartmani Niš",
         "text": "Nevjerojatno kako tehnologija može olakšati posao. Sada možemo primati goste 24/7 bez dodatnog osoblja. Sustav je intuitivan i naši stariji gosti nemaju problema s njim.",
         "stat": "24/7 Dostupnost"
       },
@@ -120,7 +120,7 @@
       },
       "jelena": {
         "name": "Jelena Stojanović",
-        "role": "Vlasnica",
+        "role": "Menadžer",
         "company": "Boutique Hotel Skadarlija",
         "text": "Gosti često komentiraju kako im se sviđa moderan pristup. Mladi gosti to očekuju, a stariji brzo nauče. Povećali smo prosječnu ocjenu na Booking.com za 0.5 poena!",
         "stat": "+0.5 Boost ocjene"
@@ -132,7 +132,7 @@
     "subtitle": "2-minutni video koji pokazuje kompletnu funkcionalnost digitalne recepcije",
     "overlay": "Check-in za 30 sekundi - Kompletna demonstracija sustava",
     "stats": {
-      "speed": "Brzi Check-in",
+      "speed": "Check-in",
       "availability": "Dostupnost",
       "security": "Sigurnost"
     }
@@ -289,8 +289,14 @@
     },
     "hours": {
       "title": "Radno vrijeme",
-      "weekdays": "Ponedjeljak - Petak: 09:00 - 17:00",
-      "weekend": "Subota - Nedjelja: Zatvoreno"
+      "weekdays": {
+        "label": "Ponedjeljak - Petak:",
+        "hours": "09:00 - 17:00"
+      },
+      "weekend": {
+        "label": "Subota - Nedjelja:",
+        "hours": "Zatvoreno"
+      }
     },
     "form": {
       "title": "Pošaljite Poruku",

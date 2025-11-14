@@ -289,8 +289,14 @@
     },
     "hours": {
       "title": "Working hours",
-      "weekdays": "Monday - Friday: 09:00 - 17:00",
-      "weekend": "Saturday - Sunday: Closed"
+      "weekdays": {
+        "label": "Monday - Friday:",
+        "hours": "09:00 - 17:00"
+      },
+      "weekend": {
+        "label": "Saturday - Sunday:",
+        "hours": "Closed"
+      }
     },
     "form": {
       "title": "Send Message",

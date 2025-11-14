@@ -50,7 +50,7 @@ export default function Testimonials() {
       role: t("reviews.djordje.role"),
       company: t("reviews.djordje.company"),
       image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+        "https://images.unsplash.com/photo-1649123245135-4db6ead931b5?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       rating: 5,
       text: t("reviews.djordje.text"),
       stat: t("reviews.djordje.stat"),
@@ -84,7 +84,7 @@ export default function Testimonials() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             {t("title")}
           </h2>
-          <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-s sm:text-lg text-slate-600 max-w-3xl mx-auto">
             {t("subtitle")}
           </p>
         </motion.div>

@@ -58,7 +58,7 @@ export default function ProductHero({ onOpenBrochure }: ProductHeroProps) {
   return (
     <section
       id="product-hero"
-      className="relative min-h-[80vh] sm:min-h-[85vh] md:min-h-[90vh] flex items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 bg-gradient-to-br from-orange-50 via-white to-slate-50 scroll-mt-16 overflow-hidden"
+      className="relative min-h-[80vh] sm:min-h-[85vh] md:min-h-[90vh] flex items-center justify-center py-8 sm:py-12 md:py-16 lg:py-20 px-8 sm:px-10 md:px-12 lg:px-6 bg-gradient-to-br from-orange-50 via-white to-slate-50 scroll-mt-16 overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
